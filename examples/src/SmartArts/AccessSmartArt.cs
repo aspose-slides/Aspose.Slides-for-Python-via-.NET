@@ -32,7 +32,7 @@ namespace Aspose.slides.Examples.CSharp.SmartArts
                         Aspose.slides.SmartArt.SmartArtNode node = (Aspose.slides.SmartArt.SmartArtNode)smart.AllNodes[i]
 
                         # Printing the SmartArt node parameters
-                        outString = string.format("i = {0}, Text = {1},  Level = {2}, Position = {3}", i, node.text_frame.text, node.Level, node.Position)
+                        outString = string.format("i = {0}, Text = {1},  Level = {2}, Position = {3}", i, node.text_frame.text, node.Level, node.position)
                         print(outString)
                     }
                 }

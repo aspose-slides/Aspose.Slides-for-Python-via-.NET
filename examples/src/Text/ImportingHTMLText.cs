@@ -21,7 +21,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 # Adding the AutoShape to accomodate the HTML content
                 ashape = slide.shapes.add_auto_shape(ShapeType.Rectangle, 10, 10, pres.SlideSize.size.width - 20, pres.SlideSize.size.height - 10)
 
-                ashape.FillFormat.fill_type = FillType.NoFill
+                ashape.fill_format.fill_type = slides.FillType.NO_FILL
 
                 # Adding text frame to the shape
                 ashape.AddTextFrame("")

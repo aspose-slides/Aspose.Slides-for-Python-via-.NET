@@ -64,7 +64,7 @@ def charts_automatic_chart_series_color():
         series.format.fill.solid_fill_color.color = drawing.Color.gray
 
         # Save presentation with chart
-        presentation.save(outDir + "charts_AutomaticColor_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_automatic_chart_series_color_out.pptx", slides.export.SaveFormat.PPTX)
     
     #ExEnd:AutomaticChartSeriescolor
 

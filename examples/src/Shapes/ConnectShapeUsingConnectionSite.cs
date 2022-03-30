@@ -29,7 +29,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 IConnector connector = shapes.AddConnector(ShapeType.BentConnector3, 0, 0, 10, 10)
 
                 # Add autoshape Ellipse
-                ellipse = shapes.add_auto_shape(ShapeType.Ellipse, 0, 100, 100, 100)
+                ellipse = shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 0, 100, 100, 100)
 
                 # Add autoshape Rectangle
                 rectangle = shapes.add_auto_shape(ShapeType.Rectangle, 100, 200, 100, 100)

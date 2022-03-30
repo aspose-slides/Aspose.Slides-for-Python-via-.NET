@@ -24,7 +24,7 @@ namespace CSharp.Charts
             {
                 chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.BUBBLE, 50, 50, 600, 400, True)
 
-                chart.chart_data.SeriesGroups[0].BubbleSizeRepresentation = BubbleSizeRepresentationType.width
+                chart.chart_data.series_groups[0].BubbleSizeRepresentation = BubbleSizeRepresentationType.width
 
                 pres.save(dataDir+ "Presentation_BubbleSizeRepresentation.pptx", slides.export.SaveFormat.PPTX)
             }

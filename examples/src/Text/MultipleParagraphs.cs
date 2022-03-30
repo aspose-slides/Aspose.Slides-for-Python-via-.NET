@@ -32,26 +32,26 @@ namespace Aspose.slides.Examples.CSharp.text
                 ITextFrame tf = ashp.text_frame
 
                 # Create Paragraphs and Portions with different text formats
-                IParagraph para0 = tf.paragraphs[0]
-                port01 = new Portion()
-                port02 = new Portion()
+                para0 = tf.paragraphs[0]
+                port01 = slides.Portion()
+                port02 = slides.Portion()
                 para0.portions.add(port01)
                 para0.portions.add(port02)
 
-                IParagraph para1 = new Paragraph()
+                para1 = new Paragraph()
                 tf.Paragraphs.add(para1)
-                port10 = new Portion()
-                port11 = new Portion()
-                port12 = new Portion()
+                port10 = slides.Portion()
+                port11 = slides.Portion()
+                port12 = slides.Portion()
                 para1.portions.add(port10)
                 para1.portions.add(port11)
                 para1.portions.add(port12)
 
-                IParagraph para2 = new Paragraph()
+                para2 = new Paragraph()
                 tf.Paragraphs.add(para2)
-                port20 = new Portion()
-                port21 = new Portion()
-                port22 = new Portion()
+                port20 = slides.Portion()
+                port21 = slides.Portion()
+                port22 = slides.Portion()
                 para2.portions.add(port20)
                 para2.portions.add(port21)
                 para2.portions.add(port22)

@@ -31,7 +31,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             ISmartArtNode node = smart.Nodes[1]
 
             # Get thumbnail
-            bmp = node.shapes[0].GetThumbnail()
+            bmp = node.shapes[0].get_thumbnail()
 
             # Save thumbnail
             bmp.save(dataDir + "SmartArt_ChildNote_Thumbnail_out.jpeg", ImageFormat.Jpeg)

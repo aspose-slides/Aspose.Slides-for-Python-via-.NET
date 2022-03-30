@@ -29,8 +29,8 @@ namespace Aspose.slides.Examples.CSharp.text
                 tf2.text = "Center Align by Aspose"
 
                 # Getting the first paragraph of the placeholders
-                IParagraph para1 = tf1.paragraphs[0]
-                IParagraph para2 = tf2.paragraphs[0]
+                para1 = tf1.paragraphs[0]
+                para2 = tf2.paragraphs[0]
 
                 # Aligning the text paragraph to center
                 para1.ParagraphFormat.Alignment = TextAlignment.Center

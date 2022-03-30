@@ -35,7 +35,7 @@ namespace Aspose.slides.Examples.CSharp.SmartArts
             SmartArtNode chNode = (SmartArtNode)node.ChildNodes[position] 
 
             # Printing the SmartArt child node parameters
-            outString = string.format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.text_frame.text, chNode.Level, chNode.Position)
+            outString = string.format("j = {0}, Text = {1},  Level = {2}, Position = {3}", position, chNode.text_frame.text, chNode.Level, chNode.position)
             print(outString)
             #ExEnd:AccessChildNodeSpecificPosition
         }

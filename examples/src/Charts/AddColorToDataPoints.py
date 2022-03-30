@@ -30,6 +30,6 @@ def charts_add_color_to_data_points():
         
         steam4Format.fill.solid_fill_color.color = drawing.Color.from_argb(0, 176, 240, 255)
 
-        pres.save(outDir + "charts_AddColorToDataPoints.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_add_color_to_data_points_out.pptx", slides.export.SaveFormat.PPTX)
     #ExEnd:AddColorToDataPoints
 

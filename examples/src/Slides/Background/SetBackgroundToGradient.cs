@@ -24,7 +24,7 @@ namespace Aspose.slides.Examples.CSharp.slides.Background
 
                 # Apply Gradiant effect to the Background
                 pres.slides[0].Background.type = BackgroundType.OwnBackground
-                pres.slides[0].Background.FillFormat.fill_type = FillType.Gradient
+                pres.slides[0].Background.fill_format.fill_type = FillType.Gradient
                 pres.slides[0].Background.FillFormat.GradientFormat.TileFlip = TileFlip.FlipBoth
 
                 #Write the presentation to disk

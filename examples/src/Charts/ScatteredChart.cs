@@ -53,7 +53,7 @@ namespace Aspose.slides.Examples.CSharp.Charts
 
             # Changing the chart series marker
             series.marker.size = 10
-            series.marker.Symbol = MarkerStyleType.Star
+            series.marker.symbol = MarkerStyleType.Star
 
             # Take second chart series
             series = chart.chart_data.series[1]
@@ -72,7 +72,7 @@ namespace Aspose.slides.Examples.CSharp.Charts
 
             # Changing the chart series marker
             series.marker.size = 10
-            series.marker.Symbol = MarkerStyleType.Circle
+            series.marker.symbol = slides.charts.MarkerStyleType.CIRCLE
 
             pres.save(dataDir + "AsposeChart_out.pptx", slides.export.SaveFormat.PPTX)
             #ExEnd:ScatteredChart

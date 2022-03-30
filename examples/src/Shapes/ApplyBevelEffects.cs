@@ -25,7 +25,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             slide = pres.slides[0]
 
             # Add a shape on slide
-            shape = slide.shapes.add_auto_shape(ShapeType.Ellipse, 30, 30, 100, 100)
+            shape = slide.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 30, 30, 100, 100)
             shape.fill_format.fill_type = slides.FillType.SOLID
             shape.fill_format.solid_fill_color.color = drawing.Color.green
             ILineFillFormat format = shape.line_format.FillFormat

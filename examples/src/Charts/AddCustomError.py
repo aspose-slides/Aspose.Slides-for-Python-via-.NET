@@ -35,8 +35,7 @@ def charts_add_custom_error():
             points[i].error_bars_custom_values.yplus.as_literal_double = i + 1
 
         # Saving presentation
-        presentation.save(outDir + "charts_ErrorBarsCustomValues_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_add_custom_error_out.pptx", slides.export.SaveFormat.PPTX)
         
     #ExEnd:AddCustomError
 
-charts_add_custom_error()

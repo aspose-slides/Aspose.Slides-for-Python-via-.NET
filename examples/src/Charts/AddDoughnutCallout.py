@@ -59,5 +59,5 @@ def chart_add_doughnut_callout():
 
 			categoryIndex += 1
 
-		pres.save(outDir + "charts_add_doughnut_callout_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(outDir + "chart_add_doughnut_callout_out.pptx", slides.export.SaveFormat.PPTX)
 	#ExEnd:AddDoughnutCallout

@@ -72,7 +72,7 @@ namespace Aspose.slides.Examples.CSharp.Charts
                 series.format.line.fill_format.solid_fill_color.color = drawing.Color.orange
 
                 # Set legend position
-                ichart.legend.Position = LegendPositionType.Bottom
+                ichart.legend.position = LegendPositionType.Bottom
 
                 # Setting Category Axis Text Properties
                 txtCat = ichart.axes.horizontal_axis.text_format.portion_format

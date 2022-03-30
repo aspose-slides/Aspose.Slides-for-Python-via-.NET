@@ -37,7 +37,7 @@ namespace Aspose.slides.Examples.CSharp.text
                                                   bulletFormatEffective.FillFormat.GradientFormat.GradientStops.Count)
                                 foreach (IGradientStopEffectiveData gradStop in bulletFormatEffective.FillFormat
                                     .GradientFormat.GradientStops)
-                                    print(gradStop.Position + ": " + gradStop.Color)
+                                    print(gradStop.position + ": " + gradStop.Color)
                                 break
                             case FillType.Pattern:
                                 print("Pattern style: " +

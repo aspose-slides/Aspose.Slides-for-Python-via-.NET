@@ -24,10 +24,10 @@ namespace Aspose.slides.Examples.CSharp.shapes
             using (Presentation presentation = new Presentation(dataDir + "HelloWorld.pptx"))
             {
                 # Create a Appearance bound shape image
-                using (bitmap = presentation.slides[0].shapes[0].GetThumbnail(ShapeThumbnailBounds.Appearance, 1, 1))
+                using (bitmap = presentation.slides[0].shapes[0].get_thumbnail(ShapeThumbnailBounds.Appearance, 1, 1))
                 {
                     # Save the image to disk in PNG format
-                    bitmap.save(dataDir + "Shape_thumbnail_Bound_Shape_out.png", ImageFormat.Png)
+                    bitmap.save(dataDir + "Shape_thumbnail_Bound_Shape_out.png", drawing.imaging.ImageFormat.png)
                 }
             }
             #ExEnd:CreateBoundsShapeThumbnail

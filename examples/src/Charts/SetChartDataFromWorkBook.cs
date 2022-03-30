@@ -39,7 +39,7 @@ namespace CSharp.Charts
                 MemoryStream mem = new MemoryStream()
                 workbook.save(mem, Aspose.Cells.SaveFormat.Xlsx)
 
-                mem.Position = 0
+                mem.position = 0
                 chart.chart_data.WriteWorkbookStream(mem)
 
                 chart.chart_data.SetRange("Sheet2!$A$1:$B$3")

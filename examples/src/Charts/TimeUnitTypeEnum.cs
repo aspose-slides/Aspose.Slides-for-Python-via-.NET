@@ -22,7 +22,7 @@ namespace CSharp.Charts
 
             with slides.Presentation() as pres:
             {
-                chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.Area, 10, 10, 400, 300, True)
+                chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.AREA, 10, 10, 400, 300, True)
                 chart.axes.horizontal_axis.major_unit_scale = TimeUnitType.NONE
                 pres.save(resultPath, slides.export.SaveFormat.PPTX)
             }

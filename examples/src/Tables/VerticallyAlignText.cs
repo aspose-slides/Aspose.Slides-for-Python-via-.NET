@@ -40,7 +40,7 @@ namespace Aspose.slides.Examples.CSharp.Tables
             ITextFrame txtFrame = tbl[0, 0].text_frame
 
             # Create the Paragraph object for text frame
-            IParagraph paragraph = txtFrame.paragraphs[0]
+            paragraph = txtFrame.paragraphs[0]
 
             # Create Portion object for paragraph
             portion = paragraph.portions[0]

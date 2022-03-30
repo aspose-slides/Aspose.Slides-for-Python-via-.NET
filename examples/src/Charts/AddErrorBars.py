@@ -25,6 +25,6 @@ def charts_add_error_bars():
         errBarX.has_end_cap = True
 
         # Saving presentation
-        presentation.save(outDir + "charts_ErrorBars_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_add_error_bars_out.pptx", slides.export.SaveFormat.PPTX)
 
     #ExEnd:AddErrorBars

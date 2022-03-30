@@ -39,7 +39,7 @@ namespace Aspose.slides.Examples.CSharp.Tables
             imgx1 = presentation.images.add_image(image)
 
             # Add image to first table cell
-            tbl[0, 0].CellFormat.FillFormat.fill_type = slides.FillType.PICTURE
+            tbl[0, 0].CellFormat.fill_format.fill_type = slides.FillType.PICTURE
             tbl[0, 0].CellFormat.FillFormat.picture_fill_format.PictureFillMode = PictureFillMode.Stretch
             tbl[0, 0].CellFormat.FillFormat.picture_fill_format.picture.image = imgx1
             tbl[0, 0].CellFormat.FillFormat.picture_fill_format.CropRight = 20

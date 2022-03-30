@@ -36,7 +36,7 @@ namespace CSharp.Presentations.Conversion
                 portion.portion_format.font_height = 36
 
                 # Set format of the text
-                portion.portion_format.FillFormat.fill_type = FillType.Pattern
+                portion.portion_format.fill_format.fill_type = FillType.Pattern
                 portion.portion_format.FillFormat.PatternFormat.ForeColor.color = Color.DarkOrange
                 portion.portion_format.FillFormat.PatternFormat.BackColor.color = Color.white
                 portion.portion_format.FillFormat.PatternFormat.PatternStyle = PatternStyle.SmallGrid

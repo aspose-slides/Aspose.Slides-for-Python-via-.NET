@@ -25,7 +25,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             {
 
                 # Load Image to be added in presentaiton image collection
-                Image img = drawing.Bitmap(dataDir + "aspose-logo.jpg")
+                img = drawing.Bitmap(dataDir + "aspose-logo.jpg")
                 image = presentation.images.add_image(img)
 
                 # Add picture frame to slide

@@ -21,7 +21,7 @@ namespace CSharp.Charts
 		dataDir = RunExamples.GetDataDir_Charts()
            using (Presentation pres = new Presentation(dataDir+"test.pptx"))
 			{
-				chart = pres.slides[0].shapes.AddChart(Aspose.slides.Charts.ChartType.Treemap, 50, 50, 500, 400)
+				chart = pres.slides[0].shapes.add_chart(Aspose.slides.Charts.ChartType.Treemap, 50, 50, 500, 400)
 				chart.chart_data.categories.clear()
 				chart.chart_data.series.clear()
 

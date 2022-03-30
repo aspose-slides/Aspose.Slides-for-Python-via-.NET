@@ -29,7 +29,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 IShape shp = sld.shapes.add_auto_shape(ShapeType.Rectangle, 50, 150, 75, 150)
 
                 # Set the fill type to Pattern
-                shp.FillFormat.fill_type = FillType.Pattern
+                shp.fill_format.fill_type = FillType.Pattern
 
                 # Set the pattern style
                 shp.FillFormat.PatternFormat.PatternStyle = PatternStyle.Trellis

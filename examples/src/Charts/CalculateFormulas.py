@@ -27,4 +27,4 @@ def charts_calculate_formulas():
         cell.formula = "MAX(2:2)"
         workbook.calculate_formulas()
 
-        presentation.save(outDir + "charts_CalculateFormulas_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_calculate_formulas_out.pptx", slides.export.SaveFormat.PPTX)

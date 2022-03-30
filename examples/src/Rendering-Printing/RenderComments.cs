@@ -37,7 +37,7 @@ namespace Aspose.slides.Examples.CSharp.Rendering.Printing
                 pres.slides[0].RenderToGraphics(renderOptions, graphics)
             }
 
-            bmp.save(resultPath, ImageFormat.Png)
+            bmp.save(resultPath, drawing.imaging.ImageFormat.png)
             System.Diagnostics.Process.Start(resultPath)
 
         }

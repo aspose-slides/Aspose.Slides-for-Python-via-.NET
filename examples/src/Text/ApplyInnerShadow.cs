@@ -39,7 +39,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 ITextFrame txtFrame = ashp.text_frame
 
                 # Create the Paragraph object for text frame
-                IParagraph para = txtFrame.paragraphs[0]
+                para = txtFrame.paragraphs[0]
 
                 # Create Portion object for paragraph
                 portion = para.portions[0]

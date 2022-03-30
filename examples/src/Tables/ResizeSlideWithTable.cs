@@ -16,20 +16,20 @@ namespace CSharp.Tables
             Presentation presentation = new Presentation("D:\\Test.pptx")
 
             #Old slide size
-            float currentHeight = presentation.SlideSize.size.height
-            float currentWidth = presentation.SlideSize.size.width
+            currentHeight = presentation.SlideSize.size.height
+            currentWidth = presentation.SlideSize.size.width
 
             #Changing slide size
             presentation.SlideSize.type = SlideSizeType.A4Paper
             #presentation.SlideSize.Orientation = SlideOrienation.Portrait
 
             #New slide size
-            float newHeight = presentation.SlideSize.size.height
-            float newWidth = presentation.SlideSize.size.width
+            newHeight = presentation.SlideSize.size.height
+            newWidth = presentation.SlideSize.size.width
 
 
-            float ratioHeight = newHeight / currentHeight
-            float ratioWidth = newWidth / currentWidth
+            ratioHeight = newHeight / currentHeight
+            ratioWidth = newWidth / currentWidth
 
             foreach (IMasterSlide master in presentation.Masters)
             {

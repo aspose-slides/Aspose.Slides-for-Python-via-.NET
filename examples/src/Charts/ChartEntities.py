@@ -1,7 +1,7 @@
 import aspose.slides as slides
 import aspose.pydrawing as drawing
 
-def charts_chart_entities():
+def charts_entities_formatting():
     #ExStart:ChartEntities
     # The path to the documents directory.
 
@@ -138,6 +138,6 @@ def charts_chart_entities():
         chart.plot_area.format.fill.solid_fill_color.color = drawing.Color.light_cyan
 
         # Save Presentation
-        pres.save(outDir + "charts_FormattedChart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_entities_formatting_out.pptx", slides.export.SaveFormat.PPTX)
 
     #ExEnd:ChartEntities

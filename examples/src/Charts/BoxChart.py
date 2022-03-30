@@ -38,7 +38,7 @@ def charts_box_chart():
 		series.data_points.add_data_point_for_box_and_whisker_series(wb.get_cell(0, "B6", 16))
 
 
-		pres.save(outDir + "charts_BoxAndWhisker_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(outDir + "charts_box_chart_out.pptx", slides.export.SaveFormat.PPTX)
 
 	#ExEnd:BoxChart
 

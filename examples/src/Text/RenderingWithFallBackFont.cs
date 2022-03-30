@@ -46,7 +46,7 @@ namespace CSharp.text
                 pres.FontsManager.FontFallBackRulesCollection = rulesList
 
                 # Rendering of thumbnail with using of initialized rules collection and saving to PNG
-                pres.slides[0].GetThumbnail(1f, 1f).save(dataDir + "Slide_0.png", ImageFormat.Png)
+                pres.slides[0].get_thumbnail(1f, 1f).save(dataDir + "Slide_0.png", drawing.imaging.ImageFormat.png)
             }
             #ExEnd:RenderingWithFallBackFont
 

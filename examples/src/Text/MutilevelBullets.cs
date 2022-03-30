@@ -37,7 +37,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 text.Paragraphs.clear()
 
                 #Adding first paragraph
-                IParagraph para1 = new Paragraph()
+                para1 = new Paragraph()
                 para1.text = "Content"
                 para1.ParagraphFormat.Bullet.type = BulletType.Symbol
                 para1.ParagraphFormat.Bullet.Char = Convert.ToChar(8226)
@@ -47,7 +47,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 para1.ParagraphFormat.Depth = 0
 
                 #Adding second paragraph
-                IParagraph para2 = new Paragraph()
+                para2 = new Paragraph()
                 para2.text = "Second Level"
                 para2.ParagraphFormat.Bullet.type = BulletType.Symbol
                 para2.ParagraphFormat.Bullet.Char = '-'
@@ -57,7 +57,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 para2.ParagraphFormat.Depth = 1
 
                 #Adding third paragraph
-                IParagraph para3 = new Paragraph()
+                para3 = new Paragraph()
                 para3.text = "Third Level"
                 para3.ParagraphFormat.Bullet.type = BulletType.Symbol
                 para3.ParagraphFormat.Bullet.Char = Convert.ToChar(8226)
@@ -67,7 +67,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 para3.ParagraphFormat.Depth = 2
 
                 #Adding fourth paragraph
-                IParagraph para4 = new Paragraph()
+                para4 = new Paragraph()
                 para4.text = "Fourth Level"
                 para4.ParagraphFormat.Bullet.type = BulletType.Symbol
                 para4.ParagraphFormat.Bullet.Char = '-'

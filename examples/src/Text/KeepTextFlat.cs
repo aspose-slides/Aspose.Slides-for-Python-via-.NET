@@ -33,7 +33,7 @@ namespace CSharp.Presentations.Conversion
                 shape1.text_frame.TextFrameFormat.KeepTextFlat = False
                 shape2.text_frame.TextFrameFormat.KeepTextFlat = True
 
-                pres.slides[0].GetThumbnail(4 / 3f, 4 / 3f).save(resultPath, ImageFormat.Png)
+                pres.slides[0].get_thumbnail(4 / 3f, 4 / 3f).save(resultPath, drawing.imaging.ImageFormat.png)
             }
         }
     }

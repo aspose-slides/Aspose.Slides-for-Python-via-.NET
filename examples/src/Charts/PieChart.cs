@@ -65,7 +65,7 @@ namespace Aspose.slides.Examples.CSharp.Charts
             # Not working in new version
             # Adding new points and setting sector color
             # series.IsColorVaried = True
-            chart.chart_data.SeriesGroups[0].IsColorVaried = True
+            chart.chart_data.series_groups[0].IsColorVaried = True
 
             point = series.data_points[0]
             point.format.fill.fill_type = slides.FillType.SOLID
@@ -107,18 +107,18 @@ namespace Aspose.slides.Examples.CSharp.Charts
 
             lbl2 = series.data_points[1].label
             lbl2.data_label_format.show_value = True
-            lbl2.data_label_format.ShowLegendKey = True
-            lbl2.data_label_format.ShowPercentage = True
+            lbl2.data_label_format.show_legend_key = True
+            lbl2.data_label_format.show_percentage = True
 
             lbl3 = series.data_points[2].label
             lbl3.data_label_format.show_series_name = True
-            lbl3.data_label_format.ShowPercentage = True
+            lbl3.data_label_format.show_percentage = True
 
             # Showing Leader Lines for Chart
             series.labels.default_data_label_format.show_leader_lines = True
 
             # Setting Rotation Angle for Pie Chart Sectors
-            chart.chart_data.SeriesGroups[0].first_slice_angle = 180
+            chart.chart_data.series_groups[0].first_slice_angle = 180
 
             # Save presentation with chart
             presentation.save(dataDir + "PieChart_out.pptx", slides.export.SaveFormat.PPTX)

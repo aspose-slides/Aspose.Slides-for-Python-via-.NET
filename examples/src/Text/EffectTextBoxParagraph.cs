@@ -20,7 +20,7 @@ namespace CSharp.text
 				ISequence sequence = pres.slides[0].timeline.main_sequence
 				autoShape = (IAutoShape)pres.slides[0].shapes[1]
 
-				foreach (IParagraph paragraph in autoShape.text_frame.Paragraphs)
+				foreach (paragraph in autoShape.text_frame.Paragraphs)
 				{
 					IEffect[] effects = sequence.GetEffectsByParagraph(paragraph)
 

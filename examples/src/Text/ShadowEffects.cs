@@ -33,7 +33,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 ashp.AddTextFrame("Aspose TextBox")
 
                 # Disable shape fill in case we want to get shadow of text
-                ashp.FillFormat.fill_type = FillType.NoFill
+                ashp.fill_format.fill_type = slides.FillType.NO_FILL
 
                 # Add outer shadow and set all necessary parameters
                 ashp.EffectFormat.EnableOuterShadowEffect()

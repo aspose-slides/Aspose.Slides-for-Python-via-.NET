@@ -55,12 +55,12 @@ namespace CSharp.Charts
 				series.data_points.AddDataPointForStockSeries(wb.get_cell(0, 2, 4, 38))
 				series.data_points.AddDataPointForStockSeries(wb.get_cell(0, 3, 4, 50))
 
-				chart.chart_data.SeriesGroups[0].UpDownBars.HasUpDownBars = True
-				chart.chart_data.SeriesGroups[0].HiLowLinesFormat.line.fill_format.fill_type = slides.FillType.SOLID
+				chart.chart_data.series_groups[0].UpDownBars.HasUpDownBars = True
+				chart.chart_data.series_groups[0].HiLowLinesFormat.line.fill_format.fill_type = slides.FillType.SOLID
 
 				foreach (ser in chart.chart_data.series)
 				{
-					ser.format.line.FillFormat.fill_type = FillType.NoFill
+					ser.format.line.fill_format.fill_type = slides.FillType.NO_FILL
 				}
 
 				pres.save(dataDir+"output.pptx", slides.export.SaveFormat.PPTX)

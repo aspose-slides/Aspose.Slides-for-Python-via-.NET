@@ -24,7 +24,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
 
                 # Set background in first slide
                 presentation.slides[0].Background.type = BackgroundType.OwnBackground
-                presentation.slides[0].Background.FillFormat.fill_type = slides.FillType.PICTURE
+                presentation.slides[0].Background.fill_format.fill_type = slides.FillType.PICTURE
                 presentation.slides[0].Background.FillFormat.picture_fill_format.picture.image = backgroundImage
 
                 # Add Duotone effect to background

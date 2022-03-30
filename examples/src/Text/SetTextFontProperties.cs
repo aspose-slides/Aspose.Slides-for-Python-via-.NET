@@ -31,7 +31,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 ashp = sld.shapes.add_auto_shape(ShapeType.Rectangle, 50, 50, 200, 50)
 
                 # Remove any fill style associated with the AutoShape
-                ashp.FillFormat.fill_type = FillType.NoFill
+                ashp.fill_format.fill_type = slides.FillType.NO_FILL
 
                 # Access the TextFrame associated with the AutoShape
                 ITextFrame tf = ashp.text_frame

@@ -39,7 +39,7 @@ namespace Aspose.slides.Examples.CSharp.text
             rect.line_format.fill_format.fill_type = slides.FillType.SOLID
 
             # Get first Paragraph in the TextFrame and set its Indent
-            IParagraph para1 = tf.paragraphs[0]
+            para1 = tf.paragraphs[0]
             # Setting paragraph bullet style and symbol
             para1.ParagraphFormat.Bullet.type = BulletType.Symbol
             para1.ParagraphFormat.Bullet.Char = Convert.ToChar(8226)
@@ -49,7 +49,7 @@ namespace Aspose.slides.Examples.CSharp.text
             para1.ParagraphFormat.Indent = 30
 
             # Get second Paragraph in the TextFrame and set its Indent
-            IParagraph para2 = tf.paragraphs[1]
+            para2 = tf.paragraphs[1]
             para2.ParagraphFormat.Bullet.type = BulletType.Symbol
             para2.ParagraphFormat.Bullet.Char = Convert.ToChar(8226)
             para2.ParagraphFormat.Alignment = TextAlignment.Left
@@ -57,7 +57,7 @@ namespace Aspose.slides.Examples.CSharp.text
             para2.ParagraphFormat.Indent = 40
 
             # Get third Paragraph in the TextFrame and set its Indent
-            IParagraph para3 = tf.paragraphs[2]
+            para3 = tf.paragraphs[2]
             para3.ParagraphFormat.Bullet.type = BulletType.Symbol
             para3.ParagraphFormat.Bullet.Char = Convert.ToChar(8226)
             para3.ParagraphFormat.Alignment = TextAlignment.Left

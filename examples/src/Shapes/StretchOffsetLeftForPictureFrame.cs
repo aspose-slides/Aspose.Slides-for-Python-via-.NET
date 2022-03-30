@@ -33,7 +33,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 aShape = slide.shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 300, 300)
 
                 # Set shape's fill type
-                aShape.FillFormat.fill_type = slides.FillType.PICTURE
+                aShape.fill_format.fill_type = slides.FillType.PICTURE
 
                 # Set shape's picture fill mode
                 aShape.FillFormat.picture_fill_format.PictureFillMode = PictureFillMode.Stretch

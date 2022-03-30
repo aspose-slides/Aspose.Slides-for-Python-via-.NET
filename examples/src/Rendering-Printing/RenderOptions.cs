@@ -22,14 +22,14 @@ namespace Aspose.slides.Examples.CSharp.Rendering.Printing
                 IRenderingOptions renderingOpts = new RenderingOptions()
                 renderingOpts.NotesCommentsLayouting.NotesPosition = NotesPositions.BottomTruncated
 
-                pres.slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-Original.png"), ImageFormat.Png)
+                pres.slides[0].get_thumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-Original.png"), drawing.imaging.ImageFormat.png)
 
                 renderingOpts.NotesCommentsLayouting.NotesPosition = NotesPositions.NONE
                 renderingOpts.DefaultRegularFont = "Arial Black"
-                pres.slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialBlackDefault.png"), ImageFormat.Png)
+                pres.slides[0].get_thumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialBlackDefault.png"), drawing.imaging.ImageFormat.png)
 
                 renderingOpts.DefaultRegularFont = "Arial Narrow"
-                pres.slides[0].GetThumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialNarrowDefault.png"), ImageFormat.Png)
+                pres.slides[0].get_thumbnail(renderingOpts, 4 / 3f, 4 / 3f).save(Path.Combine(RunExamples.OutPath, "RenderingOptions-Slide1-ArialNarrowDefault.png"), drawing.imaging.ImageFormat.png)
             }
         }
     }

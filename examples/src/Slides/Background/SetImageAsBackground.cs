@@ -25,7 +25,7 @@ namespace Aspose.slides.Examples.CSharp.slides.Background
 
                 # Set the background with Image
                 pres.slides[0].Background.type = BackgroundType.OwnBackground
-                pres.slides[0].Background.FillFormat.fill_type = slides.FillType.PICTURE
+                pres.slides[0].Background.fill_format.fill_type = slides.FillType.PICTURE
                 pres.slides[0].Background.FillFormat.picture_fill_format.PictureFillMode = PictureFillMode.Stretch
 
                 # Set the picture

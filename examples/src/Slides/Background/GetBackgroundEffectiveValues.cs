@@ -22,7 +22,7 @@ namespace CSharp.slides.Background
 
             IBackgroundEffectiveData effBackground = pres.slides[0].Background.GetEffective()
 
-            if (effBackground.FillFormat.fill_type == slides.FillType.SOLID)
+            if (effBackground.fill_format.fill_type == slides.FillType.SOLID)
                 print("Fill color: " + effBackground.FillFormat.SolidFillColor)
             else
                 print("Fill type: " + effBackground.FillFormat.FillType)

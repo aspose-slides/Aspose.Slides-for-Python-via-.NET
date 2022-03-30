@@ -46,7 +46,7 @@ namespace CSharp.Charts
 					dataPoint.format.line.fill_format.solid_fill_color.color = Color.white
 					dataPoint.format.line.width = 1
 					dataPoint.format.line.style = LineStyle.Single
-					dataPoint.format.line.dash_style = LineDashStyle.Solid
+					dataPoint.format.line.dash_style = slides.LineDashStyle.SOLID
 					if (i == chart.chart_data.series.Count - 1)
 					{
 						lbl = dataPoint.label

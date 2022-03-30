@@ -13,8 +13,8 @@ def charts_recover_workbook():
     lo = slides.LoadOptions()
     lo.spreadsheet_options.recover_workbook_from_chart_cache = True
 
-    with slides.Presentation(dataDir + "ExternalWB.pptx", lo) as pres:
+    with slides.Presentation(dataDir + "charts_with_external_workbook.pptx", lo) as pres:
         chart = pres.slides[0].shapes[0]
         wb = chart.chart_data.chart_data_workbook
 
-        pres.save(outDir + "charts_ExternalWB_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_recover_workbook_out.pptx", slides.export.SaveFormat.PPTX)

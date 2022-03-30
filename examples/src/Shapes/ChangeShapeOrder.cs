@@ -22,11 +22,11 @@ namespace Aspose.slides.Examples.CSharp.shapes
             Presentation presentation1 = new Presentation(dataDir + "HelloWorld.pptx")
             slide = presentation1.slides[0]
             shp3 = slide.shapes.add_auto_shape(ShapeType.Rectangle, 200, 365, 400, 150)
-            shp3.FillFormat.fill_type = FillType.NoFill
+            shp3.fill_format.fill_type = slides.FillType.NO_FILL
             shp3.AddTextFrame(" ")
 
             ITextFrame txtFrame = shp3.text_frame
-            IParagraph para = txtFrame.paragraphs[0]
+            para = txtFrame.paragraphs[0]
             portion = para.portions[0]
             portion.text="Watermark Text Watermark Text Watermark Text"
             shp3 = slide.shapes.add_auto_shape(ShapeType.Triangle, 200, 365, 400, 150)

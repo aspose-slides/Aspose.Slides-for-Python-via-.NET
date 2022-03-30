@@ -26,7 +26,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of ellipse type
-                sld.shapes.add_auto_shape(ShapeType.Ellipse, 50, 150, 150, 50)
+                sld.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 50, 150, 150, 50)
 
                 #Write the PPTX file to disk
                 pres.save(dataDir + "EllipseShp1_out.pptx", slides.export.SaveFormat.PPTX)

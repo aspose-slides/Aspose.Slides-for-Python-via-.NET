@@ -31,14 +31,14 @@ namespace Aspose.slides.Examples.CSharp.text
 
             # Add TextFrame to the Rectangle
             ashp.AddTextFrame(" ")
-            ashp.FillFormat.fill_type = FillType.NoFill
+            ashp.fill_format.fill_type = slides.FillType.NO_FILL
 
             # Accessing the text frame
             ITextFrame txtFrame = ashp.text_frame
             txtFrame.TextFrameFormat.AnchoringType = TextAnchorType.Bottom
 
             # Create the Paragraph object for text frame
-            IParagraph para = txtFrame.paragraphs[0]
+            para = txtFrame.paragraphs[0]
 
             # Create Portion object for paragraph
             portion = para.portions[0]

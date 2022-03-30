@@ -26,7 +26,7 @@ namespace CSharp.SmartArts
 
                 if (node.BulletFillFormat != None)
                 {
-                    Image img = (Image)drawing.Bitmap(dataDir + "aspose-logo.jpg")
+                    img = (Image)drawing.Bitmap(dataDir + "aspose-logo.jpg")
                     image = presentation.images.add_image(img)
                     node.BulletFillFormat.fill_type = slides.FillType.PICTURE
                     node.BulletFillFormat.picture_fill_format.picture.image = image

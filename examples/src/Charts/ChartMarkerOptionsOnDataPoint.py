@@ -61,6 +61,6 @@ def charts_marker_options_on_data_point():
 		#Changing the chart series marker
 		series.marker.size = 15
 
-		pres.save(outDir + "charts_AsposeScatterChart_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(outDir + "charts_marker_options_on_data_point_out.pptx", slides.export.SaveFormat.PPTX)
 
 	#ExEnd:ChartMarkerOptionsOnDataPoint

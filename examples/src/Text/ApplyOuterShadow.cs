@@ -26,7 +26,7 @@ namespace Aspose.slides.Examples.CSharp.text
 
             # Add an AutoShape of Rectangle type
             ashp = slide.shapes.add_auto_shape(ShapeType.Rectangle, 150, 75, 400, 300)
-            ashp.FillFormat.fill_type = FillType.NoFill
+            ashp.fill_format.fill_type = slides.FillType.NO_FILL
 
             # Add TextFrame to the Rectangle
             ashp.AddTextFrame("Aspose TextBox")

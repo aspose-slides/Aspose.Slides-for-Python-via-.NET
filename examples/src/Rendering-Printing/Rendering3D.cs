@@ -30,7 +30,7 @@ namespace Aspose.slides.Examples.CSharp.Rendering.Printing
                 shape.ThreeDFormat.ExtrusionHeight = 100
                 shape.ThreeDFormat.ExtrusionColor.color = drawing.Color.blue
 
-                pres.slides[0].GetThumbnail(2, 2).save(outPngFile, ImageFormat.Png)
+                pres.slides[0].get_thumbnail(2, 2).save(outPngFile, drawing.imaging.ImageFormat.png)
                 pres.save(outPptxFile, slides.export.SaveFormat.PPTX)
             }
         }

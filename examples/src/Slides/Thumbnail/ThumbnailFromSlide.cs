@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.slides.Thumbnail
                 sld = pres.slides[0]
 
                 # Create a full scale image
-                bmp = sld.GetThumbnail(1f, 1f)
+                bmp = sld.get_thumbnail(1f, 1f)
 
                 # Save the image to disk in JPEG format
                 bmp.save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg)

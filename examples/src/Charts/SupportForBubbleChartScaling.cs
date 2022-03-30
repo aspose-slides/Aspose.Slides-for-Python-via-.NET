@@ -19,7 +19,7 @@ namespace CSharp.Charts
 			{
 				chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.BUBBLE, 100, 100, 400, 300)
 
-				chart.chart_data.SeriesGroups[0].BubbleSizeScale = 150
+				chart.chart_data.series_groups[0].BubbleSizeScale = 150
 
 				pres.save(dataDir+"Result.pptx",slides.export.SaveFormat.PPTX)
 			}

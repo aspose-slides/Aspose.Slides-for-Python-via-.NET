@@ -26,7 +26,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 IShapeCollection shapes = input.slides[0].shapes
 
                 # Add autoshape Ellipse
-                ellipse = shapes.add_auto_shape(ShapeType.Ellipse, 0, 100, 100, 100)
+                ellipse = shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 0, 100, 100, 100)
 
                 # Add autoshape Rectangle
                 rectangle = shapes.add_auto_shape(ShapeType.Rectangle, 100, 300, 100, 100)

@@ -32,7 +32,7 @@ namespace Aspose.slides.Examples.CSharp.slides.CRUD
 
                 # Generate SVG image of slide and save in memory stream
                 sld.WriteAsSvg(SvgStream)
-                SvgStream.Position = 0
+                SvgStream.position = 0
 
                 # Save memory stream to file
                 using (Stream fileStream = System.IO.File.OpenWrite(dataDir + "Aspose_out.svg"))

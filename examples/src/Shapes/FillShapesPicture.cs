@@ -30,7 +30,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
 
 
                 # Set the fill type to Picture
-                shp.FillFormat.fill_type = slides.FillType.PICTURE
+                shp.fill_format.fill_type = slides.FillType.PICTURE
 
                 # Set the picture fill mode
                 shp.FillFormat.picture_fill_format.PictureFillMode = PictureFillMode.Tile

@@ -31,29 +31,29 @@ namespace Aspose.slides.Examples.CSharp.text
                 textFrame.Paragraphs.clear()
 
                 # Create paragraph for superscript text
-                IParagraph superPar = new Paragraph()
+                superPar = new Paragraph()
 
                 # Create portion with usual text
-                portion1 = new Portion()
+                portion1 = slides.Portion()
                 portion1.text = "SlideTitle"
                 superPar.portions.add(portion1)
 
                 # Create portion with superscript text
-                superPortion = new Portion()
+                superPortion = slides.Portion()
                 superPortion.portion_format.Escapement = 30
                 superPortion.text = "TM"
                 superPar.portions.add(superPortion)
 
                 # Create paragraph for subscript text
-                IParagraph paragraph2 = new Paragraph()
+                paragraph2 = new Paragraph()
 
                 # Create portion with usual text
-                portion2 = new Portion()
+                portion2 = slides.Portion()
                 portion2.text = "a"
                 paragraph2.portions.add(portion2)
 
                 # Create portion with subscript text
-                subPortion = new Portion()
+                subPortion = slides.Portion()
                 subPortion.portion_format.Escapement = -25
                 subPortion.text = "i"
                 paragraph2.portions.add(subPortion)

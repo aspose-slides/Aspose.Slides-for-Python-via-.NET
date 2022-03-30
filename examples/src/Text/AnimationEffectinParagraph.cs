@@ -22,7 +22,7 @@ namespace CSharp.text
             {
                 # select paragraph to add effect
                 autoShape = (IAutoShape)presentation.slides[0].shapes[0]
-                IParagraph paragraph = autoShape.text_frame.paragraphs[0]
+                paragraph = autoShape.text_frame.paragraphs[0]
 
                 # add Fly animation effect to selected paragraph
                 IEffect effect = presentation.slides[0].timeline.main_sequence.add_effect(paragraph, slides.animation.EffectType.Fly, slides.animation.EffectSubtype.Left, slides.animation.EffectTriggerType.OnClick)

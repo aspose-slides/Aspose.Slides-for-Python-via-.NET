@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.text
             slide = presentation.slides[0]
 
             # Instantiate the image for bullets
-            Image image = drawing.Bitmap(dataDir + "bullets.png")
+            image = drawing.Bitmap(dataDir + "bullets.png")
             ippxImage = presentation.images.add_image(image)
 
             # Adding and accessing Autoshape

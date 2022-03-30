@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.text
             using (Presentation presentation = new Presentation(dataDir + "EmbeddedFonts.pptx"))
             {
                 # render a slide that contains a text frame that uses embedded "FunSized"
-                presentation.slides[0].GetThumbnail(new Size(960, 720)).save(dataDir + "picture1_out.png", ImageFormat.Png)
+                presentation.slides[0].get_thumbnail(new Size(960, 720)).save(dataDir + "picture1_out.png", drawing.imaging.ImageFormat.png)
 
                 IFontsManager fontsManager = presentation.FontsManager
 
@@ -44,7 +44,7 @@ namespace Aspose.slides.Examples.CSharp.text
                 fontsManager.RemoveEmbeddedFont(funSizedEmbeddedFont)
 
                 # render the presentation removed "Calibri" font is replaced to an existing one
-                presentation.slides[0].GetThumbnail(new Size(960, 720)).save(dataDir + "picture2_out.png", ImageFormat.Png)
+                presentation.slides[0].get_thumbnail(new Size(960, 720)).save(dataDir + "picture2_out.png", drawing.imaging.ImageFormat.png)
 
                 # save the presentation without embedded "Calibri" font
                 presentation.save(dataDir + "WithoutManageEmbeddedFonts_out.ppt", SaveFormat.Ppt)

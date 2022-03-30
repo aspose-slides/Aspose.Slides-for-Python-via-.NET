@@ -7,7 +7,7 @@ def charts_animating_series():
     outDir = "./examples/out/"
 
     # Instantiate Presentation class that represents a presentation file 
-    with slides.Presentation(dataDir + "ExistingChart.pptx") as presentation:
+    with slides.Presentation(dataDir + "charts_existing_chart.pptx") as presentation:
         # Get reference of the chart object
         slide = presentation.slides[0]
         shapes = slide.shapes
@@ -34,6 +34,6 @@ def charts_animating_series():
         slides.animation.EffectType.APPEAR, slides.animation.EffectSubtype.NONE, slides.animation.EffectTriggerType.AFTER_PREVIOUS)
 
         # Write the modified presentation to disk 
-        presentation.save(outDir + "charts_AnimatingSeries_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_animating_series_out.pptx", slides.export.SaveFormat.PPTX)
 
     #ExEnd:AnimatingSeries

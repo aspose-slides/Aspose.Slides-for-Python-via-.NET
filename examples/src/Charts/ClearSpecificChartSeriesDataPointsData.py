@@ -18,6 +18,6 @@ def charts_clear_specific_chart_series_datapoints_data():
 
         chart.chart_data.series[0].data_points.clear()
 
-        pres.save(outDir + "charts_ClearSpecificChartSeriesDataPointsData_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_clear_specific_chart_series_datapoints_data_out.pptx", slides.export.SaveFormat.PPTX)
 
     #ExEnd:ClearSpecificChartSeriesDataPointsData

@@ -17,7 +17,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             Shape shape
             for (i = 0 i < slide.shapes.Count i++)
             {
-                double dir = 0.0
+                dir = 0.0
                 shape = (Shape)slide.shapes[i]
                 if (shape is AutoShape)
                 {
@@ -37,13 +37,13 @@ namespace Aspose.slides.Examples.CSharp.shapes
             }
 
         }
-        public static double getDirection(float w, float h, bool flipH, bool flipV)
+        public static double getDirection(w, h, bool flipH, bool flipV)
         {
-            float endLineX = w * (flipH ? -1 : 1)
-            float endLineY = h * (flipV ? -1 : 1)
-            float endYAxisX = 0
-            float endYAxisY = h
-            double angle = (Math.Atan2(endYAxisY, endYAxisX) - Math.Atan2(endLineY, endLineX))
+            endLineX = w * (flipH ? -1 : 1)
+            endLineY = h * (flipV ? -1 : 1)
+            endYAxisX = 0
+            endYAxisY = h
+            angle = (Math.Atan2(endYAxisY, endYAxisX) - Math.Atan2(endLineY, endLineX))
             if (angle < 0) angle += 2 * Math.PI
             return angle * 180.0 / Math.PI
         }

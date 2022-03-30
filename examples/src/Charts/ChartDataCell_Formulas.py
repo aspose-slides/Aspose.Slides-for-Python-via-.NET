@@ -22,4 +22,4 @@ def charts_data_cell_formulas():
         cell2.r1_c1_formula = "MAX(R2C6:R5C8) / 3"
         workbook.calculate_formulas()
 
-        presentation.save(outDir + "charts_data_cell_formulas.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(outDir + "charts_data_cell_formulas_out.pptx", slides.export.SaveFormat.PPTX)

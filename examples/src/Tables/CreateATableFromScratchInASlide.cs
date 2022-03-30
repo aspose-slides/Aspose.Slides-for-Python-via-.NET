@@ -41,7 +41,7 @@ namespace CSharp.Tables
                     tbl.Rows[row][cell].CellFormat.BorderTop.fill_format.solid_fill_color.color = drawing.Color.red
                     tbl.Rows[row][cell].CellFormat.BorderTop.width = 5
 
-                    tbl.Rows[row][cell].CellFormat.BorderBottom.FillFormat.fill_type = (slides.FillType.SOLID)
+                    tbl.Rows[row][cell].CellFormat.BorderBottom.fill_format.fill_type = (slides.FillType.SOLID)
                     tbl.Rows[row][cell].CellFormat.BorderBottom.fill_format.solid_fill_color.color= drawing.Color.red
                     tbl.Rows[row][cell].CellFormat.BorderBottom.width =5
 

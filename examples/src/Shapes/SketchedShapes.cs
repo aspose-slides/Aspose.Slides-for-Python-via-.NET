@@ -28,12 +28,12 @@ namespace CSharp.shapes
             with slides.Presentation() as pres:
             {
                 shape = pres.slides[0].shapes.add_auto_shape(ShapeType.Rectangle, 20, 20, 300, 150)
-                shape.FillFormat.fill_type = FillType.NoFill
+                shape.fill_format.fill_type = slides.FillType.NO_FILL
 
                 # Transform shape to sketch of a freehand style
                 shape.line_format.SketchFormat.SketchType = LineSketchType.Scribble
 
-                pres.slides[0].GetThumbnail(4/3f, 4/3f).save(outPngFile, ImageFormat.Png)
+                pres.slides[0].get_thumbnail(4/3f, 4/3f).save(outPngFile, drawing.imaging.ImageFormat.png)
                 pres.save(outPptxFile, slides.export.SaveFormat.PPTX)
             }
         }

@@ -39,7 +39,7 @@ namespace Aspose.slides.Examples.CSharp.text
             presentation.FontsManager.FontSubstRuleList = fontSubstRuleCollection
 
             # Arial font will be used instead of SomeRareFont when inaccessible
-            bmp = presentation.slides[0].GetThumbnail(1f, 1f)
+            bmp = presentation.slides[0].get_thumbnail(1f, 1f)
 
             # Save the image to disk in JPEG format
             bmp.save(dataDir + "Thumbnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg)

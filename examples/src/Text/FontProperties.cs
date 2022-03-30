@@ -26,8 +26,8 @@ namespace Aspose.slides.Examples.CSharp.text
                 ITextFrame tf2 = ((IAutoShape)slide.shapes[1]).text_frame
 
                 # Accessing the first Paragraph
-                IParagraph para1 = tf1.paragraphs[0]
-                IParagraph para2 = tf2.paragraphs[0]
+                para1 = tf1.paragraphs[0]
+                para2 = tf2.paragraphs[0]
 
                 # Accessing the first portion
                 port1 = para1.portions[0]
@@ -51,7 +51,7 @@ namespace Aspose.slides.Examples.CSharp.text
 
                 # Set font color
                 port1.portion_format.fill_format.fill_type = slides.FillType.SOLID
-                port1.portion_format.fill_format.solid_fill_color.color = Color.Purple
+                port1.portion_format.fill_format.solid_fill_color.color = drawing.Color.purple
                 port2.portion_format.fill_format.fill_type = slides.FillType.SOLID
                 port2.portion_format.fill_format.solid_fill_color.color = Color.Peru
 

@@ -19,7 +19,7 @@ namespace CSharp.Charts
 			dataDir = RunExamples.GetDataDir_Charts()
 			with slides.Presentation() as pres:
 			{
-				chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.Area, 50, 50, 450, 300)
+				chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.AREA, 50, 50, 450, 300)
 
 				wb = chart.chart_data.chart_data_workbook
 

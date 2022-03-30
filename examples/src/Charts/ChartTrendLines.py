@@ -48,6 +48,6 @@ def charts_trend_lines():
         tredLinePower.backward = 1
 
         # Saving presentation
-        pres.save(outDir + "charts_ChartTrendLines_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_trend_lines_out.pptx", slides.export.SaveFormat.PPTX)
     #ExEnd:ChartTrendLines
 

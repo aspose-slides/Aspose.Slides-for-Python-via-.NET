@@ -26,10 +26,10 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of ellipse type
-                IShape shp = sld.shapes.add_auto_shape(ShapeType.Ellipse, 50, 150, 75, 150)
+                IShape shp = sld.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 50, 150, 75, 150)
 
                 # Apply some gradiant formatting to ellipse shape
-                shp.FillFormat.fill_type = FillType.Gradient
+                shp.fill_format.fill_type = FillType.Gradient
                 shp.FillFormat.GradientFormat.GradientShape = GradientShape.Linear
 
                 # Set the Gradient Direction

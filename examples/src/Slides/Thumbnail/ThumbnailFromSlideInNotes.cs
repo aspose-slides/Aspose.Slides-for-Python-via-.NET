@@ -30,12 +30,12 @@ namespace Aspose.slides.Examples.CSharp.slides.Thumbnail
                 desiredY = 800
 
                 # Getting scaled value  of X and Y
-                float ScaleX = (float)(1.0 / pres.SlideSize.size.width) * desiredX
-                float ScaleY = (float)(1.0 / pres.SlideSize.size.height) * desiredY
+                ScaleX = (float)(1.0 / pres.SlideSize.size.width) * desiredX
+                ScaleY = (float)(1.0 / pres.SlideSize.size.height) * desiredY
 
                
                 # Create a full scale image                
-                bmp = sld.GetThumbnail(ScaleX, ScaleY)
+                bmp = sld.get_thumbnail(ScaleX, ScaleY)
                 # Save the image to disk in JPEG format
                 bmp.save(dataDir + "Notes_tnail_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg)
             }

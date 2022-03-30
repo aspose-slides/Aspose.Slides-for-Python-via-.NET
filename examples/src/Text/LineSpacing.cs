@@ -30,7 +30,7 @@ namespace Aspose.slides.Examples.CSharp.text
             ITextFrame tf1 = ((IAutoShape)sld.shapes[0]).text_frame
 
             # Access the Paragraph
-            IParagraph para1 = tf1.paragraphs[0]
+            para1 = tf1.paragraphs[0]
 
             # Set properties of Paragraph
             para1.ParagraphFormat.SpaceWithin = 80

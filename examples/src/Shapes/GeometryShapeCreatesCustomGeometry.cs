@@ -19,7 +19,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             # Output file name
             resultPath = Path.Combine(RunExamples.OutPath, "GeometryShapeCreatesCustomGeometry.pptx")
 
-            float R = 100, r = 50 # Outer and inner star radius
+            R = 100, r = 50 # Outer and inner star radius
 
             # Create star geometry path
             GeometryPath starPath = CreateStarGeometry(R, r)
@@ -43,7 +43,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
         #/ <param name="outerRadius">Outet radius of a star figure.</param>
         #/ <param name="innerRadiusr">inner radius of a star figure.</param>
         #/ <returns>Geometry Path</returns>
-        private static GeometryPath CreateStarGeometry(float outerRadius, float innerRadiusr)
+        private static GeometryPath CreateStarGeometry(outerRadius, innerRadiusr)
         {
             GeometryPath starPath = new GeometryPath()
             List<PointF> points = new List<PointF>()
@@ -52,9 +52,9 @@ namespace Aspose.slides.Examples.CSharp.shapes
 
             for (angle = -90 angle < 270 angle += step)
             {
-                double radians = angle * (Math.PI / 180f)
-                double x = outerRadius * Math.Cos(radians)
-                double y = outerRadius * Math.Sin(radians)
+                radians = angle * (Math.PI / 180f)
+                x = outerRadius * Math.Cos(radians)
+                y = outerRadius * Math.Sin(radians)
                 points.add(new PointF((float)x + outerRadius, (float)y + outerRadius))
 
                 radians = Math.PI * (angle + step / 2) / 180.0

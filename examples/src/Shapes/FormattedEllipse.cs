@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of ellipse type
-                IShape shp = sld.shapes.add_auto_shape(ShapeType.Ellipse, 50, 150, 150, 50)
+                IShape shp = sld.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 50, 150, 150, 50)
 
                 # Apply some formatting to ellipse shape
                 shp.fill_format.fill_type = slides.FillType.SOLID
