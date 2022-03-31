@@ -20,4 +20,3 @@ def charts_edit_chartdata_in_external_workbook():
 
     #ExEnd:EditChartDatainExternalWorkbook
 
-charts_edit_chartdata_in_external_workbook()
