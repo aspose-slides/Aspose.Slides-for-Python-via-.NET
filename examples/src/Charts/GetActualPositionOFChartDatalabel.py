@@ -29,6 +29,6 @@ def charts_get_actual_position_of_chart_datalabel():
                     shape.fill_format.fill_type = slides.FillType.SOLID
                     shape.fill_format.solid_fill_color.color = drawing.Color.from_argb(100, 0, 255, 0)
 
-        pres.save(outDir + "charts_get_actual_position_of_chart_datalabel_out", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "charts_get_actual_position_of_chart_datalabel_out.pptx", slides.export.SaveFormat.PPTX)
 
     #ExEnd:GetActualPositionOFChartDatalabel
