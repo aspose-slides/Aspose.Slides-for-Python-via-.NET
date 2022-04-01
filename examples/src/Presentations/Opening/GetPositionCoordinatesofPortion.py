@@ -7,7 +7,7 @@ def get_position_coordinates_of_portion():
     # The path to the documents directory.
     dataDir = "./examples/data/"
     
-    with slides.Presentation(dataDir + "Shapes.pptx") as presentation:
+    with slides.Presentation(dataDir + "open_shapes.pptx") as presentation:
         shape = presentation.slides[0].shapes[0]
         textFrame = shape.text_frame
 

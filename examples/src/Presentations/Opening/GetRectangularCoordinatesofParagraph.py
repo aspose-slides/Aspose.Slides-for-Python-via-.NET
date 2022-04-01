@@ -7,7 +7,7 @@ def get_rectangular_coordinates_of_paragraph():
     dataDir = "./examples/data/"
 
     # Instantiate a Presentation object that represents a presentation file
-    with slides.Presentation(dataDir + "Shapes.pptx") as presentation:
+    with slides.Presentation(dataDir + "open_shapes.pptx") as presentation:
         shape = presentation.slides[0].shapes[0]
         textFrame = shape.text_frame
         rect = textFrame.paragraphs[0].get_rect()

@@ -6,7 +6,7 @@ def open_presentation():
     dataDir = "./examples/data/"
 
     # Opening the presentation file by passing the file path to the constructor of Presentation class
-    pres = slides.Presentation(dataDir + "OpenPresentation.pptx")
+    pres = slides.Presentation(dataDir + "open_presentation.pptx")
 
     # Printing the total number of slides present in the presentation
     print(len(pres.slides))

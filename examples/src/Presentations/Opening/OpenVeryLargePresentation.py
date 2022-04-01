@@ -5,6 +5,7 @@ def open_very_large_presentation():
     #ExStart:OpenVeryLargePresentation
     # The path to the documents directory.
     dataDir = "./examples/data/"
+    outDir = "./examples/out/"
 
     loadOptions = slides.LoadOptions()
     loadOptions.blob_management_options = slides.BlobManagementOptions()
@@ -17,13 +18,14 @@ def open_very_large_presentation():
         pres.slides[0].name = "Very large presentation"
 
         # presentation will be saved to the other file, the memory consumptions still low during saving.
-        pres.save("veryLargePresentation-copy.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "veryLargePresentation-copy.pptx", slides.export.SaveFormat.PPTX)
 
         # can't do that! PermissionError exception will be thrown, because the file is locked while pres objects will
         # not be disposed
-        os.remove(dataDir + "large_presentation.pptx")
+        # os.remove(dataDir + "large_presentation.pptx")
 
     # it's ok to do it here, the source file is not locked by pres object
-    os.remove(dataDir + "large_presentation.pptx")
+    # os.remove(dataDir + "large_presentation.pptx")
+    
     #ExEnd:OpenVeryLargePresentation
 
