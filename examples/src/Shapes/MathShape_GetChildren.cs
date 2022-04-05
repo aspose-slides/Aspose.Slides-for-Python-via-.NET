@@ -6,12 +6,12 @@ using System.text
 using System.Threading.Tasks
 import aspose.slides as slides
 using Aspose.slides.Examples.CSharp
-using Aspose.slides.Export
+import aspose.slides as slides
 using Aspose.slides.MathText
 
-/*
+"""
 This example demonstrates a using of GetChildren() method of the IMathElement interface.
-*/
+"""
 namespace CSharp.shapes
 {
     class MathShape_GetChildren
@@ -27,12 +27,12 @@ namespace CSharp.shapes
                 slide = presentation.slides[0]
 
                 # Create MathShape in the first slide
-                mathShape = slide.shapes.AddMathShape(10, 10, 500, 500)
+                mathShape = slide.shapes.add_math_shape(10, 10, 500, 500)
                 # Create MathParagraph
-                IMathParagraph mathParagraph = (mathShape.text_frame.paragraphs[0].portions[0] as MathPortion).MathParagraph
+                IMathParagraph mathParagraph = (mathShape.text_frame.paragraphs[0].portions[0] as MathPortion).math_paragraph
 
                 # Create MathBlock
-                IMathBlock mathBlock = new MathBlock(new MathematicalText("F").Join("+").Join(new MathematicalText("1").Divide("y")).Underbar())
+                IMathBlock mathBlock = new MathBlock(new MathematicalText("F").join("+").join(new MathematicalText("1").Divide("y")).Underbar())
 
                 # Add MathBlock to the MathParagraph
                 mathParagraph.add(mathBlock)

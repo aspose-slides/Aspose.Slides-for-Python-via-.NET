@@ -1,7 +1,7 @@
 using System.IO
 
 import aspose.slides as slides
-using Aspose.slides.Export
+import aspose.slides as slides
 import aspose.pydrawing as drawing
 
 namespace Aspose.slides.Examples.CSharp.shapes
@@ -15,7 +15,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -27,15 +27,15 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of ellipse type
-                IShape shp = sld.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 50, 150, 150, 50)
+                shp = sld.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, 50, 150, 150, 50)
 
                 # Apply some formatting to ellipse shape
                 shp.fill_format.fill_type = slides.FillType.SOLID
-                shp.fill_format.solid_fill_color.color = Color.Chocolate
+                shp.fill_format.solid_fill_color.color = drawing.Color.Chocolate
 
                 # Apply some formatting to the line of Ellipse
                 shp.line_format.fill_format.fill_type = slides.FillType.SOLID
-                shp.line_format.fill_format.solid_fill_color.color = Color.Black
+                shp.line_format.fill_format.solid_fill_color.color = drawing.Color.Black
                 shp.line_format.width = 5
 
                 #Write the PPTX file to disk

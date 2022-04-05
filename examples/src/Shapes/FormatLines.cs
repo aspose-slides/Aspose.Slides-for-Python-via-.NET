@@ -3,7 +3,7 @@ using System.IO
 
 import aspose.slides as slides
 import aspose.pydrawing as drawing
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -16,7 +16,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -28,11 +28,11 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of rectangle type
-                IShape shp = sld.shapes.add_auto_shape(ShapeType.Rectangle, 50, 150, 150, 75)
+                shp = sld.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 50, 150, 150, 75)
 
                 # Set the fill color of the rectangle shape
                 shp.fill_format.fill_type = slides.FillType.SOLID
-                shp.fill_format.solid_fill_color.color = Color.white
+                shp.fill_format.solid_fill_color.color = drawing.Color.white
 
                 # Apply some formatting on the line of the rectangle
                 shp.line_format.style = LineStyle.ThickThin

@@ -1,7 +1,7 @@
 using System.IO
 
 import aspose.slides as slides
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -14,7 +14,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -26,7 +26,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 sld = pres.slides[0]
 
                 # Add autoshape of rectangle type
-                sld.shapes.add_auto_shape(ShapeType.Rectangle, 50, 150, 150, 50)
+                sld.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 50, 150, 150, 50)
 
                 #Write the PPTX file to disk
                 pres.save(dataDir+ "RectShp1_out.pptx", slides.export.SaveFormat.PPTX)

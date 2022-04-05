@@ -1,7 +1,7 @@
 using System.IO
 
 import aspose.slides as slides
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {

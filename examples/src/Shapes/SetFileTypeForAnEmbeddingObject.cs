@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 using Aspose.slides.DOM.Ole
 using Aspose.slides.Examples.CSharp
-using Aspose.slides.Export
+import aspose.slides as slides
 using System
 using System.Collections.Generic
 using System.IO

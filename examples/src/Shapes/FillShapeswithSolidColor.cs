@@ -1,14 +1,14 @@
 ﻿import aspose.pydrawing as drawing
-using Aspose.slides.Export
+import aspose.slides as slides
 import aspose.slides as slides
 
-/*
+"""
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 when the project is build. Please check https:#docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http:#www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http:#www.aspose.com/community/forums/default.aspx
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             slide = presentation.slides[0]
 
             # Add autoshape of rectangle type
-            IShape shape = slide.shapes.add_auto_shape(ShapeType.Rectangle, 50, 150, 75, 150)
+            shape = slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 50, 150, 75, 150)
 
             # Set the fill type to Solid
             shape.fill_format.fill_type = slides.FillType.SOLID

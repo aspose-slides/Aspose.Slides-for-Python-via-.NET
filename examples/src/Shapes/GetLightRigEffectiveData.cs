@@ -20,11 +20,11 @@ namespace CSharp.shapes
 
             using (Presentation pres = new Presentation(dataDir + "Presentation1.pptx"))
             {
-                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].ThreeDFormat.GetEffective()
+                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].three_dformat.get_effective()
 
                 print("= Effective light rig properties =")
-                print("Type: " + threeDEffectiveData.LightRig.LightType)
-                print("Direction: " + threeDEffectiveData.LightRig.Direction)
+                print("Type: " + threeDEffectiveData.light_rig.light_type)
+                print("Direction: " + threeDEffectiveData.light_rig.direction)
 
 
             }

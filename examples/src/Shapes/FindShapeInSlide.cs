@@ -13,7 +13,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -23,10 +23,10 @@ namespace Aspose.slides.Examples.CSharp.shapes
 
                 slide = p.slides[0]
                 # Alternative text of the shape to be found
-                IShape shape = FindShape(slide, "Shape1")
+                shape = FindShape(slide, "Shape1")
                 if (shape != None)
                 {
-                    print("Shape Name: " + shape.Name)
+                    print("Shape Name: " + shape.name)
                 }
             }
         }
@@ -39,7 +39,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             {
                 # If the alternative text of the slide matches with the required one then
                 # Return the shape
-                if (slide.shapes[i].AlternativeText.CompareTo(alttext) == 0)
+                if (slide.shapes[i].alternative_text.CompareTo(alttext) == 0)
                     return slide.shapes[i]
             }
             return None

@@ -20,12 +20,12 @@ namespace CSharp.shapes
 
             using (Presentation pres = new Presentation(dataDir + "Presentation1.pptx"))
             {
-                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].ThreeDFormat.GetEffective()
+                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].three_dformat.get_effective()
 
                 print("= Effective shape's top face relief properties =")
-                print("Type: " + threeDEffectiveData.BevelTop.BevelType)
-                print("Width: " + threeDEffectiveData.BevelTop.width)
-                print("Height: " + threeDEffectiveData.BevelTop.height)
+                print("Type: " + threeDEffectiveData.bevel_top.bevel_type)
+                print("Width: " + threeDEffectiveData.bevel_top.width)
+                print("Height: " + threeDEffectiveData.bevel_top.height)
 
 
             }

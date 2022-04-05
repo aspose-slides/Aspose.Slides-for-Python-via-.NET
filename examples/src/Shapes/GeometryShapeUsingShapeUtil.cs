@@ -2,12 +2,12 @@
 import aspose.pydrawing as drawing
 using System.Drawing.Drawing2D
 using System.IO
-using Aspose.slides.Export
+import aspose.slides as slides
 using Aspose.slides.Util
 
-/*
+"""
 The example demonstrates using of ShapeUtil for editing shape geometry as System.Drawing.Drawing2D.GrpahicsPath object.
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -21,7 +21,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             with slides.Presentation() as pres:
             {
                 # Create new shape
-                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 300, 100)
+                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, 300, 100)
 
                 # Get geometry path of the shape
                 IGeometryPath originalPath = shape.GetGeometryPaths()[0]

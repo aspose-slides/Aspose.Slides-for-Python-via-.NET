@@ -1,14 +1,14 @@
 ﻿import aspose.pydrawing as drawing
-using Aspose.slides.Export
+import aspose.slides as slides
 import aspose.slides as slides
 
-/*
+"""
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Slides for .NET API reference 
 when the project is build. Please check https:#docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.Slides for .NET API from http:#www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http:#www.aspose.com/community/forums/default.aspx
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -27,8 +27,8 @@ namespace Aspose.slides.Examples.CSharp.shapes
             sld = pres.slides[0]
 
             # Add autoshape of rectangle type
-            IShape shp1 = sld.shapes.add_auto_shape(ShapeType.Rectangle, 50, 40, 150, 50)
-            IShape shp2 = sld.shapes.add_auto_shape(ShapeType.Moon, 160, 40, 150, 50)
+            shp1 = sld.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 50, 40, 150, 50)
+            shp2 = sld.shapes.add_auto_shape(ShapeType.Moon, 160, 40, 150, 50)
             shp2.fill_format.fill_type = slides.FillType.SOLID
             shp2.fill_format.solid_fill_color.color = drawing.Color.gray
 
@@ -38,7 +38,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 if (shape != None)
                 {
                     AutoShape ashp = shape
-                    ashp.AlternativeText = "User Defined"
+                    ashp.alternative_text = "User Defined"
                 }
             }
 

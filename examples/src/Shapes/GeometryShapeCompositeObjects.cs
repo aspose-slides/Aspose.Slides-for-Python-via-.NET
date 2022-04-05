@@ -1,9 +1,9 @@
 ﻿using System.IO
-using Aspose.slides.Export
+import aspose.slides as slides
 
-/*
+"""
 The example demonstrates creation a composite custom shape from two GeometryPath objects.
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -17,7 +17,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             with slides.Presentation() as pres:
             {
                 # Create new shape
-                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 200, 100)
+                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, 200, 100)
 
                 # Create first geometry path
                 GeometryPath geometryPath0 = new GeometryPath()

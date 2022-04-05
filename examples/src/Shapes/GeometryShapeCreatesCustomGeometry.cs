@@ -4,11 +4,11 @@ using System.Collections.Generic
 using System.Diagnostics
 import aspose.pydrawing as drawing
 using System.IO
-using Aspose.slides.Export
+import aspose.slides as slides
 
-/*
+"""
 The example demonstrates creation a shape with completely custom geometry.
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -27,7 +27,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             with slides.Presentation() as pres:
             {
                 # Create new shape
-                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, R * 2, R * 2)
+                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, R * 2, R * 2)
 
                 # Set new geometry path to the shape
                 shape.SetGeometryPath(starPath)
@@ -55,12 +55,12 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 radians = angle * (Math.PI / 180f)
                 x = outerRadius * Math.Cos(radians)
                 y = outerRadius * Math.Sin(radians)
-                points.add(new PointF((float)x + outerRadius, (float)y + outerRadius))
+                points.add(new PointF(x + outerRadius, y + outerRadius))
 
                 radians = Math.PI * (angle + step / 2) / 180.0
                 x = innerRadiusr * Math.Cos(radians)
                 y = innerRadiusr * Math.Sin(radians)
-                points.add(new PointF((float)x + outerRadius, (float)y + outerRadius))
+                points.add(new PointF(x + outerRadius, y + outerRadius))
             }
 
             starPath.MoveTo(points[0])

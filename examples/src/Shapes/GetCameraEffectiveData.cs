@@ -19,12 +19,12 @@ namespace CSharp.shapes
 
             using (Presentation pres = new Presentation(dataDir + "Presentation1.pptx"))
             {
-                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].ThreeDFormat.GetEffective()
+                IThreeDFormatEffectiveData threeDEffectiveData = pres.slides[0].shapes[0].three_dformat.get_effective()
 
                 print("= Effective camera properties =")
-                print("Type: " + threeDEffectiveData.Camera.CameraType)
-                print("Field of view: " + threeDEffectiveData.Camera.FieldOfViewAngle)
-                print("Zoom: " + threeDEffectiveData.Camera.Zoom)
+                print("Type: " + threeDEffectiveData.camera.camera_type)
+                print("Field of view: " + threeDEffectiveData.camera.FieldOfViewAngle)
+                print("Zoom: " + threeDEffectiveData.camera.Zoom)
 
                 
             }

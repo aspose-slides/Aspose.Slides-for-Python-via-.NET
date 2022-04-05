@@ -1,10 +1,10 @@
 ﻿
 using System.IO
-using Aspose.slides.Export
+import aspose.slides as slides
 
-/*
+"""
 This example demonstrates removing a segment from the existing geometry shape.
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {

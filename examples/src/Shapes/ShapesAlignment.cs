@@ -7,12 +7,12 @@ using System.Threading.Tasks
 import aspose.slides as slides
 using Aspose.slides.Examples.CSharp
 using Aspose.slides.Util
-using Aspose.slides.Export
+import aspose.slides as slides
 using Aspose.slides.MathText
 
-/*
+"""
 This example demonstrates of using SlideUtil.AlignShapes method.
-*/
+"""
 namespace CSharp.shapes
 {
     class ShapesAlignment
@@ -26,31 +26,31 @@ namespace CSharp.shapes
             {
                 slide = pres.slides[0]
                 # Create some shapes
-                slide.shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 100, 100)
-                slide.shapes.add_auto_shape(ShapeType.Rectangle, 200, 200, 100, 100)
-                slide.shapes.add_auto_shape(ShapeType.Rectangle, 300, 300, 100, 100)
+                slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, 100, 100)
+                slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 200, 200, 100, 100)
+                slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 300, 300, 100, 100)
                 # Aligning all shapes within IBaseSlide.
                 SlideUtil.AlignShapes(ShapesAlignmentType.AlignBottom, True, pres.slides[0])
 
-                slide = pres.slides.AddEmptySlide(slide.LayoutSlide)
+                slide = pres.slides.add_empty_slide(slide.layout_slide)
                 # Add group shape
-                IGroupShape groupShape = slide.shapes.AddGroupShape()
+                groupShape = slide.shapes.add_group_shape()
                 # Create some shapes to the group shape
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 350, 50, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 450, 150, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 550, 250, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 650, 350, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 350, 50, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 450, 150, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 550, 250, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 650, 350, 50, 50)
                 # Aligning all shapes within IGroupShape.
                 SlideUtil.AlignShapes(ShapesAlignmentType.AlignLeft, False, groupShape)
 
-                slide = pres.slides.AddEmptySlide(slide.LayoutSlide)
+                slide = pres.slides.add_empty_slide(slide.layout_slide)
                 # Add group shape
-                groupShape = slide.shapes.AddGroupShape()
+                groupShape = slide.shapes.add_group_shape()
                 # Create some shapes to the group shape
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 350, 50, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 450, 150, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 550, 250, 50, 50)
-                groupShape.shapes.add_auto_shape(ShapeType.Rectangle, 650, 350, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 350, 50, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 450, 150, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 550, 250, 50, 50)
+                groupShape.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 650, 350, 50, 50)
                 # Aligning shapes with specified indexes within IGroupShape.
                 SlideUtil.AlignShapes(ShapesAlignmentType.AlignLeft, False, groupShape, new int[] { 0, 2 })
 

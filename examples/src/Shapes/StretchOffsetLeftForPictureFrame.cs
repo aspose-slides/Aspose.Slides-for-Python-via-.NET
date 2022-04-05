@@ -1,7 +1,7 @@
 ﻿using System.IO
 import aspose.slides as slides
 import aspose.pydrawing as drawing
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -14,7 +14,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -30,22 +30,22 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 imgEx = pres.images.add_image(img)
 
                 # Add an AutoShape of Rectangle type
-                aShape = slide.shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 300, 300)
+                aShape = slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, 300, 300)
 
                 # Set shape's fill type
                 aShape.fill_format.fill_type = slides.FillType.PICTURE
 
                 # Set shape's picture fill mode
-                aShape.FillFormat.picture_fill_format.PictureFillMode = PictureFillMode.Stretch
+                aShape.fill_format.picture_fill_format.PictureFillMode = PictureFillMode.Stretch
 
                 # Set image to fill the shape
-                aShape.FillFormat.picture_fill_format.picture.image = imgEx
+                aShape.fill_format.picture_fill_format.picture.image = imgEx
 
                 # Specify image offsets from the corresponding edge of the shape's bounding box
-                aShape.FillFormat.picture_fill_format.StretchOffsetLeft = 25
-                aShape.FillFormat.picture_fill_format.StretchOffsetRight = 25
-                aShape.FillFormat.picture_fill_format.StretchOffsetTop = -20
-                aShape.FillFormat.picture_fill_format.StretchOffsetBottom = -10
+                aShape.fill_format.picture_fill_format.StretchOffsetLeft = 25
+                aShape.fill_format.picture_fill_format.StretchOffsetRight = 25
+                aShape.fill_format.picture_fill_format.StretchOffsetTop = -20
+                aShape.fill_format.picture_fill_format.StretchOffsetBottom = -10
 
 
                 #Write the PPTX file to disk

@@ -1,7 +1,7 @@
 using System.IO
 
 import aspose.slides as slides
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -14,7 +14,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 

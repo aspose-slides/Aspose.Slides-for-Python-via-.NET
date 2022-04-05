@@ -19,6 +19,6 @@ def rendering_3d():
         shape.three_dformat.extrusion_color.color = drawing.Color.blue
         
         pres.slides[0].get_thumbnail(2, 2).save(outDir + "sample_3d.png")
-        pres.save(outDir + "sandbox_3d.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(outDir + "rendering_3d_out.pptx", slides.export.SaveFormat.PPTX)
 
 

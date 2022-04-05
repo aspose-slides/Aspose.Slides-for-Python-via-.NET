@@ -2,7 +2,7 @@ using System.IO
 
 import aspose.slides as slides
 import aspose.pydrawing as drawing
-using Aspose.slides.Export
+import aspose.slides as slides
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -15,7 +15,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             dataDir = RunExamples.GetDataDir_Shapes()
 
             # Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir)
+            IsExists = System.IO.Directory.Exists(dataDir)
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir)
 
@@ -31,7 +31,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
                 imgx = pres.images.add_image(img)
 
                 # Add Picture Frame with height and width equivalent of Picture
-                IPictureFrame pf = sld.shapes.AddPictureFrame(ShapeType.Rectangle, 50, 150, imgx.width, imgx.height, imgx)
+                pf = sld.shapes.add_picture_frame(slides.ShapeType.RECTANGLE, 50, 150, imgx.width, imgx.height, imgx)
 
                 # Apply some formatting to PictureFrameEx
                 pf.line_format.fill_format.fill_type = slides.FillType.SOLID

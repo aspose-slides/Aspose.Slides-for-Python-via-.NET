@@ -1,11 +1,11 @@
 ﻿using System.IO
 
 import aspose.slides as slides
-using Aspose.slides.Export
+import aspose.slides as slides
 
-/*
+"""
 This example demonstrates adding new segment to the existing geometry shape.
-*/
+"""
 
 namespace Aspose.slides.Examples.CSharp.shapes
 {
@@ -19,7 +19,7 @@ namespace Aspose.slides.Examples.CSharp.shapes
             with slides.Presentation() as pres:
             {
                 # Create new shape
-                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(ShapeType.Rectangle, 100, 100, 200, 100)
+                GeometryShape shape = (GeometryShape)pres.slides[0].shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 100, 200, 100)
                 # Get geometry path of the shape
                 IGeometryPath geometryPath = shape.GetGeometryPaths()[0]
 
