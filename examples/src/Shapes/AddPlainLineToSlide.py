@@ -5,7 +5,7 @@ import aspose.slides as slides
 dataDir = "./examples/data/"
 outDir = "./examples/out/"
 
-# Instantiate PresentationEx class that represents the PPTX file
+# Instantiate Presentation class that represents the PPTX file
 with slides.Presentation() as pres:
     # Get the first slide
     sld = pres.slides[0]
