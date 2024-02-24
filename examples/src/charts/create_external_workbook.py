@@ -4,7 +4,7 @@ import shutil
 
 def charts_create_external_workbook(global_opts):
     external_workbook_file_name = "charts_external_workbook.xlsx"
-    shutil.copy(global_opts.data_dir + external_workbook_file_name, global_opts.out_dir + external_workbook_file_name)
+    shutil.copyfile(global_opts.data_dir + external_workbook_file_name, global_opts.out_dir + external_workbook_file_name)
 
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.PIE, 50, 50, 500, 400)
