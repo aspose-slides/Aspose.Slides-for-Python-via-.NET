@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_set_data_labels_percentage_sign(options):
+def charts_set_data_labels_percentage_sign(global_opts):
     # Create an instance of Presentation class
     with slides.Presentation() as presentation:
         # Get reference of the slide
@@ -59,4 +59,4 @@ def charts_set_data_labels_percentage_sign(options):
         series2.labels.default_data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = drawing.Color.white
 
         # Write presentation to disk
-        presentation.save(options.out_dir + "charts_set_data_labels_percentage_sign_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_set_data_labels_percentage_sign_out.pptx", slides.export.SaveFormat.PPTX)

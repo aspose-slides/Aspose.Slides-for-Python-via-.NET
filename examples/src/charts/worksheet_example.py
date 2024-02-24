@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_worksheets_example(options):
+def charts_worksheets_example(global_opts):
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.PIE, 50, 50, 400, 500)
 

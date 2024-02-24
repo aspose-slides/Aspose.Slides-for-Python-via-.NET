@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_series_invert_if_negative(options):
+def charts_series_invert_if_negative(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 50, 50, 600, 400, True)
 		series = chart.chart_data.series
@@ -17,4 +17,4 @@ def charts_series_invert_if_negative(options):
 
 		series[0].data_points[2].invert_if_negative = True
 
-		pres.save(options.out_dir + "charts_series_invert_if_negative_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_series_invert_if_negative_out.pptx", slides.export.SaveFormat.PPTX)

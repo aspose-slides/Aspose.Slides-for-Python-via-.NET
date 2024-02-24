@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_add_error_bars(options):
+def charts_add_error_bars(global_opts):
     # Creating empty presentation
     with slides.Presentation() as presentation:
         # Creating a bubble chart
@@ -21,4 +21,4 @@ def charts_add_error_bars(options):
         err_bar_x.has_end_cap = True
 
         # Saving presentation
-        presentation.save(options.out_dir + "charts_add_error_bars_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_add_error_bars_out.pptx", slides.export.SaveFormat.PPTX)

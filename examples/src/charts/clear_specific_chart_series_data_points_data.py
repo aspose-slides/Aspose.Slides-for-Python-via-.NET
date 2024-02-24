@@ -1,8 +1,8 @@
 ﻿import aspose.slides as slides
 
 
-def charts_clear_specific_chart_series_datapoints_data(options):
-    with slides.Presentation(options.data_dir + "charts_with_chart.pptx") as pres:
+def charts_clear_specific_chart_series_datapoints_data(global_opts):
+    with slides.Presentation(global_opts.data_dir + "charts_with_chart.pptx") as pres:
         sl = pres.slides[0]
 
         chart = sl.shapes[0]
@@ -13,4 +13,4 @@ def charts_clear_specific_chart_series_datapoints_data(options):
 
         chart.chart_data.series[0].data_points.clear()
 
-        pres.save(options.out_dir + "charts_clear_specific_chart_series_datapoints_data_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_clear_specific_chart_series_datapoints_data_out.pptx", slides.export.SaveFormat.PPTX)

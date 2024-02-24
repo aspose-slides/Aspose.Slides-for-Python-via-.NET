@@ -2,9 +2,9 @@
 import aspose.slides as slides
 
 
-def manage_activex_control(options):
+def manage_activex_control(global_opts):
     # Accessing the presentation with ActiveX controls
-    with slides.Presentation(options.data_dir + "activex_master.pptm") as presentation:
+    with slides.Presentation(global_opts.data_dir + "activex_master.pptm") as presentation:
         # Accessing the first slide in presentation
         slide = presentation.slides[0]
 
@@ -113,10 +113,10 @@ def manage_activex_control(options):
                 frame.x, frame.y + 100, frame.width, frame.height, frame.flip_h, frame.flip_v, frame.rotation)
 
         # Save the presentation with Edited ActiveX Controls
-        presentation.save(options.out_dir + "activex_manage_control-edited_out.pptm", slides.export.SaveFormat.PPTM)
+        presentation.save(global_opts.out_dir + "activex_manage_control-edited_out.pptm", slides.export.SaveFormat.PPTM)
 
         # Now removing controls
         slide.controls.clear()
 
         # Saving the presentation with cleared ActiveX controls
-        presentation.save(options.out_dir + "activex_manage_control-cleared_out.pptm", slides.export.SaveFormat.PPTM)
+        presentation.save(global_opts.out_dir + "activex_manage_control-cleared_out.pptm", slides.export.SaveFormat.PPTM)

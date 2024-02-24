@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_set_marker_options(options):
+def charts_set_marker_options(global_opts):
     # Create an instance of Presentation class
     with slides.Presentation() as presentation:
         slide = presentation.slides[0]
@@ -23,11 +23,11 @@ def charts_set_marker_options(options):
         chart.chart_data.series.add(fact.get_cell(default_worksheet_index, 1, 1, "Series 1"), chart.type)
         
         # Set the picture
-        image1 = drawing.Bitmap(options.data_dir + "image1.jpg")
+        image1 = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
         imgx1 = presentation.images.add_image(image1)
 
         # Set the picture
-        image2 = drawing.Bitmap(options.data_dir + "image2.jpg")
+        image2 = drawing.Bitmap(global_opts.data_dir + "image2.jpg")
         imgx2 = presentation.images.add_image(image2)
 
         # Take first chart series
@@ -54,4 +54,4 @@ def charts_set_marker_options(options):
         series.marker.size = 15
 
         # Write presentation to disk
-        presentation.save(options.out_dir + "charts_set_marker_options_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_set_marker_options_out.pptx", slides.export.SaveFormat.PPTX)

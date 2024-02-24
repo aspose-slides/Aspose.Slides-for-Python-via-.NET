@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_histogram_chart(options):
+def charts_histogram_chart(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.HISTOGRAM, 50, 50, 500, 400)
 		chart.chart_data.categories.clear()
@@ -20,4 +20,4 @@ def charts_histogram_chart(options):
 
 		chart.axes.horizontal_axis.aggregation_type = slides.charts.AxisAggregationType.AUTOMATIC
 
-		pres.save(options.out_dir + "charts_histogram_chart_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_histogram_chart_out.pptx", slides.export.SaveFormat.PPTX)

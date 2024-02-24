@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_pie_chart(options):
+def charts_pie_chart(global_opts):
     # Instantiate Presentation class that represents PPTX file
     with slides.Presentation() as presentation:
         # Access first slide
@@ -103,4 +103,4 @@ def charts_pie_chart(options):
         chart.chart_data.series_groups[0].first_slice_angle = 180
 
         # Save presentation with chart
-        presentation.save(options.out_dir + "charts_pie_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_pie_chart_out.pptx", slides.export.SaveFormat.PPTX)

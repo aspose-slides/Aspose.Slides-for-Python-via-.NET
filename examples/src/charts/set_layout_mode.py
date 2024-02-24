@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_set_layout_mode(options):
+def charts_set_layout_mode(global_opts):
     with slides.Presentation() as presentation:
         slide = presentation.slides[0]
         chart = slide.shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 20, 100, 600, 400)
@@ -11,4 +11,4 @@ def charts_set_layout_mode(options):
         chart.plot_area.as_i_layoutable.height = 0.7
         chart.plot_area.layout_target_type = slides.charts.LayoutTargetType.INNER
 
-        presentation.save(options.out_dir + "charts_set_layout_mode_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_set_layout_mode_out.pptx", slides.export.SaveFormat.PPTX)

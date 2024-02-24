@@ -2,7 +2,7 @@
 import aspose.pydrawing as drawing
 
 
-def charts_marker_options_on_data_point(options):
+def charts_marker_options_on_data_point(global_opts):
 	with slides.Presentation() as pres:
 		slide = pres.slides[0]
 
@@ -22,11 +22,11 @@ def charts_marker_options_on_data_point(options):
 		chart.chart_data.series.add(fact.get_cell(default_worksheet_index, 1, 1, "Series 1"), chart.type)
 		
 		# Set the picture
-		img = drawing.Bitmap(options.data_dir + "image1.jpg")
+		img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
 		imgx1 = pres.images.add_image(img)
 
 		# Set the picture
-		img2 = drawing.Bitmap(options.data_dir + "image2.jpg")
+		img2 = drawing.Bitmap(global_opts.data_dir + "image2.jpg")
 		imgx2 = pres.images.add_image(img2)
 
 		# Take first chart series
@@ -52,4 +52,4 @@ def charts_marker_options_on_data_point(options):
 		# Changing the chart series marker
 		series.marker.size = 15
 
-		pres.save(options.out_dir + "charts_marker_options_on_data_point_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_marker_options_on_data_point_out.pptx", slides.export.SaveFormat.PPTX)

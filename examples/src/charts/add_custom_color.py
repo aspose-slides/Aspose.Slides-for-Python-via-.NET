@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_add_custom_error(options):
+def charts_add_custom_error(global_opts):
     # Creating empty presentation
     with slides.Presentation() as presentation:
         # Creating a bubble chart
@@ -31,4 +31,4 @@ def charts_add_custom_error(options):
             points[i].error_bars_custom_values.y_plus.as_literal_double = i + 1
 
         # Saving presentation
-        presentation.save(options.out_dir + "charts_add_custom_error_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_add_custom_error_out.pptx", slides.export.SaveFormat.PPTX)

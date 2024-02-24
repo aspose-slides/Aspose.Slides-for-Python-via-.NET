@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_stock_chart(options):
+def charts_stock_chart(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.OPEN_HIGH_LOW_CLOSE, 50, 50, 600, 400, False)
 
@@ -46,4 +46,4 @@ def charts_stock_chart(options):
 		for ser in chart.chart_data.series:
 			ser.format.line.fill_format.fill_type = slides.FillType.NO_FILL
 
-		pres.save(options.out_dir + "charts_stock_chart_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_stock_chart_out.pptx", slides.export.SaveFormat.PPTX)

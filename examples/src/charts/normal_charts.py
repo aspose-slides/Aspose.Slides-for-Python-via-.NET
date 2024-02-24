@@ -2,7 +2,7 @@ import aspose.slides as slides
 import aspose.pydrawing as drawing
 
 
-def charts_normal_charts(options):
+def charts_normal_charts(global_opts):
     # Instantiate Presentation class that represents PPTX file
     with slides.Presentation() as pres:
         # Access first slide
@@ -80,4 +80,4 @@ def charts_normal_charts(options):
         lbl.data_label_format.separator = "/"
                     
         # Save presentation with chart
-        pres.save(options.out_dir + "charts_normal_charts_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_normal_charts_out.pptx", slides.export.SaveFormat.PPTX)

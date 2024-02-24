@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_default_markers(options):
+def charts_default_markers(global_opts):
     with slides.Presentation() as pres:
         slide = pres.slides[0]
         chart = slide.shapes.add_chart(slides.charts.ChartType.LINE_WITH_MARKERS, 10, 10, 400, 400)
@@ -35,4 +35,4 @@ def charts_default_markers(options):
         chart.has_legend = True
         chart.legend.overlay = False
 
-        pres.save(options.out_dir + "charts_default_markers_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_default_markers_out.pptx", slides.export.SaveFormat.PPTX)

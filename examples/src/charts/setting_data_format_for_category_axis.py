@@ -2,7 +2,7 @@
 from datetime import date
 
 
-def charts_setting_date_format_for_category_axis(options):
+def charts_setting_date_format_for_category_axis(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.AREA, 50, 50, 450, 300)
 
@@ -25,4 +25,4 @@ def charts_setting_date_format_for_category_axis(options):
 		chart.axes.horizontal_axis.is_number_format_linked_to_source = False
 		chart.axes.horizontal_axis.number_format = "yyyy"
 
-		pres.save(options.out_dir + "charts_setting_date_format_for_category_axis_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_setting_date_format_for_category_axis_out.pptx", slides.export.SaveFormat.PPTX)

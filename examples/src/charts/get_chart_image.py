@@ -2,8 +2,8 @@
 import aspose.pydrawing as drawing
 
 
-def charts_get_chart_image(options):
+def charts_get_chart_image(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 50, 50, 600, 400)
 		img = chart.get_thumbnail()
-		img.save(options.out_dir + "charts_get_chart_image_out.png", drawing.imaging.ImageFormat.png)
+		img.save(global_opts.out_dir + "charts_get_chart_image_out.png", drawing.imaging.ImageFormat.png)

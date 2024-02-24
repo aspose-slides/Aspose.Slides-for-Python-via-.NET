@@ -1,4 +1,5 @@
 import aspose.slides as slides
+import shutil
 
 
 def update_by_template(path, template):
@@ -18,6 +19,9 @@ def props_update_properties_using_template(global_opts):
     template.content_type = "Template Content"
     template.subject = "Template Subject"
 
-    update_by_template(global_opts.data_dir + "doc1.pptx", template)
-    update_by_template(global_opts.data_dir + "doc2.odp", template)
-    update_by_template(global_opts.data_dir + "doc3.ppt", template)
+    for file_name in ["doc1.pptx", "doc2.odp", "doc3.ppt"]:
+        shutil.copyfile(global_opts.data_dir + file_name, global_opts.out_dir + file_name)
+
+    update_by_template(global_opts.out_dir + "doc1.pptx", template)
+    update_by_template(global_opts.out_dir + "doc2.odp", template)
+    update_by_template(global_opts.out_dir + "doc3.ppt", template)

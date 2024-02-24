@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_switching_rows_and_columns(options):
+def charts_switching_rows_and_columns(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 100, 100, 400, 300)
 
@@ -16,4 +16,4 @@ def charts_switching_rows_and_columns(options):
 
 		chart.chart_data.switch_row_column()
 
-		pres.save(options.out_dir + "charts_switching_rows_and_columns_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_switching_rows_and_columns_out.pptx", slides.export.SaveFormat.PPTX)

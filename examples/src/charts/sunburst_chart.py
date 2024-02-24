@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_sunburst_chart(options):
+def charts_sunburst_chart(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.SUNBURST, 50, 50, 500, 400)
 		chart.chart_data.categories.clear()
@@ -45,4 +45,4 @@ def charts_sunburst_chart(options):
 		series.data_points.add_data_point_for_sunburst_series(wb.get_cell(0, "D7", 4))
 		series.data_points.add_data_point_for_sunburst_series(wb.get_cell(0, "D8", 3))
 
-		pres.save(options.out_dir + "charts_sunburst_chart_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_sunburst_chart_out.pptx", slides.export.SaveFormat.PPTX)

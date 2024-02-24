@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_second_plot_options(options):
+def charts_second_plot_options(global_opts):
     # Create an instance of Presentation class
     with slides.Presentation() as presentation:
 
@@ -15,4 +15,4 @@ def charts_second_plot_options(options):
         chart.chart_data.series[0].parent_series_group.pie_split_position = 53
 
         # Write presentation to disk
-        presentation.save(options.out_dir + "charts_second_plot_options_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_second_plot_options_out.pptx", slides.export.SaveFormat.PPTX)

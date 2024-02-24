@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_radar_chart(options):
+def charts_radar_chart(global_opts):
     with slides.Presentation() as pres:
         # Access first slide
         slide = pres.slides[0]
@@ -97,4 +97,4 @@ def charts_radar_chart(options):
         chart.axes.vertical_axis.major_unit = 1.25
 
         # Save generated presentation
-        pres.save(options.out_dir + "charts_radar_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_radar_chart_out.pptx", slides.export.SaveFormat.PPTX)

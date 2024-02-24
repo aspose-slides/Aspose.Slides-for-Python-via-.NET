@@ -2,7 +2,7 @@ import aspose.slides as slides
 import aspose.pydrawing as drawing
 
 
-def charts_entities_formatting(options):
+def charts_entities_formatting(global_opts):
     # Instantiating presentation# Instantiating presentation
     with slides.Presentation() as pres:
         # Accessing the first slide
@@ -131,4 +131,4 @@ def charts_entities_formatting(options):
         chart.plot_area.format.fill.solid_fill_color.color = drawing.Color.light_cyan
 
         # Save Presentation
-        pres.save(options.out_dir + "charts_entities_formatting_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_entities_formatting_out.pptx", slides.export.SaveFormat.PPTX)

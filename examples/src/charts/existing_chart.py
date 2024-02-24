@@ -1,9 +1,9 @@
 import aspose.slides as slides
 
 
-def charts_existing_chart(options):
+def charts_existing_chart(global_opts):
     # Instantiate Presentation class that represents PPTX file
-    with slides.Presentation(options.data_dir + "charts_existing_chart.pptx") as pres:
+    with slides.Presentation(global_opts.data_dir + "charts_existing_chart.pptx") as pres:
         # Access first slideMarker
         slide = pres.slides[0]
 
@@ -54,4 +54,4 @@ def charts_existing_chart(options):
         chart.type = slides.charts.ChartType.CLUSTERED_CYLINDER
 
         # Save presentation with chart
-        pres.save(options.out_dir + "charts_existing_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_existing_chart_out.pptx", slides.export.SaveFormat.PPTX)

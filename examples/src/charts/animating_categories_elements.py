@@ -1,8 +1,8 @@
 ﻿import aspose.slides as slides
 
 
-def charts_animating_categories_elements(options):
-    with slides.Presentation(options.data_dir + "charts_existing_chart.pptx") as presentation:
+def charts_animating_categories_elements(global_opts):
+    with slides.Presentation(global_opts.data_dir + "charts_existing_chart.pptx") as presentation:
         # Get reference of the chart object
         slide = presentation.slides[0]
         shapes = slide.shapes
@@ -26,4 +26,4 @@ def charts_animating_categories_elements(options):
         slide.timeline.main_sequence.add_effect(chart, slides.animation.EffectChartMinorGroupingType.BY_ELEMENT_IN_CATEGORY, 2, 3, slides.animation.EffectType.APPEAR, slides.animation.EffectSubtype.NONE, slides.animation.EffectTriggerType.AFTER_PREVIOUS)
 
         # Write the presentation file to disk
-        presentation.save(options.out_dir + "charts_animating_categories_elements_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_animating_categories_elements_out.pptx", slides.export.SaveFormat.PPTX)

@@ -1,7 +1,7 @@
 import aspose.slides as slides
 
 
-def charts_scattered_chart(options):
+def charts_scattered_chart(global_opts):
     with slides.Presentation() as pres:
         slide = pres.slides[0]
 
@@ -56,4 +56,4 @@ def charts_scattered_chart(options):
         series.marker.size = 10
         series.marker.symbol = slides.charts.MarkerStyleType.CIRCLE
 
-        pres.save(options.out_dir + "charts_scattered_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_scattered_chart_out.pptx", slides.export.SaveFormat.PPTX)

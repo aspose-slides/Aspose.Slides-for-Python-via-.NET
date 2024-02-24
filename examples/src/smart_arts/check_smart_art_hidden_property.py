@@ -13,4 +13,4 @@ def check_smart_art_hidden_property(global_opts):
         print("is_hidden: " + str(node.is_hidden))
 
         # Saving Presentation
-        presentation.save(global_opts.data_dir + "smart_art_check_hidden_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "smart_art_check_hidden_out.pptx", slides.export.SaveFormat.PPTX)

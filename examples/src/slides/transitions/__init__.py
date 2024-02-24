@@ -7,3 +7,15 @@ from .set_transition_effects import set_transition_effects
 from .set_transition_morph_type import set_transition_morph_type
 from .simple_slide_transitions import simple_slide_transitions
 from .support_of_morph_transition import support_of_morph_transition
+
+
+def run_slides_transition_examples(global_opts):
+    after_animation_type_example(global_opts)
+    animation_rewind(global_opts)
+    better_slide_transitions(global_opts)
+    manage_simple_slide_transitions(global_opts)
+    managing_better_slide_transitions(global_opts)
+    set_transition_effects(global_opts)
+    set_transition_morph_type(global_opts)
+    simple_slide_transitions(global_opts)
+    support_of_morph_transition(global_opts)

@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_funnel_chart(options):
+def charts_funnel_chart(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.FUNNEL, 50, 50, 500, 400)
 		chart.chart_data.categories.clear()
@@ -26,4 +26,4 @@ def charts_funnel_chart(options):
 		series.data_points.add_data_point_for_funnel_series(wb.get_cell(0, "B5", 400))
 		series.data_points.add_data_point_for_funnel_series(wb.get_cell(0, "B6", 500))
 
-		pres.save(options.out_dir + "charts_funnel_chart_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_funnel_chart_out.pptx", slides.export.SaveFormat.PPTX)

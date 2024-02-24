@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_setting_callout_for_data_label(options):
+def charts_setting_callout_for_data_label(global_opts):
 	with slides.Presentation() as pres:
 		slide = pres.slides[0]
 		chart = slide.shapes.add_chart(slides.charts.ChartType.DOUGHNUT, 10, 10, 500, 500, False)
@@ -51,4 +51,4 @@ def charts_setting_callout_for_data_label(options):
 					lbl.as_i_layoutable.y = lbl.as_i_layoutable.y + 0.5
 				i += 1
 			category_index += 1
-		pres.save(options.out_dir + "charts_setting_callout_for_data_label_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_setting_callout_for_data_label_out.pptx", slides.export.SaveFormat.PPTX)

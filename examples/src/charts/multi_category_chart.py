@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_multi_category_chart(options):
+def charts_multi_category_chart(global_opts):
     with slides.Presentation() as pres:
         slide = pres.slides[0]
 
@@ -43,4 +43,4 @@ def charts_multi_category_chart(options):
         series.data_points.add_data_point_for_bar_series(fact.get_cell(default_worksheet_index, "D9", 80))
 
         # Save presentation with chart
-        pres.save(options.out_dir + "charts_multi_category_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_multi_category_chart_out.pptx", slides.export.SaveFormat.PPTX)

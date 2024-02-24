@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_tree_map_chart(options):
+def charts_tree_map_chart(global_opts):
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.TREEMAP, 50, 50, 500, 400)
         chart.chart_data.categories.clear()
@@ -48,4 +48,4 @@ def charts_tree_map_chart(options):
 
         series.parent_label_layout = slides.charts.ParentLabelLayoutType.OVERLAPPING
 
-        pres.save(options.out_dir + "charts_tree_map_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_tree_map_chart_out.pptx", slides.export.SaveFormat.PPTX)

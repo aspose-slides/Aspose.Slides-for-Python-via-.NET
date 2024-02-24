@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_data_cell_formulas(options):
+def charts_data_cell_formulas(global_opts):
     """This example demonstrates a way to set a formula value for a chart data cell."""
     with slides.Presentation() as presentation:
         chart = presentation.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 150, 150, 500, 300)
@@ -14,4 +14,4 @@ def charts_data_cell_formulas(options):
         cell2.r1c1_formula = "MAX(R2C6:R5C8) / 3"
         workbook.calculate_formulas()
 
-        presentation.save(options.out_dir + "charts_data_cell_formulas_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_data_cell_formulas_out.pptx", slides.export.SaveFormat.PPTX)

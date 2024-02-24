@@ -2,7 +2,7 @@
 import aspose.pydrawing as drawing
 
 
-def charts_add_color_to_data_points(options):
+def charts_add_color_to_data_points(global_opts):
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.SUNBURST, 100, 100, 450, 400)
 
@@ -21,4 +21,4 @@ def charts_add_color_to_data_points(options):
         
         steam4_format.fill.solid_fill_color.color = drawing.Color.from_argb(0, 176, 240, 255)
 
-        pres.save(options.out_dir + "charts_add_color_to_data_points_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_add_color_to_data_points_out.pptx", slides.export.SaveFormat.PPTX)

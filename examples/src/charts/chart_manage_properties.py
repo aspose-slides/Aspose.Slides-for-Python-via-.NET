@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_manage_properties(options):
+def charts_manage_properties(global_opts):
     # Create an instance of Presentation class
     with slides.Presentation() as presentation:
         # Access first slide
@@ -46,4 +46,4 @@ def charts_manage_properties(options):
         series.parent_series_group.overlap = 100         
 
         # Write presentation to disk
-        presentation.save(options.out_dir + "charts_manage_properties_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_manage_properties_out.pptx", slides.export.SaveFormat.PPTX)

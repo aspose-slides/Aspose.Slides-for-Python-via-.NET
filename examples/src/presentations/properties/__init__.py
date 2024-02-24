@@ -11,3 +11,19 @@ from .modify_builtin_properties import props_modify_builtin_properties
 from .read_only_recommended import props_read_only_recommended
 from .update_presentation_properties import props_update_presentation_properties
 from .update_presentation_properties_using_new_template import props_update_properties_using_template
+
+
+def run_presentation_properties_examples(global_opts):
+    props_access_builtin_properties(global_opts)
+    props_access_layout_formats(global_opts)
+    props_access_modifying_properties(global_opts)
+    props_access_properties()
+    props_add_blob_to_presentation(global_opts)
+    props_add_custom_document_properties(global_opts)
+    props_check_password(global_opts)
+    props_check_presentation_protection(global_opts)
+    insert_svg(global_opts)
+    props_modify_builtin_properties(global_opts)
+    props_read_only_recommended(global_opts)
+    props_update_presentation_properties(global_opts)
+    props_update_properties_using_template(global_opts)

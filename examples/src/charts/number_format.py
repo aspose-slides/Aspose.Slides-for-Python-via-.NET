@@ -1,7 +1,7 @@
 import aspose.slides as slides
 
 
-def charts_number_format(options):
+def charts_number_format(global_opts):
     # Instantiate the presentation
     with slides.Presentation() as pres:
         # Access the first presentation slide
@@ -22,4 +22,4 @@ def charts_number_format(options):
                 cell.value.as_cell.preset_number_format = 10  # 0.00%
 
         # Saving presentation
-        pres.save(options.out_dir + "charts_number_format_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_number_format_out.pptx", slides.export.SaveFormat.PPTX)

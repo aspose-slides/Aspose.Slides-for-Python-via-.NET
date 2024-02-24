@@ -2,7 +2,7 @@
 import aspose.pydrawing as drawing
 
 
-def charts_get_actual_position_of_chart_data_label(options):
+def charts_get_actual_position_of_chart_data_label(global_opts):
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 50, 50, 500, 400)
         for series in chart.chart_data.series:
@@ -23,4 +23,4 @@ def charts_get_actual_position_of_chart_data_label(options):
                     shape.fill_format.fill_type = slides.FillType.SOLID
                     shape.fill_format.solid_fill_color.color = drawing.Color.from_argb(100, 0, 255, 0)
 
-        pres.save(options.out_dir + "charts_get_actual_position_of_chart_datalabel_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_get_actual_position_of_chart_datalabel_out.pptx", slides.export.SaveFormat.PPTX)

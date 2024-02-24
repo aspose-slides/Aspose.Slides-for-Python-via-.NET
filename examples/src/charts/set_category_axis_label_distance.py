@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_set_category_axis_label_distance(options):
+def charts_set_category_axis_label_distance(global_opts):
     with slides.Presentation() as presentation:
         # Get reference of the slide
         slide = presentation.slides[0]
@@ -13,4 +13,4 @@ def charts_set_category_axis_label_distance(options):
         ch.axes.horizontal_axis.label_offset = 500
 
         # Write the presentation file to disk
-        presentation.save(options.out_dir + "charts_set_category_axis_label_distance_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_set_category_axis_label_distance_out.pptx", slides.export.SaveFormat.PPTX)

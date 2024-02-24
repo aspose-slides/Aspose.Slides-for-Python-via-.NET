@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_setting_automic_pie_chart_slice_colors(options):
+def charts_setting_automic_pie_chart_slice_colors(global_opts):
     # Instantiate Presentation class that represents PPTX file
     with slides.Presentation() as presentation:
         # Access first slide
@@ -43,4 +43,4 @@ def charts_setting_automic_pie_chart_slice_colors(options):
         series.data_points.add_data_point_for_pie_series(fact.get_cell(default_worksheet_index, 3, 1, 30))
     
         series.parent_series_group.is_color_varied = True
-        presentation.save(options.out_dir + "charts_setting_automic_pie_chart_slice_colors_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_setting_automic_pie_chart_slice_colors_out.pptx", slides.export.SaveFormat.PPTX)

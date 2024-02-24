@@ -1,1 +1,5 @@
 from .manage_presentation_normal_view_state import manage_presentation_normal_view_state
+
+
+def run_slides_views_examples(global_opts):
+    manage_presentation_normal_view_state(global_opts)

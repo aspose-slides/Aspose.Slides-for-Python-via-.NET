@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_map_chart(options):
+def charts_map_chart(global_opts):
     with slides.Presentation() as presentation:
         # Create empty chart
         chart = presentation.slides[0].shapes.add_chart(slides.charts.ChartType.MAP, 50, 50, 500, 400, False)
@@ -27,4 +27,4 @@ def charts_map_chart(options):
         data_point.format.fill.fill_type = slides.FillType.SOLID
         data_point.format.fill.solid_fill_color.color = drawing.Color.green
 
-        presentation.save(options.out_dir + "charts_map_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_map_chart_out.pptx", slides.export.SaveFormat.PPTX)

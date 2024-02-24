@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_set_invert_fill_color_chart(options):
+def charts_set_invert_fill_color_chart(global_opts):
     invert_color = drawing.Color.red
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 100, 100, 400, 300)
@@ -27,4 +27,4 @@ def charts_set_invert_fill_color_chart(options):
         series.format.fill.fill_type = slides.FillType.SOLID
         series.format.fill.solid_fill_color.color = series_color
         series.inverted_solid_fill_color.color = invert_color
-        pres.save(options.out_dir + "charts_set_invert_fill_color_chart_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_set_invert_fill_color_chart_out.pptx", slides.export.SaveFormat.PPTX)

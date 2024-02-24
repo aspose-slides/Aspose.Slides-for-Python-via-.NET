@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_display_percentage_as_labels(options):
+def charts_display_percentage_as_labels(global_opts):
     # Create an instance of Presentation class
     with slides.Presentation() as presentation:
         slide = presentation.slides[0]
@@ -39,4 +39,4 @@ def charts_display_percentage_as_labels(options):
                 lbl.data_label_format.show_bubble_size = False
 
         # Save presentation with chart
-        presentation.save(options.out_dir + "charts_display_percentage_as_labels_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_display_percentage_as_labels_out.pptx", slides.export.SaveFormat.PPTX)

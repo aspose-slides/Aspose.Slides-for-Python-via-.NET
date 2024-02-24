@@ -18,3 +18,26 @@ from .table_with_cell_borders import table_with_cell_borders
 from .text_formatting_inside_table_column import text_formatting_inside_table_column
 from .text_formatting_inside_table_row import text_formatting_inside_table_row
 from .vertically_align_text import vertically_align_text
+
+
+def run_tables_examples(global_opts):
+    add_image_inside_table_cell(global_opts)
+    add_image_inside_table_cell_and_crop(global_opts)
+    cell_split(global_opts)
+    cloning_in_table(global_opts)
+    create_table(global_opts)
+    create_table_from_scratch_in_slide(global_opts)
+    get_effective_values_of_table(global_opts)
+    identifying_the_merged_cells_in_table(global_opts)
+    lock_aspect_ratio(global_opts)
+    merge_cell(global_opts)
+    removing_row_column(global_opts)
+    resize_slide_with_table(global_opts)
+    set_first_row_as_header(global_opts)
+    set_text_formatting_inside_table(global_opts)
+    standard_tables(global_opts)
+    table_from_scratch(global_opts)
+    table_with_cell_borders(global_opts)
+    text_formatting_inside_table_column(global_opts)
+    text_formatting_inside_table_row(global_opts)
+    vertically_align_text(global_opts)

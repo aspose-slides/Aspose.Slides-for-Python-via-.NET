@@ -2,7 +2,7 @@
 import aspose.slides as slides
 
 
-def charts_add_doughnut_callout(options):
+def charts_add_doughnut_callout(global_opts):
 	with slides.Presentation() as pres:
 		slide = pres.slides[0]
 		chart = slide.shapes.add_chart(slides.charts.ChartType.DOUGHNUT, 10, 10, 500, 500, False)
@@ -55,4 +55,4 @@ def charts_add_doughnut_callout(options):
 
 			category_index += 1
 
-		pres.save(options.out_dir + "chart_add_doughnut_callout_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "chart_add_doughnut_callout_out.pptx", slides.export.SaveFormat.PPTX)

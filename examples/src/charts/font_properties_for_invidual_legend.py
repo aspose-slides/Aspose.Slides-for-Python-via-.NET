@@ -2,7 +2,7 @@
 import aspose.pydrawing as drawing
 
 
-def charts_font_properties_for_invidual_legend(options):
+def charts_font_properties_for_invidual_legend(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 50, 50, 600, 400)
 
@@ -13,4 +13,4 @@ def charts_font_properties_for_invidual_legend(options):
 		tf.portion_format.fill_format.fill_type = slides.FillType.SOLID 
 		tf.portion_format.fill_format.solid_fill_color.color = drawing.Color.blue
 
-		pres.save(options.out_dir + "charts_font_properties_for_invidual_legend_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_font_properties_for_invidual_legend_out.pptx", slides.export.SaveFormat.PPTX)

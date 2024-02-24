@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_font_size_legend(options):
+def charts_font_size_legend(global_opts):
 	with slides.Presentation() as pres:
 		chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 50, 50, 600, 400)
 
@@ -10,4 +10,4 @@ def charts_font_size_legend(options):
 		chart.axes.vertical_axis.min_value = -5
 		chart.axes.vertical_axis.is_automatic_max_value = False
 		chart.axes.vertical_axis.max_value = 10
-		pres.save(options.out_dir + "charts_font_size_legend_out.pptx", slides.export.SaveFormat.PPTX)
+		pres.save(global_opts.out_dir + "charts_font_size_legend_out.pptx", slides.export.SaveFormat.PPTX)

@@ -2,7 +2,7 @@ import aspose.slides as slides
 import aspose.pydrawing as drawing
 
 
-def charts_trend_lines(options):
+def charts_trend_lines(global_opts):
     # Creating empty presentation
     with slides.Presentation() as pres:
         # Creating a clustered column chart
@@ -42,4 +42,4 @@ def charts_trend_lines(options):
         power_trend_line.backward = 1
 
         # Saving presentation
-        pres.save(options.out_dir + "charts_trend_lines_out.pptx", slides.export.SaveFormat.PPTX)
+        pres.save(global_opts.out_dir + "charts_trend_lines_out.pptx", slides.export.SaveFormat.PPTX)

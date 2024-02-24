@@ -1,7 +1,7 @@
 ﻿import aspose.slides as slides
 
 
-def charts_set_gap_width(options):
+def charts_set_gap_width(global_opts):
     # Creating empty presentation
     with slides.Presentation() as presentation:
         # Access first slide
@@ -40,4 +40,4 @@ def charts_set_gap_width(options):
         series.parent_series_group.gap_width = 50
 
         # Save presentation with chart
-        presentation.save(options.out_dir + "charts_set_gap_width_out.pptx", slides.export.SaveFormat.PPTX)
+        presentation.save(global_opts.out_dir + "charts_set_gap_width_out.pptx", slides.export.SaveFormat.PPTX)
