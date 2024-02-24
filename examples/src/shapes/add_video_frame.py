@@ -1,0 +1,18 @@
+import aspose.slides as slides
+
+
+def add_video_frame(global_opts):
+    # Instantiate Presentation class that represents the PPTX
+    with slides.Presentation() as pres:
+        # Get the first slide
+        slide = pres.slides[0]
+
+        # Add Video Frame
+        vf = slide.shapes.add_video_frame(50, 150, 300, 150, global_opts.data_dir + "video.mp4")
+
+        # Set Play Mode and Volume of the Video
+        vf.play_mode = slides.VideoPlayModePreset.AUTO
+        vf.volume = slides.AudioVolumeMode.LOUD
+
+        # Write the PPTX file to disk
+        pres.save(global_opts.out_dir + "shapes_add_video_out.pptx", slides.export.SaveFormat.PPTX)

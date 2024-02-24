@@ -1,0 +1,5 @@
+from .get_background_effective_values import get_background_effective_values
+from .set_background_to_gradient import set_background_to_gradient
+from .set_image_as_background import set_image_as_background
+from .set_slide_background_master import set_slide_background_master
+from .set_slide_background_normal import set_slide_background_normal
