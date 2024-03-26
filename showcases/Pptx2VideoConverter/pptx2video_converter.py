@@ -25,7 +25,7 @@ class Pptx2VideoConverter:
         os.makedirs(os.path.dirname(self.out_video_path), exist_ok=True)
 
     def generate_frames(self):
-        with slides.export.experimental.SimplePresentationFramesGenerator(self.presentation, self.fps) as frames_generator:
+        with slides.export.PresentationEnumerableFramesGenerator(self.presentation, self.fps) as frames_generator:
             for frame_args in frames_generator.enumerate_frames(self.presentation.slides):
                 image_file_name = self._IMAGE_FILE_TEMPLATE % frame_args.frames_generator.frame_index
                 full_image_path = os.path.join(self.temp_folder_path, image_file_name)
