@@ -16,7 +16,7 @@ def substitute_picture_title_of_ole_object_frame(global_opts):
         oof.is_object_icon = True
 
         # Add image object
-        image = pres.images.add_image(drawing.Bitmap(global_opts.data_dir + "image1.jpg"))
+        image = pres.images.add_image(slides.Images.from_file(global_opts.data_dir + "image1.jpg"))
         oof.substitute_picture_format.picture.image = image
 
         # Set caption to OLE icon

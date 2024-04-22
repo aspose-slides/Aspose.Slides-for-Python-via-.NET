@@ -14,6 +14,6 @@ def sketched_shapes(global_opts):
         # Transform shape to sketch of a freehand style
         shape.line_format.sketch_format.sketch_type = slides.LineSketchType.SCRIBBLE
 
-        pres.slides[0].get_thumbnail(4 / 3, 4 / 3).save(global_opts.out_dir + "shapes_sketch_format_out.png",
-                                                        drawing.imaging.ImageFormat.png)
+        pres.slides[0].get_image(4 / 3, 4 / 3).save(global_opts.out_dir + "shapes_sketch_format_out.png",
+                                                        slides.ImageFormat.PNG)
         pres.save(global_opts.out_dir + "shapes_sketch_format_out.pptx", slides.export.SaveFormat.PPTX)

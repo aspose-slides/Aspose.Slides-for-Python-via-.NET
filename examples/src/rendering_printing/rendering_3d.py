@@ -16,5 +16,5 @@ def rendering_3d(global_opts):
         shape.three_d_format.extrusion_height = 100
         shape.three_d_format.extrusion_color.color = drawing.Color.blue
         
-        pres.slides[0].get_thumbnail(2, 2).save(global_opts.out_dir + "sample_3d.png")
+        pres.slides[0].get_image(2, 2).save(global_opts.out_dir + "sample_3d.png")
         pres.save(global_opts.out_dir + "rendering_3d_out.pptx", slides.export.SaveFormat.PPTX)

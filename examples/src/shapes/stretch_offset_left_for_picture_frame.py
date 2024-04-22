@@ -9,7 +9,7 @@ def stretch_offset_left_for_picture_frame(global_opts):
         slide = pres.slides[0]
 
         # Instantiate the Image class
-        img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+        img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
         imgx = pres.images.add_image(img)
 
         # Add an AutoShape of Rectangle type

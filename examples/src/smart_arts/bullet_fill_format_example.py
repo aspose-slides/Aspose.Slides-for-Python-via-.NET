@@ -8,7 +8,7 @@ def bullet_fill_format_example(global_opts):
         node = smart.all_nodes[0]
 
         if node.bullet_fill_format is not None:
-            img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+            img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
             image = presentation.images.add_image(img)
             node.bullet_fill_format.fill_type = slides.FillType.PICTURE
             node.bullet_fill_format.picture_fill_format.picture.image = image

@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def keep_text_flat(global_opts):
@@ -10,5 +9,4 @@ def keep_text_flat(global_opts):
         shape1.text_frame.text_frame_format.keep_text_flat = False
         shape2.text_frame.text_frame_format.keep_text_flat = True
 
-        pres.slides[0].get_thumbnail(4 / 3, 4 / 3).save(global_opts.out_dir + "text_keep_text_flat_out.png",
-                                                        drawing.imaging.ImageFormat.png)
+        pres.slides[0].get_image(4 / 3, 4 / 3).save(global_opts.out_dir + "text_keep_text_flat_out.png", slides.ImageFormat.PNG)

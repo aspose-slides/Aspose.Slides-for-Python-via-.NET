@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def default_fonts_example(global_opts):
@@ -12,8 +11,7 @@ def default_fonts_example(global_opts):
     # Load the presentation
     with slides.Presentation(global_opts.data_dir + "text_default_fonts.pptx", load_options) as pptx:
         # Generate slide thumbnail
-        pptx.slides[0].get_thumbnail(1, 1).save(global_opts.out_dir + "text_default_fonts_out.png",
-                                                drawing.imaging.ImageFormat.png)
+        pptx.slides[0].get_image(1, 1).save(global_opts.out_dir + "text_default_fonts_out.png", slides.ImageFormat.PNG)
 
         # Generate PDF
         pptx.save(global_opts.out_dir + "text_default_fonts_out.pdf", slides.export.SaveFormat.PDF)

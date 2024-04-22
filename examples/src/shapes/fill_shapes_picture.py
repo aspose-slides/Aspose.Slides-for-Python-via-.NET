@@ -18,7 +18,7 @@ def fill_shapes_picture(global_opts):
         shape.fill_format.picture_fill_format.picture_fill_mode = slides.PictureFillMode.TILE
 
         # Set the picture
-        img = drawing.Bitmap(global_opts.data_dir + "image2.jpg")
+        img = slides.Images.from_file(global_opts.data_dir + "image2.jpg")
         imgx = pres.images.add_image(img)
         shape.fill_format.picture_fill_format.picture.image = imgx
 

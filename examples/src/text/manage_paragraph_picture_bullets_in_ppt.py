@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def manage_paragraph_picture_bullets_in_ppt(global_opts):
@@ -8,7 +7,7 @@ def manage_paragraph_picture_bullets_in_ppt(global_opts):
         slide = presentation.slides[0]
 
         # Instantiate the image for bullets
-        image = drawing.Bitmap(global_opts.data_dir + "bullets.png")
+        image = slides.Images.from_file(global_opts.data_dir + "bullets.png")
         ippx_image = presentation.images.add_image(image)
 
         # Adding and accessing Autoshape

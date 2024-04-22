@@ -9,7 +9,7 @@ def add_stretch_offset_for_image_fill(global_opts):
         slide = pres.slides[0]
 
         # Instantiate the Image class
-        img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+        img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
         imgx = pres.images.add_image(img)
 
         # Add Picture Frame with height and width equivalent of Picture

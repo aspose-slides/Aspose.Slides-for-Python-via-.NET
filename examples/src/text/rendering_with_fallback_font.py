@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def rendering_with_fallback_font(global_opts):
@@ -26,4 +25,4 @@ def rendering_with_fallback_font(global_opts):
         pres.fonts_manager.font_fall_back_rules_collection = rules_list
 
         # Rendering of thumbnail with using of initialized rules collection and saving to PNG
-        pres.slides[0].get_thumbnail(1, 1).save(global_opts.out_dir + "text_font_fall_back_out.png", drawing.imaging.ImageFormat.png)
+        pres.slides[0].get_image(1, 1).save(global_opts.out_dir + "text_font_fall_back_out.png", slides.ImageFormat.PNG)
