@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def create_smart_art_child_note_thumbnail(global_opts):
@@ -12,7 +11,7 @@ def create_smart_art_child_note_thumbnail(global_opts):
         node = smart.nodes[1]
 
         # Get thumbnail
-        bmp = node.shapes[0].get_image()
+        image = node.shapes[0].get_image()
 
         # Save thumbnail
-        bmp.save(global_opts.out_dir + "shapes_create_smartart_thumbnail_out.jpeg", slides.ImageFormat.JPEG)
+        image.save(global_opts.out_dir + "shapes_create_smartart_thumbnail_out.jpeg", slides.ImageFormat.JPEG)
