@@ -12,10 +12,12 @@ from .convert_to_html5_notes_comments import convert_to_html5_notes_comments
 from .convert_to_html5 import convert_to_html5
 from .convert_to_markdown import convert_to_markdown
 from .convert_to_pdf_compliance import convert_to_pdf_compliance
+from .convert_to_pdf_unsupported_font_styles import convert_to_pdf_unsupported_font_styles
 from .convert_to_pdf_with_hidden_slides import convert_to_pdf_hidden_slides
 from .convert_to_pdf_with_pdf_compliance_a1a_a1b_ua import convert_to_pdf_with_compliance
 from .convert_to_pdf import convert_to_pdf
 from .convert_to_swf import convert_to_swf
+from .convert_to_xml import convert_to_xml
 from .convert_whole_presentation_to_html_with_media_files import convert_to_html_with_media
 from .convert_with_custom_size import convert_to_tiff_custom_size
 from .convert_with_note_to_tiff import convert_to_tiff_with_notes
@@ -58,8 +60,10 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_pdf_compliance(global_opts)
     convert_to_pdf_hidden_slides(global_opts)
     convert_to_pdf_with_compliance(global_opts)
+    convert_to_pdf_unsupported_font_styles(global_opts)
     convert_to_pdf(global_opts)
     convert_to_swf(global_opts)
+    convert_to_xml(global_opts)
     convert_to_html_with_media(global_opts)
     convert_to_tiff_custom_size(global_opts)
     convert_to_tiff_with_notes(global_opts)
