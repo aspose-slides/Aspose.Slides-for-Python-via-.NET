@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def rule_based_fonts_replacement(global_opts):
@@ -22,7 +21,7 @@ def rule_based_fonts_replacement(global_opts):
         presentation.fonts_manager.font_subst_rule_list = font_subst_rule_collection
 
         # Arial font will be used instead of SomeRareFont when inaccessible
-        bmp = presentation.slides[0].get_thumbnail(1, 1)
+        bmp = presentation.slides[0].get_image(1, 1)
 
         # Save the image to disk in JPEG format
-        bmp.save(global_opts.out_dir + "text_rule_based_font_replacement_out.jpg", drawing.imaging.ImageFormat.jpeg)
+        bmp.save(global_opts.out_dir + "text_rule_based_font_replacement_out.jpg", slides.ImageFormat.JPEG)

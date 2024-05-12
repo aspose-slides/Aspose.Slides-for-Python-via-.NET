@@ -1,4 +1,3 @@
-from .render_comments import rendering_comments
 from .render_options import rendering_options
 from .rendering_3d import rendering_3d
 from .rendering_emoji import rendering_emoji
@@ -7,7 +6,6 @@ from .set_zoom import rendering_set_zoom
 
 
 def run_rendering_printing_examples(global_opts):
-    rendering_comments(global_opts)
     rendering_options(global_opts)
     rendering_3d(global_opts)
     rendering_emoji(global_opts)

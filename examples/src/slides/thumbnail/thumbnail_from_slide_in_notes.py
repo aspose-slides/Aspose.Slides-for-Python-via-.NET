@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -17,6 +16,6 @@ def thumbnail_from_slide_in_notes(global_opts):
         scale_y = (1.0 / pres.slide_size.size.height) * desired_y
 
         # Create a full scale image
-        bmp = slide.get_thumbnail(scale_x, scale_y)
+        bmp = slide.get_image(scale_x, scale_y)
         # Save the image to disk in JPEG format
-        bmp.save(global_opts.out_dir + "thumbnail_get_from_notes_out.jpg", drawing.imaging.ImageFormat.jpeg)
+        bmp.save(global_opts.out_dir + "thumbnail_get_from_notes_out.jpg", slides.ImageFormat.JPEG)

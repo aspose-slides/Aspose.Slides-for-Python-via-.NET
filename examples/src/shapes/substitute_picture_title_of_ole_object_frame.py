@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def substitute_picture_title_of_ole_object_frame(global_opts):
@@ -16,8 +15,9 @@ def substitute_picture_title_of_ole_object_frame(global_opts):
         oof.is_object_icon = True
 
         # Add image object
-        image = pres.images.add_image(drawing.Bitmap(global_opts.data_dir + "image1.jpg"))
-        oof.substitute_picture_format.picture.image = image
+        img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
+        imgx = pres.images.add_image(img)
+        oof.substitute_picture_format.picture.image = imgx
 
         # Set caption to OLE icon
         oof.substitute_picture_title = "Caption example"

@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -11,7 +10,7 @@ def set_image_as_background(global_opts):
         pres.slides[0].background.fill_format.picture_fill_format.picture_fill_mode = slides.PictureFillMode.STRETCH
 
         # Set the picture
-        img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+        img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
 
         # Add image to presentation's images collection
         imgx = pres.images.add_image(img)

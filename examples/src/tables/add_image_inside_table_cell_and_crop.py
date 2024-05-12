@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def add_image_inside_table_cell_and_crop(global_opts):
@@ -16,7 +15,7 @@ def add_image_inside_table_cell_and_crop(global_opts):
         tbl = slide.shapes.add_table(50, 50, dbl_cols, dbl_rows)
 
         # Creating a Image object to hold the image file
-        image = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+        image = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
 
         # Create an object using the bitmap object
         imgx1 = presentation.images.add_image(image)

@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_marker_options_on_data_point(global_opts):
@@ -22,11 +21,11 @@ def charts_marker_options_on_data_point(global_opts):
 		chart.chart_data.series.add(fact.get_cell(default_worksheet_index, 1, 1, "Series 1"), chart.type)
 		
 		# Set the picture
-		img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+		img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
 		imgx1 = pres.images.add_image(img)
 
 		# Set the picture
-		img2 = drawing.Bitmap(global_opts.data_dir + "image2.jpg")
+		img2 = slides.Images.from_file(global_opts.data_dir + "image2.jpg")
 		imgx2 = pres.images.add_image(img2)
 
 		# Take first chart series

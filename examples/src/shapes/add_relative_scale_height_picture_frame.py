@@ -1,12 +1,11 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def add_relative_scale_height_picture_frame(global_opts):
     # Instantiate presentation object
     with slides.Presentation() as presentation:
         # Load Image to be added in presentation image collection
-        img = drawing.Bitmap(global_opts.data_dir + "image1.jpg")
+        img = slides.Images.from_file(global_opts.data_dir + "image1.jpg")
         image = presentation.images.add_image(img)
 
         # Add picture frame to slide
