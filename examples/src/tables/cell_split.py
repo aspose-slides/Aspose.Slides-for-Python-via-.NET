@@ -9,8 +9,8 @@ def cell_split(global_opts):
         slide = presentation.slides[0]
 
         # Define columns with widths and rows with heights
-        dbl_cols = [ 70, 70, 70, 70 ]
-        dbl_rows = [ 70, 70, 70, 70 ]
+        dbl_cols = [70, 70, 70, 70]
+        dbl_rows = [70, 70, 70, 70]
 
         # Add table shape to slide
         table = slide.shapes.add_table(100, 50, dbl_cols, dbl_rows)

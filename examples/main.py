@@ -24,6 +24,7 @@ def main():
     run_shapes_examples(global_opts)
     run_slides_examples(global_opts)
     run_smart_arts_examples(global_opts)
+    run_tables_examples(global_opts)
     run_text_examples(global_opts)
     run_vba_examples(global_opts)
 

@@ -14,6 +14,7 @@ from .set_first_row_as_header import set_first_row_as_header
 from .set_text_formatting_inside_table import set_text_formatting_inside_table
 from .standard_tables import standard_tables
 from .table_from_scratch import table_from_scratch
+from .table_transparency import table_transparency
 from .table_with_cell_borders import table_with_cell_borders
 from .text_formatting_inside_table_column import text_formatting_inside_table_column
 from .text_formatting_inside_table_row import text_formatting_inside_table_row
@@ -37,6 +38,7 @@ def run_tables_examples(global_opts):
     set_text_formatting_inside_table(global_opts)
     standard_tables(global_opts)
     table_from_scratch(global_opts)
+    table_transparency(global_opts)
     table_with_cell_borders(global_opts)
     text_formatting_inside_table_column(global_opts)
     text_formatting_inside_table_row(global_opts)
