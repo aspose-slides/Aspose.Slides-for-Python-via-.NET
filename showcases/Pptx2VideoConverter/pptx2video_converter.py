@@ -4,7 +4,6 @@ import subprocess
 import argparse
 
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 class Pptx2VideoConverter:
@@ -29,7 +28,7 @@ class Pptx2VideoConverter:
             for frame_args in frames_generator.enumerate_frames(self.presentation.slides):
                 image_file_name = self._IMAGE_FILE_TEMPLATE % frame_args.frames_generator.frame_index
                 full_image_path = os.path.join(self.temp_folder_path, image_file_name)
-                frame_args.get_frame().save(full_image_path, drawing.imaging.ImageFormat.png)
+                frame_args.get_frame().save(full_image_path, slides.ImageFormat.PNG)
 
     def run_ffmpeg(self):
         file_mask = os.path.join(self.temp_folder_path, self._IMAGE_FILE_TEMPLATE)
