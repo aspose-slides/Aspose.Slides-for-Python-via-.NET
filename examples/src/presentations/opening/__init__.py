@@ -1,3 +1,4 @@
+from .delete_embedded_binary_objects import delete_embedded_binary_objects
 from .get_file_format import get_file_format
 from .get_position_coordinates_of_portion import get_position_coordinates_of_portion
 from .get_rectangular_coordinates_of_paragraph import get_rectangular_coordinates_of_paragraph
@@ -9,6 +10,7 @@ from .set_access_permissions_to_pdf import open_set_access_permissions_to_pdf
 
 
 def run_presentation_opening_examples(global_opts):
+    delete_embedded_binary_objects(global_opts)
     get_file_format(global_opts)
     get_position_coordinates_of_portion(global_opts)
     get_rectangular_coordinates_of_paragraph(global_opts)

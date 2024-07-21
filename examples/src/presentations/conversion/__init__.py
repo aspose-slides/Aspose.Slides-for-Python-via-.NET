@@ -31,6 +31,7 @@ from .custom_options_pdf_conversion import convert_to_pdf_custom_options
 from .export_ink_example import export_ink_example
 from .export_math_paragraph_to_latex import export_math_paragraph_to_latex
 from .export_math_paragraph_to_math_ml import export_math_paragraph_to_math_ml
+from .export_ole_example import export_ole_example
 from .export_shape_to_svg import export_shape_to_svg
 from .export_to_html_with_responsive_layout import convert_to_html_with_responsive_layout
 from .fodp_format_conversion import convert_to_fodp
@@ -76,6 +77,7 @@ def run_presentation_conversion_examples(global_opts):
     export_ink_example(global_opts)
     export_math_paragraph_to_latex()
     export_math_paragraph_to_math_ml(global_opts)
+    export_ole_example(global_opts)
     export_shape_to_svg(global_opts)
     convert_to_html_with_responsive_layout(global_opts)
     convert_to_fodp(global_opts)
