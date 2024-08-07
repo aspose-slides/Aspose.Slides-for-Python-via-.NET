@@ -64,6 +64,7 @@ from .simple_rectangle import simple_rectangle
 from .sketched_shapes import sketched_shapes
 from .stretch_offset_left_for_picture_frame import stretch_offset_left_for_picture_frame
 from .substitute_picture_title_of_ole_object_frame import substitute_picture_title_of_ole_object_frame
+from .tile_picture_fill_format_example import tile_picture_fill_format_example
 
 
 def run_shapes_examples(global_opts):
@@ -134,3 +135,4 @@ def run_shapes_examples(global_opts):
     sketched_shapes(global_opts)
     stretch_offset_left_for_picture_frame(global_opts)
     substitute_picture_title_of_ole_object_frame(global_opts)
+    tile_picture_fill_format_example(global_opts)

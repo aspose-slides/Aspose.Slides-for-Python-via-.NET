@@ -15,6 +15,8 @@ from .end_para_graph_properties import end_para_graph_properties
 from .exporting_html_text import exporting_html_text
 from .fallback_rules_collection import fallback_rules_collection
 from .find_and_replace_text import find_and_replace_text
+from .font_binary_data_example import font_binary_data_example
+from .font_embedding_level_example import font_embedding_level_example
 from .font_family_example import font_family_example
 from .font_properties_example import font_properties_example
 from .get_effective_values import get_effective_values
@@ -77,6 +79,8 @@ def run_text_examples(global_opts):
     exporting_html_text(global_opts)
     fallback_rules_collection()
     find_and_replace_text(global_opts)
+    font_binary_data_example(global_opts)
+    font_embedding_level_example(global_opts)
     font_family_example(global_opts)
     font_properties_example(global_opts)
     get_effective_values(global_opts)
