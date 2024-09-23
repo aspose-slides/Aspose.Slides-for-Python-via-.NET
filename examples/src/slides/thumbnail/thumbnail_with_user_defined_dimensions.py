@@ -17,7 +17,7 @@ def thumbnail_with_user_defined_dimensions(global_opts):
         scale_y = (1.0 / pres.slide_size.size.height) * desired_y
 
         # Create a full scale image
-        bmp = slide.get_image(scale_x, scale_y)
+        img = slide.get_image(scale_x, scale_y)
 
         # Save the image to disk in JPEG format
-        bmp.save(global_opts.out_dir + "thumbnail_user_defined_dimensions_out.jpg", slides.ImageFormat.JPEG)
+        img.save(global_opts.out_dir + "thumbnail_user_defined_dimensions_out.jpg", slides.ImageFormat.JPEG)

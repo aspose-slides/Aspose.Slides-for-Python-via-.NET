@@ -9,7 +9,7 @@ def embedded_video_frame(global_opts):
 
         # Embed video inside presentation
         with open(global_opts.data_dir + "video.mp4", "rb") as in_file:
-            video = pres.videos.add_video(in_file)
+            video = pres.videos.add_video(in_file, slides.LoadingStreamBehavior.READ_STREAM_AND_RELEASE)
 
             # Add Video Frame
             vf = slide.shapes.add_video_frame(50, 150, 300, 350, video)

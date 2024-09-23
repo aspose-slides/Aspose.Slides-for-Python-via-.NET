@@ -8,12 +8,14 @@ from .add_relative_scale_height_picture_frame import add_relative_scale_height_p
 from .add_stretch_offset_for_image_fill import add_stretch_offset_for_image_fill
 from .add_video_frame_from_web_source import add_video_frame_from_web_source
 from .add_video_frame import add_video_frame
+from .animation_float_up_down import animation_float_up_down
 from .animation_target_shapes import animation_target_shapes
 from .animations_on_shapes import animation_on_shapes
 from .apply_3d_rotation_effect_on_shape import apply_3d_rotation_effect_on_shape
 from .apply_bevel_effects import apply_bevel_effects
 from .change_shape_order import change_shape_order
 from .clone_shapes import clone_shapes
+from .compress_image_example import compress_image_example
 from .connect_shape_using_connection_site import connect_shape_using_connection_site
 from .connect_shapes_using_connectors import connect_shapes_using_connectors
 from .connector_line_angle import connector_line_angle
@@ -79,12 +81,14 @@ def run_shapes_examples(global_opts):
     # Exception with HTTP error 404 on image link
     # add_video_frame_from_web_source(global_opts)
     add_video_frame(global_opts)
+    animation_float_up_down()
     animation_target_shapes(global_opts)
     animation_on_shapes(global_opts)
     apply_3d_rotation_effect_on_shape(global_opts)
     apply_bevel_effects(global_opts)
     change_shape_order(global_opts)
     clone_shapes(global_opts)
+    compress_image_example(global_opts)
     connect_shape_using_connection_site(global_opts)
     connect_shapes_using_connectors(global_opts)
     connector_line_angle(global_opts)
