@@ -18,3 +18,6 @@ def run_slides_examples(global_opts):
     run_slides_layout_examples(global_opts)
     run_slides_media_examples(global_opts)
     run_slides_notes_examples(global_opts)
+    run_slides_thumbnail_examples(global_opts)
+    run_slides_transition_examples(global_opts)
+    run_slides_views_examples(global_opts)
