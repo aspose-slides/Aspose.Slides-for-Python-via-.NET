@@ -14,8 +14,9 @@ def convert_to_pdf_notes(global_opts):
         aux_presentation.slide_size.set_size(612, 792, slides.SlideSizeScaleType.ENSURE_FIT)
 
         pdf_options = slides.export.PdfOptions()
-        options = pdf_options.notes_comments_layouting
-        options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        slides_layout_options = slides.export.NotesCommentsLayoutingOptions()
+        slides_layout_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        pdf_options.slides_layout_options = slides_layout_options
 
         aux_presentation.save(global_opts.out_dir + "convert_to_pdf_notes_out.pdf", slides.export.SaveFormat.PDF,
                               pdf_options)

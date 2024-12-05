@@ -11,16 +11,17 @@ def convert_to_tiff_custom_size(global_opts):
         # Setting compression type
         tiff_options.compression_type = slides.export.TiffCompressionTypes.DEFAULT
 
-        notes_options = tiff_options.notes_comments_layouting
-        notes_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
         # Compression Types
-
         # Default - Specifies the default compression scheme (LZW).
         # None - Specifies no compression.
         # CCITT3
         # CCITT4
         # LZW
         # RLE
+
+        slides_layout_options = slides.export.NotesCommentsLayoutingOptions()
+        slides_layout_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        tiff_options.slides_layout_options = slides_layout_options
 
         # Depth depends on the compression type and cannot be set manually.
         # Resolution unit  is always equal to “2” (dots per inch)

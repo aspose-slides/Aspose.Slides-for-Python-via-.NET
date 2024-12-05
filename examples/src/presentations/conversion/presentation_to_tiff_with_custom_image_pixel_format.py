@@ -7,8 +7,9 @@ def convert_to_tiff_image_pixel_format(global_opts):
         tiff_options = slides.export.TiffOptions()
         tiff_options.pixel_format = slides.export.ImagePixelFormat.FORMAT_8BPP_INDEXED
 
-        notes_comments_layouting_options = tiff_options.notes_comments_layouting
-        notes_comments_layouting_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        slides_layout_options = slides.export.NotesCommentsLayoutingOptions()
+        slides_layout_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        tiff_options.slides_layout_options = slides_layout_options
 
         """
         ImagePixelFormat contains the following values (as could be seen from documentation):

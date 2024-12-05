@@ -19,8 +19,9 @@ def convert_to_pdf_custom_options(global_opts):
         # Define the PDF standard
         pdf_options.compliance = slides.export.PdfCompliance.PDF15
 
-        notes_comments_layouting_options = pdf_options.notes_comments_layouting
-        notes_comments_layouting_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        slides_layout_options = slides.export.NotesCommentsLayoutingOptions()
+        slides_layout_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        pdf_options.slides_layout_options = slides_layout_options
 
         # Save the presentation to PDF with specified options
         pres.save(global_opts.out_dir + "convert_to_pdf_custom_options_out.pdf", slides.export.SaveFormat.PDF,
