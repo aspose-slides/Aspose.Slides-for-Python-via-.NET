@@ -6,6 +6,7 @@ from .add_blob_to_presentation import props_add_blob_to_presentation
 from .add_custom_document_properties import props_add_custom_document_properties
 from .check_password_example import props_check_password
 from .check_presentation_protection import props_check_presentation_protection
+from .extended_presentation_properties import extended_presentation_properties
 from .grid_properties import grid_properties
 from .guides_properties import guides_properties
 from .insert_svg_into_presentation import insert_svg
@@ -24,6 +25,7 @@ def run_presentation_properties_examples(global_opts):
     props_add_custom_document_properties(global_opts)
     props_check_password(global_opts)
     props_check_presentation_protection(global_opts)
+    extended_presentation_properties(global_opts)
     grid_properties(global_opts)
     guides_properties(global_opts)
     insert_svg(global_opts)

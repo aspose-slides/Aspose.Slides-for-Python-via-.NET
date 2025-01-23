@@ -5,7 +5,9 @@ from .convert_presentation_to_password_protected_pdf import convert_to_password_
 from .convert_presentation_to_responsive_html import convert_to_responsive_html
 from .convert_slides_to_pdf_notes import convert_to_pdf_notes
 from .convert_specific_slide_to_pdf import convert_specific_slide_to_pdf
+from .convert_svg_to_emf import convert_svg_to_emf
 from .convert_to_black_white_tiff import convert_to_black_white_tiff
+from .convert_to_emf import convert_to_emf
 from .convert_to_gif import convert_to_gif
 from .convert_to_handout import convert_to_handout
 from .convert_to_html5_notes_comments import convert_to_html5_notes_comments
@@ -52,7 +54,9 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_responsive_html(global_opts)
     convert_to_pdf_notes(global_opts)
     convert_specific_slide_to_pdf(global_opts)
+    convert_svg_to_emf(global_opts)
     convert_to_black_white_tiff(global_opts)
+    convert_to_emf(global_opts)
     convert_to_gif(global_opts)
     convert_to_handout(global_opts)
     convert_to_html5_notes_comments(global_opts)
