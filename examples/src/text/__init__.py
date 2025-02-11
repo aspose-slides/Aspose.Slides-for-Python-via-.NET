@@ -10,6 +10,7 @@ from .apply_outer_shadow import apply_outer_shadow
 from .bullet_fill_format_effective import bullet_fill_format_effective
 from .custom_rotation_angle_text_frame import custom_rotation_angle_text_frame
 from .default_fonts_example import default_fonts_example
+from .disable_font_ligatures_example import disable_font_ligatures_example
 from .effect_text_box_paragraph import effect_text_box_paragraph
 from .end_para_graph_properties import end_para_graph_properties
 from .exporting_html_text import exporting_html_text
@@ -74,6 +75,7 @@ def run_text_examples(global_opts):
     bullet_fill_format_effective(global_opts)
     custom_rotation_angle_text_frame(global_opts)
     default_fonts_example(global_opts)
+    disable_font_ligatures_example(global_opts)
     effect_text_box_paragraph(global_opts)
     end_para_graph_properties(global_opts)
     exporting_html_text(global_opts)
