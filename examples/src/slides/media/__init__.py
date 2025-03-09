@@ -4,6 +4,7 @@ from .extract_video import extract_video
 from .fade_in_out_duration_audio_example import fade_in_out_duration_audio_example
 from .stop_previous_sound_example import stop_previous_sound_example
 from .trimming_time_audio_example import trimming_time_audio_example
+from .video_captions_example import video_captions_example
 from .volume_audio_example import volume_audio_example
 
 
@@ -14,4 +15,5 @@ def run_slides_media_examples(global_opts):
     fade_in_out_duration_audio_example(global_opts)
     stop_previous_sound_example(global_opts)
     trimming_time_audio_example(global_opts)
+    video_captions_example(global_opts)
     volume_audio_example(global_opts)

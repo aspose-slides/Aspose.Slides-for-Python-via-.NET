@@ -56,6 +56,7 @@ from .set_transparency_of_text_in_shadow import set_transparency_of_text_in_shad
 from .setting_presentation_language_and_shape_text import setting_presentation_language_and_shape_text
 from .shadow_effects import shadow_effects
 from .specify_default_text_language import specify_default_text_language
+from .split_text_by_columns_example import split_text_by_columns_example
 from .text_box_hyperlink import text_box_hyperlink
 from .text_box_on_slide_program import text_box_on_slide_program
 from .use_custom_fonts import use_custom_fonts
@@ -121,6 +122,7 @@ def run_text_examples(global_opts):
     setting_presentation_language_and_shape_text(global_opts)
     shadow_effects(global_opts)
     specify_default_text_language()
+    split_text_by_columns_example(global_opts)
     text_box_hyperlink(global_opts)
     text_box_on_slide_program(global_opts)
     use_custom_fonts(global_opts)

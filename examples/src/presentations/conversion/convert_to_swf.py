@@ -7,12 +7,12 @@ def convert_to_swf(global_opts):
         swf_options = slides.export.SwfOptions()
         swf_options.viewer_included = False
 
-        notes_options = swf_options.notes_comments_layouting
-        notes_options.notes_position = slides.export.NotesPositions.BOTTOM_FULL
+        notes_comments_layouting = swf_options.notes_comments_layouting
+        notes_comments_layouting.notes_position = slides.export.NotesPositions.BOTTOM_FULL
 
         # Saving presentation and notes pages
-        presentation.save(global_opts.out_dir + "convet_to_swf_out.swf", slides.export.SaveFormat.SWF, swf_options)
+        presentation.save(global_opts.out_dir + "convert_to_swf_out.swf", slides.export.SaveFormat.SWF, swf_options)
 
         swf_options.viewer_included = True
-        presentation.save(global_opts.out_dir + "convet_to_swf_with_notes_out.swf", slides.export.SaveFormat.SWF,
+        presentation.save(global_opts.out_dir + "convert_to_swf_with_notes_out.swf", slides.export.SaveFormat.SWF,
                           swf_options)
