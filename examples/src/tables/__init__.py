@@ -22,6 +22,7 @@ from .vertically_align_text import vertically_align_text
 
 
 def run_tables_examples(global_opts):
+    print("===== Tables examples =====")
     add_image_inside_table_cell(global_opts)
     add_image_inside_table_cell_and_crop(global_opts)
     cell_split(global_opts)

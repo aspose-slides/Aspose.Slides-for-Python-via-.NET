@@ -6,6 +6,7 @@ from .set_zoom import rendering_set_zoom
 
 
 def run_rendering_printing_examples(global_opts):
+    print("===== Rendering & Printing examples =====")
     rendering_options(global_opts)
     rendering_3d(global_opts)
     #rendering_emoji(global_opts)

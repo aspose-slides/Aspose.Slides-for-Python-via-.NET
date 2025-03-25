@@ -14,6 +14,7 @@ from .support_of_digital_signature import save_add_digital_signature
 
 
 def run_presentation_saving_examples(global_opts):
+    print("======= Presentation Saving =======")
     save_add_blob_image(global_opts)
     save_convert_svg_to_group_of_shapes(global_opts)
     image_quality_example(global_opts)

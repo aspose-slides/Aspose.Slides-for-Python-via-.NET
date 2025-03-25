@@ -11,6 +11,7 @@ from .views import *
 
 
 def run_slides_examples(global_opts):
+    print("===== Slides examples =====")
     run_slides_background_examples(global_opts)
     run_slides_comments_examples(global_opts)
     run_slides_crud_examples(global_opts)

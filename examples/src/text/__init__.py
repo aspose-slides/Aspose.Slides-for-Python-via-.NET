@@ -64,6 +64,7 @@ from .word_art_example import word_art_example
 
 
 def run_text_examples(global_opts):
+    print("===== Text examples =====")
     add_column_in_text_boxes(global_opts)
     add_columns_in_text_frame(global_opts)
     add_custom_prompt_text(global_opts)

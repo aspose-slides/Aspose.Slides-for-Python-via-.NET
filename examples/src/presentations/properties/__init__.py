@@ -17,6 +17,7 @@ from .update_presentation_properties_using_new_template import props_update_prop
 
 
 def run_presentation_properties_examples(global_opts):
+    print("======= Presentation Properties =======")
     props_access_builtin_properties(global_opts)
     props_access_layout_formats(global_opts)
     props_access_modifying_properties(global_opts)

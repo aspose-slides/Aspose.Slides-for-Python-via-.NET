@@ -4,6 +4,7 @@ from .remove_vba_macros import remove_vba_macros
 
 
 def run_vba_examples(global_opts):
+    print("===== VBA examples =====")
     add_vba_macros(global_opts)
     extracting_vba_macros(global_opts)
     remove_vba_macros(global_opts)

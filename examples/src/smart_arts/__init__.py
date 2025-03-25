@@ -22,6 +22,7 @@ from .remove_node_specific_position import remove_node_specific_position
 
 
 def run_smart_arts_examples(global_opts):
+    print("===== SmartArt examples =====")
     access_child_node_specific_position()
     access_child_nodes(global_opts)
     access_smart_art(global_opts)

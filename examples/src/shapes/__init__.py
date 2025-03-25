@@ -70,6 +70,7 @@ from .tile_picture_fill_format_example import tile_picture_fill_format_example
 
 
 def run_shapes_examples(global_opts):
+    print("===== Shapes examples =====")
     shapes_accessing_ole_object_frame(global_opts)
     shapes_accessing_alt_text(global_opts)
     shapes_add_arrow_shaped_line(global_opts)

@@ -82,6 +82,7 @@ from .worksheet_example import charts_worksheets_example
 
 
 def run_charts_examples(global_opts):
+    print("===== Charts examples =====")
     charts_add_color_to_data_points(global_opts)
     charts_add_custom_error(global_opts)
     charts_add_doughnut_callout(global_opts)

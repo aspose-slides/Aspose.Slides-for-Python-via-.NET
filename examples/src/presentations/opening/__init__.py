@@ -10,6 +10,7 @@ from .set_access_permissions_to_pdf import open_set_access_permissions_to_pdf
 
 
 def run_presentation_opening_examples(global_opts):
+    print("======= Presentation Opening =======")
     delete_embedded_binary_objects(global_opts)
     get_file_format(global_opts)
     get_position_coordinates_of_portion(global_opts)
