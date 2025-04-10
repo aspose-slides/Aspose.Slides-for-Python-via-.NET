@@ -18,3 +18,6 @@ def apply_metered_licensing():
 
     # Display information
     print("Amount Consumed After: " + str(amount_after))
+
+    # Print status of a Metered license.
+    print("Is metered license accepted: " + str(metered.is_metered_licensed()))

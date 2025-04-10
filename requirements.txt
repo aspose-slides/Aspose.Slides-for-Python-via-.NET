@@ -1,1 +1,1 @@
-Aspose.Slides==25.3.0
+aspose-slides==25.4.0

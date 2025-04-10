@@ -8,6 +8,7 @@ from .add_relative_scale_height_picture_frame import add_relative_scale_height_p
 from .add_stretch_offset_for_image_fill import add_stretch_offset_for_image_fill
 from .add_video_frame_from_web_source import add_video_frame_from_web_source
 from .add_video_frame import add_video_frame
+from .adjust_value_type_example import adjust_value_type_example
 from .animation_float_up_down import animation_float_up_down
 from .animation_target_shapes import animation_target_shapes
 from .animations_on_shapes import animation_on_shapes
@@ -82,6 +83,7 @@ def run_shapes_examples(global_opts):
     # Exception with HTTP error 404 on image link
     # add_video_frame_from_web_source(global_opts)
     add_video_frame(global_opts)
+    adjust_value_type_example(global_opts)
     animation_float_up_down()
     animation_target_shapes(global_opts)
     animation_on_shapes(global_opts)
