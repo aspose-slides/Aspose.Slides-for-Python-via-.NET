@@ -55,6 +55,7 @@ from .interop_shape_id import interop_shape_id
 from .math_shape_get_children import math_shape_get_children
 from .mathematical_shape import mathematical_shape
 from .picture_frame_formatting import picture_frame_formatting
+from .picture_frame_is_cameo_example import picture_frame_is_cameo_example
 from .remove_shape import remove_shape
 from .rotating_shapes import rotating_shapes_example
 from .set_alternative_text import set_alternative_text
@@ -130,6 +131,7 @@ def run_shapes_examples(global_opts):
     math_shape_get_children(global_opts)
     mathematical_shape(global_opts)
     picture_frame_formatting(global_opts)
+    picture_frame_is_cameo_example(global_opts)
     remove_shape(global_opts)
     rotating_shapes_example(global_opts)
     set_alternative_text(global_opts)

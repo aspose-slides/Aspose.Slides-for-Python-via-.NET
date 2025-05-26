@@ -11,8 +11,10 @@ from .convert_to_emf import convert_to_emf
 from .convert_to_gif import convert_to_gif
 from .convert_to_handout import convert_to_handout
 from .convert_to_html5_notes_comments import convert_to_html5_notes_comments
+from .convert_to_html5_handout import convert_to_html5_handout
 from .convert_to_html5 import convert_to_html5
 from .convert_to_markdown import convert_to_markdown
+from .convert_to_markdown_options import convert_to_markdown_options
 from .convert_to_pdf_compliance import convert_to_pdf_compliance
 from .convert_to_pdf_unsupported_font_styles import convert_to_pdf_unsupported_font_styles
 from .convert_to_pdf_with_hidden_slides import convert_to_pdf_hidden_slides
@@ -37,6 +39,7 @@ from .export_ole_example import export_ole_example
 from .export_shape_to_svg import export_shape_to_svg
 from .export_to_html_with_responsive_layout import convert_to_html_with_responsive_layout
 from .fodp_format_conversion import convert_to_fodp
+from .import_html_slide_example import import_html_slide_example
 from .odp_to_pptx import convert_to_odp
 from .pdf_import_example import import_from_pdf
 from .ppt_to_pptx import convert_to_ppt
@@ -61,8 +64,10 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_gif(global_opts)
     convert_to_handout(global_opts)
     convert_to_html5_notes_comments(global_opts)
+    convert_to_html5_handout(global_opts)
     convert_to_html5(global_opts)
     convert_to_markdown(global_opts)
+    convert_to_markdown_options(global_opts)
     convert_to_pdf_compliance(global_opts)
     convert_to_pdf_hidden_slides(global_opts)
     convert_to_pdf_with_compliance(global_opts)
@@ -88,6 +93,7 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_fodp(global_opts)
     convert_to_odp(global_opts)
     import_from_pdf(global_opts)
+    import_html_slide_example(global_opts)
     convert_to_ppt(global_opts)
     #convert_to_tiff_image_pixel_format(global_opts)
     convert_to_tiff(global_opts)
