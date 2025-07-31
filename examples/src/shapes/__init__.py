@@ -51,6 +51,7 @@ from .get_light_rig_effective_data import get_light_rig_effective_data
 from .get_shape_bevel_effective_data import get_shape_bevel_effective_data
 from .hiding_shapes import hiding_shapes
 from .ink_management_example import ink_management_example
+from .ink_effects_example import ink_effects_example
 from .interop_shape_id import interop_shape_id
 from .math_shape_get_children import math_shape_get_children
 from .mathematical_shape import mathematical_shape
@@ -126,6 +127,7 @@ def run_shapes_examples(global_opts):
     get_light_rig_effective_data(global_opts)
     get_shape_bevel_effective_data(global_opts)
     hiding_shapes(global_opts)
+    ink_effects_example(global_opts)
     ink_management_example(global_opts)
     interop_shape_id(global_opts)
     math_shape_get_children(global_opts)
