@@ -14,6 +14,7 @@ from .animation_target_shapes import animation_target_shapes
 from .animations_on_shapes import animation_on_shapes
 from .apply_3d_rotation_effect_on_shape import apply_3d_rotation_effect_on_shape
 from .apply_bevel_effects import apply_bevel_effects
+from .brightness_contrast_effect_example import brightness_contrast_effect_example
 from .change_shape_order import change_shape_order
 from .clone_shapes import clone_shapes
 from .compress_image_example import compress_image_example
@@ -91,6 +92,7 @@ def run_shapes_examples(global_opts):
     animation_on_shapes(global_opts)
     apply_3d_rotation_effect_on_shape(global_opts)
     apply_bevel_effects(global_opts)
+    brightness_contrast_effect_example(global_opts)
     change_shape_order(global_opts)
     clone_shapes(global_opts)
     compress_image_example(global_opts)

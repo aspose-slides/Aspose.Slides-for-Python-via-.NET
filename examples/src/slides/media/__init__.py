@@ -1,3 +1,4 @@
+from .audio_captions_example import audio_captions_example
 from .extract_audio import extract_audio
 from .extract_audio_from_hyperlink import extract_audio_from_hyperlink
 from .extract_video import extract_video
@@ -9,6 +10,7 @@ from .volume_audio_example import volume_audio_example
 
 
 def run_slides_media_examples(global_opts):
+    audio_captions_example(global_opts)
     extract_audio(global_opts)
     extract_audio_from_hyperlink(global_opts)
     extract_video(global_opts)

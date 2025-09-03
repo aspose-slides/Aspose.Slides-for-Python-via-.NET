@@ -22,6 +22,7 @@ from .font_family_example import font_family_example
 from .font_properties_example import font_properties_example
 from .get_effective_values import get_effective_values
 from .get_fonts_folder import get_fonts_folder
+from .get_placeholder_text_example import get_placeholder_text_example
 from .get_text_style_effective_data import get_text_style_effective_data
 from .get_text_from_smart_art_node import get_text_from_smart_art_node
 from .get_text_style_effective_data import get_text_style_effective_data
@@ -34,6 +35,7 @@ from .load_external_font_example import load_external_font_example
 from .manage_embedded_fonts import manage_embedded_fonts
 from .manage_paragraph_font_properties import manage_paragraph_font_properties
 from .manage_paragraph_picture_bullets_in_ppt import manage_paragraph_picture_bullets_in_ppt
+from .manage_script_fonts_example import manage_script_fonts_example
 from .multiple_paragraphs import multiple_paragraphs
 from .multi_level_bullets import multi_level_bullets
 from .number_lines_in_paragraph import number_lines_in_paragraph
@@ -89,6 +91,7 @@ def run_text_examples(global_opts):
     font_properties_example(global_opts)
     get_effective_values(global_opts)
     get_fonts_folder()
+    get_placeholder_text_example()
     get_text_style_effective_data(global_opts)
     get_text_from_smart_art_node(global_opts)
     get_text_style_effective_data(global_opts)
@@ -101,6 +104,7 @@ def run_text_examples(global_opts):
     manage_embedded_fonts(global_opts)
     manage_paragraph_font_properties(global_opts)
     manage_paragraph_picture_bullets_in_ppt(global_opts)
+    manage_script_fonts_example()
     multiple_paragraphs(global_opts)
     multi_level_bullets(global_opts)
     number_lines_in_paragraph()

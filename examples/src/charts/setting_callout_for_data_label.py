@@ -47,8 +47,8 @@ def charts_setting_callout_for_data_label(global_opts):
 					lbl.data_label_format.show_leader_lines = True
 					lbl.data_label_format.show_label_as_data_callout = False
 					chart.validate_chart_layout()
-					lbl.as_i_layoutable.x = lbl.as_i_layoutable.x + 0.5
-					lbl.as_i_layoutable.y = lbl.as_i_layoutable.y + 0.5
+					lbl.x = lbl.x + 0.5
+					lbl.y = lbl.y + 0.5
 				i += 1
 			category_index += 1
 		pres.save(global_opts.out_dir + "charts_setting_callout_for_data_label_out.pptx", slides.export.SaveFormat.PPTX)

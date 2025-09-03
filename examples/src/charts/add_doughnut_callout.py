@@ -48,8 +48,8 @@ def charts_add_doughnut_callout(global_opts):
 					lbl.data_label_format.show_leader_lines = True
 					lbl.data_label_format.show_label_as_data_callout = False
 					chart.validate_chart_layout()
-					lbl.as_i_layoutable.x = lbl.as_i_layoutable.x + 0.5
-					lbl.as_i_layoutable.y = lbl.as_i_layoutable.y + 0.5
+					lbl.x = lbl.x + 0.5
+					lbl.y = lbl.y + 0.5
 
 				i += 1
 

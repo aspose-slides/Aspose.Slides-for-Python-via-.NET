@@ -29,6 +29,7 @@ from .display_percentage_as_labels import charts_display_percentage_as_labels
 from .doughnut_chart_hole import charts_doughnut_chart_hole
 from .edit_chart_data_in_external_workbook import charts_edit_chart_data_in_external_workbook
 from .existing_chart import charts_existing_chart
+from .extract_excel_data_example import charts_extract_excel_data_example
 from .font_properties_for_chart import charts_font_properties_for_chart
 from .font_properties_for_invidual_legend import charts_font_properties_for_invidual_legend
 from .font_size_legend import charts_font_size_legend
@@ -39,6 +40,7 @@ from .get_values_and_unit_scale_from_axis import charts_get_values_and_unit_scal
 from .get_width_height_from_chart_plot_area import charts_get_width_height_from_chart_plot_area
 from .hide_information_from_chart import charts_hide_information_from_chart
 from .histogram_chart import charts_histogram_chart
+from .importing_charts_from_excel_example import charts_importing_charts_from_excel_example
 from .invert_if_negative_for_individual_series import charts_series_invert_if_negative
 from .map_chart import charts_map_chart
 from .multi_category_chart import charts_multi_category_chart
@@ -113,6 +115,7 @@ def run_charts_examples(global_opts):
     charts_doughnut_chart_hole(global_opts)
     # charts_edit_chart_data_in_external_workbook(options)
     charts_existing_chart(global_opts)
+    charts_extract_excel_data_example(global_opts)
     charts_font_properties_for_chart(global_opts)
     charts_font_properties_for_invidual_legend(global_opts)
     charts_font_size_legend(global_opts)
@@ -123,6 +126,7 @@ def run_charts_examples(global_opts):
     charts_get_width_height_from_chart_plot_area(global_opts)
     charts_hide_information_from_chart(global_opts)
     charts_histogram_chart(global_opts)
+    charts_importing_charts_from_excel_example(global_opts)
     charts_series_invert_if_negative(global_opts)
     charts_map_chart(global_opts)
     charts_multi_category_chart(global_opts)
