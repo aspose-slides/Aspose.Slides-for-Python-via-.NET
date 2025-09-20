@@ -77,6 +77,7 @@ from .support_for_precision_of_data import charts_precision_of_data
 from .support_for_stock_chart import charts_stock_chart
 from .support_of_bubble_size_representation import charts_bubble_size_representation
 from .time_unit_type_enum import charts_time_unit_type_enum
+from .title_legend_chart_example import title_legend_chart_example
 from .tree_map_chart import charts_tree_map_chart
 from .using_workbook_chart_cell_as_data_label import charts_workbook_as_datalabel
 from .validate_chart_layout_added import charts_validate_chart_layout
@@ -163,6 +164,7 @@ def run_charts_examples(global_opts):
     charts_stock_chart(global_opts)
     charts_bubble_size_representation(global_opts)
     charts_time_unit_type_enum(global_opts)
+    title_legend_chart_example()
     charts_tree_map_chart(global_opts)
     charts_workbook_as_datalabel(global_opts)
     charts_validate_chart_layout(global_opts)
