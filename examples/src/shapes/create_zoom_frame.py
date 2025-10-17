@@ -31,7 +31,7 @@ def create_zoom_frame(global_opts):
 
         # Add ZoomFrame objects with custom image
         # Create a new image for the zoom object
-        image = pres.images.add_image(drawing.Image.from_file(global_opts.data_dir + "image1.jpg"))
+        image = pres.images.add_image(slides.Images.from_file(global_opts.data_dir + "image1.jpg"))
         zoom_frame2 = pres.slides[0].shapes.add_zoom_frame(200, 250, 250, 100, slide3, image)
 
         # Set a zoom frame format for the zoomFrame2 object

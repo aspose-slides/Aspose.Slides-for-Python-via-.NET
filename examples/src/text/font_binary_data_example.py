@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def font_binary_data_example(global_opts):
@@ -8,7 +7,7 @@ def font_binary_data_example(global_opts):
         fonts = pres.fonts_manager.get_fonts()
 
         # Get the byte array representing the regular style of the first font in the presentation
-        font_bytes = pres.fonts_manager.get_font_bytes(fonts[0], drawing.FontStyle.REGULAR)
+        font_bytes = pres.fonts_manager.get_font_bytes(fonts[0], slides.FontStyleType.REGULAR)
 
         # Save font
         with open(global_opts.out_dir + fonts[0].font_name + ".ttf", "wb") as f:
