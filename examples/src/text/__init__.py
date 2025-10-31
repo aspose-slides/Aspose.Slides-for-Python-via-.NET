@@ -1,3 +1,5 @@
+import platform
+
 from .add_column_in_text_boxes import add_column_in_text_boxes
 from .add_columns_in_text_frame import add_columns_in_text_frame
 from .add_custom_prompt_text import add_custom_prompt_text
@@ -70,7 +72,7 @@ def run_text_examples(global_opts):
     add_column_in_text_boxes(global_opts)
     add_columns_in_text_frame(global_opts)
     add_custom_prompt_text(global_opts)
-    add_embedded_fonts(global_opts)
+    if platform.system() == "Windows": add_embedded_fonts(global_opts)
     adding_superscript_and_subscript_text_in_text_frame(global_opts)
     animate_text_type_example(global_opts)
     animation_effect_in_paragraph(global_opts)
@@ -85,8 +87,9 @@ def run_text_examples(global_opts):
     exporting_html_text(global_opts)
     fallback_rules_collection()
     find_and_replace_text(global_opts)
-    font_binary_data_example(global_opts)
-    font_embedding_level_example(global_opts)
+    if platform.system() != "Linux":
+        font_binary_data_example(global_opts)
+        font_embedding_level_example(global_opts)
     font_family_example(global_opts)
     font_properties_example(global_opts)
     get_effective_values(global_opts)

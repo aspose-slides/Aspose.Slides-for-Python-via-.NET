@@ -5,7 +5,7 @@ def tile_picture_fill_format_example(global_opts):
     with slides.Presentation() as pres:
         first_slide = pres.slides[0]
 
-        with slides.Images.from_file(global_opts.data_dir + "image.png") as new_image:
+        with slides.Images.from_file(global_opts.data_dir + "Image.png") as new_image:
             pp_image = pres.images.add_image(new_image)
 
         # Adds the new Rectangle shape

@@ -1,3 +1,5 @@
+import platform
+
 from .conversion_to_tiff_notes import convert_to_tiff_notes
 from .convert_html_embedding_images import convert_html_embedding_images
 from .convert_notes_slide_view_to_pdf import convert_notes_to_pdf
@@ -51,7 +53,7 @@ from .slide_show_media_controls import slide_show_media_controls
 
 def run_presentation_conversion_examples(global_opts):
     print("======= Presentation Conversion =======")
-    convert_to_tiff_notes(global_opts)
+    if platform.system() == "Windows": convert_to_tiff_notes(global_opts)
     #convert_html_embedding_images(global_opts)
     convert_notes_to_pdf(global_opts)
     convert_to_password_protected_pdf(global_opts)
@@ -59,14 +61,14 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_pdf_notes(global_opts)
     convert_specific_slide_to_pdf(global_opts)
     convert_svg_to_emf(global_opts)
-    convert_to_black_white_tiff(global_opts)
+    if platform.system() == "Windows": convert_to_black_white_tiff(global_opts)
     convert_to_emf(global_opts)
     convert_to_gif(global_opts)
     convert_to_handout(global_opts)
     convert_to_html5_notes_comments(global_opts)
     convert_to_html5_handout(global_opts)
     convert_to_html5(global_opts)
-    convert_to_markdown(global_opts)
+    if platform.system() == "Windows": convert_to_markdown(global_opts)
     convert_to_markdown_options(global_opts)
     convert_to_pdf_compliance(global_opts)
     convert_to_pdf_hidden_slides(global_opts)
@@ -77,11 +79,11 @@ def run_presentation_conversion_examples(global_opts):
     convert_to_xml(global_opts)
     convert_to_html_with_media(global_opts)
     #convert_to_tiff_custom_size(global_opts)
-    convert_to_tiff_with_notes(global_opts)
+    if platform.system() == "Windows": convert_to_tiff_with_notes(global_opts)
     convert_to_xps_with_options(global_opts)
     convert_to_xps(global_opts)
     convert_to_html_with_embed_all_fonts(global_opts)
-    convert_to_html_with_preserving_original_fonts(global_opts)
+    if platform.system() != "Linux": convert_to_html_with_preserving_original_fonts(global_opts)
     create_new_presentation(global_opts)
     #convert_to_pdf_custom_options(global_opts)
     export_ink_example(global_opts)
@@ -90,12 +92,12 @@ def run_presentation_conversion_examples(global_opts):
     export_ole_example(global_opts)
     export_shape_to_svg(global_opts)
     convert_to_html_with_responsive_layout(global_opts)
-    convert_to_fodp(global_opts)
+    if platform.system() != "Linux": convert_to_fodp(global_opts)
     convert_to_odp(global_opts)
     import_from_pdf(global_opts)
     import_html_slide_example(global_opts)
     convert_to_ppt(global_opts)
     #convert_to_tiff_image_pixel_format(global_opts)
-    convert_to_tiff(global_opts)
+    if platform.system() == "Windows": convert_to_tiff(global_opts)
     #convert_to_html_with_notes(global_opts)
     slide_show_media_controls(global_opts)
