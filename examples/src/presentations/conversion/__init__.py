@@ -22,7 +22,6 @@ from .convert_to_pdf_unsupported_font_styles import convert_to_pdf_unsupported_f
 from .convert_to_pdf_with_hidden_slides import convert_to_pdf_hidden_slides
 from .convert_to_pdf_with_pdf_compliance_a1a_a1b_ua import convert_to_pdf_with_compliance
 from .convert_to_pdf import convert_to_pdf
-from .convert_to_swf import convert_to_swf
 from .convert_to_xml import convert_to_xml
 from .convert_whole_presentation_to_html_with_media_files import convert_to_html_with_media
 from .convert_with_custom_size import convert_to_tiff_custom_size

@@ -1,4 +1,6 @@
-﻿import aspose.pydrawing as drawing
+﻿import io
+
+import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -56,7 +58,10 @@ def manage_activex_control(global_opts):
                         drawing.PointF(image.width, 0)
                     ])
 
-            control.substitute_picture_format.picture.image = presentation.images.add_image(image)
+            with io.BytesIO() as ms:
+                image.save(ms, drawing.imaging.ImageFormat.png)
+                ms.seek(0)
+                control.substitute_picture_format.picture.image = presentation.images.add_image(ms)
 
         # changing Button caption
         control = slide.controls[1]
@@ -104,7 +109,11 @@ def manage_activex_control(global_opts):
                          drawing.PointF(image.width, image.height), 
                          drawing.PointF(image.width, 0)
                     ])
-            control.substitute_picture_format.picture.image = presentation.images.add_image(image)
+
+            with io.BytesIO() as ms:
+                image.save(ms, drawing.imaging.ImageFormat.png)
+                ms.seek(0)
+                control.substitute_picture_format.picture.image = presentation.images.add_image(ms)
 
         # Moving ActiveX frames 100 points down
         for ctl in slide.controls:

@@ -46,7 +46,6 @@ from .geometry_shape_add_segment import geometry_shape_add_segment
 from .geometry_shape_composite_objects import geometry_shape_composite_objects
 from .geometry_shape_creates_custom_geometry import geometry_shape_creates_custom_geometry
 from .geometry_shape_remove_segment import geometry_shape_remove_segment
-from .geometry_shape_using_shape_util import geometry_shape_using_shape_util
 from .get_camera_effective_data import get_camera_effective_data
 from .get_light_rig_effective_data import get_light_rig_effective_data
 from .get_shape_bevel_effective_data import get_shape_bevel_effective_data
@@ -54,6 +53,7 @@ from .hiding_shapes import hiding_shapes
 from .ink_management_example import ink_management_example
 from .ink_effects_example import ink_effects_example
 from .interop_shape_id import interop_shape_id
+from .math_phantom_example import math_phantom_example
 from .math_shape_get_children import math_shape_get_children
 from .mathematical_shape import mathematical_shape
 from .picture_frame_formatting import picture_frame_formatting
@@ -124,7 +124,6 @@ def run_shapes_examples(global_opts):
     geometry_shape_composite_objects(global_opts)
     geometry_shape_creates_custom_geometry(global_opts)
     geometry_shape_remove_segment(global_opts)
-    geometry_shape_using_shape_util(global_opts)
     get_camera_effective_data(global_opts)
     get_light_rig_effective_data(global_opts)
     get_shape_bevel_effective_data(global_opts)
@@ -132,6 +131,7 @@ def run_shapes_examples(global_opts):
     ink_effects_example(global_opts)
     ink_management_example(global_opts)
     interop_shape_id(global_opts)
+    math_phantom_example(global_opts)
     math_shape_get_children(global_opts)
     mathematical_shape(global_opts)
     picture_frame_formatting(global_opts)
