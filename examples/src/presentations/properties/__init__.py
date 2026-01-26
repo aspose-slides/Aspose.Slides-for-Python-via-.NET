@@ -12,6 +12,7 @@ from .guides_properties import guides_properties
 from .insert_svg_into_presentation import insert_svg
 from .modify_builtin_properties import props_modify_builtin_properties
 from .read_only_recommended import props_read_only_recommended
+from .sensitivity_labels_example import sensitivity_labels_example
 from .update_presentation_properties import props_update_presentation_properties
 from .update_presentation_properties_using_new_template import props_update_properties_using_template
 
@@ -34,3 +35,4 @@ def run_presentation_properties_examples(global_opts):
     props_read_only_recommended(global_opts)
     props_update_presentation_properties(global_opts)
     props_update_properties_using_template(global_opts)
+    sensitivity_labels_example(global_opts)

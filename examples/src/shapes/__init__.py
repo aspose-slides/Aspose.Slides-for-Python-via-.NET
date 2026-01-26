@@ -64,6 +64,7 @@ from .set_alternative_text import set_alternative_text
 from .set_file_type_for_an_embedding_object import set_file_type_for_an_embedding_object
 from .set_video_trim_from_end import set_video_trim_from_end
 from .shape_is_decorative_property_example import shape_is_decorative_property_example
+from .shape_path_points_example import shape_path_points_example
 from .shapes_alignment import shapes_alignment
 from .simple_ellipse import simple_ellipse
 from .simple_rectangle import simple_rectangle
@@ -142,6 +143,7 @@ def run_shapes_examples(global_opts):
     set_file_type_for_an_embedding_object(global_opts)
     set_video_trim_from_end(global_opts)
     shape_is_decorative_property_example(global_opts)
+    shape_path_points_example(global_opts)
     shapes_alignment(global_opts)
     simple_ellipse(global_opts)
     simple_rectangle(global_opts)
