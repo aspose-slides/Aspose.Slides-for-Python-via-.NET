@@ -11,6 +11,7 @@ from .save_to_file import save_to_file
 from .save_to_stream import save_to_stream
 from .save_with_password import save_with_password
 from .support_of_digital_signature import save_add_digital_signature
+from .to_save_format_example import to_save_format_example
 
 
 def run_presentation_saving_examples(global_opts):
@@ -28,3 +29,4 @@ def run_presentation_saving_examples(global_opts):
     save_to_stream(global_opts)
     save_with_password(global_opts)
     save_add_digital_signature(global_opts)
+    to_save_format_example(global_opts)

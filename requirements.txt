@@ -1,1 +1,1 @@
-aspose-slides==26.1.0
+aspose-slides==26.2.0
