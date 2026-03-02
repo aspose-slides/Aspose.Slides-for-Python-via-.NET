@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aspose-slides-markitdown-plugin"
+dynamic = ["version"]
+dependencies = [
+  "markitdown>=0.1.0a1",
+  "aspose.slides>=25.7.0"
+]
+
+[project.entry-points."markitdown.plugin"]
+aspose_slides_markitdown_plugin = "aspose_slides_markitdown_plugin"
+
+[tool.hatch.version]
+path = "src/aspose_slides_markitdown_plugin/__about__.py"

@@ -69,4 +69,8 @@ presentation = slides.Presentation("PowerPoint.pptx")
 presentation.save("PPTX-to-PDF.pdf", slides.export.SaveFormat.PDF)
 ```
 
+## **Integrations**
+
+The [integrations](integrations/) folder contains Aspose.Slides extensions for [MarkItDown](https://github.com/microsoft/markitdown), [Docling](https://github.com/docling-project/docling), and [Datalab Marker](https://github.com/VikParuchuri/marker). Each extension is a bridge that wraps Aspose.Slides for Python via .NET for a specific document-conversion framework, enabling PowerPoint-to-Markdown conversion.
+
 [Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/slides/python-net) | [Docs](https://docs.aspose.com/slides/python-net/) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://docs.aspose.com/slides/python-net/api-reference/) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-Python-via-.NET/) | [Blog](https://blog.aspose.com/category/slides/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
