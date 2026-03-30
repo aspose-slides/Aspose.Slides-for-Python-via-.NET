@@ -65,10 +65,12 @@ from .set_file_type_for_an_embedding_object import set_file_type_for_an_embeddin
 from .set_video_trim_from_end import set_video_trim_from_end
 from .shape_is_decorative_property_example import shape_is_decorative_property_example
 from .shape_path_points_example import shape_path_points_example
+from .shape_visual_bounds_example import shape_visual_bounds_example
 from .shapes_alignment import shapes_alignment
 from .simple_ellipse import simple_ellipse
 from .simple_rectangle import simple_rectangle
 from .sketched_shapes import sketched_shapes
+from .solid_fill_scheme_color_example import solid_fill_scheme_color_example
 from .stretch_offset_left_for_picture_frame import stretch_offset_left_for_picture_frame
 from .substitute_picture_title_of_ole_object_frame import substitute_picture_title_of_ole_object_frame
 from .tile_picture_fill_format_example import tile_picture_fill_format_example
@@ -144,10 +146,12 @@ def run_shapes_examples(global_opts):
     set_video_trim_from_end(global_opts)
     shape_is_decorative_property_example(global_opts)
     shape_path_points_example(global_opts)
+    shape_visual_bounds_example(global_opts)
     shapes_alignment(global_opts)
     simple_ellipse(global_opts)
     simple_rectangle(global_opts)
     sketched_shapes(global_opts)
+    solid_fill_scheme_color_example(global_opts)
     stretch_offset_left_for_picture_frame(global_opts)
     substitute_picture_title_of_ole_object_frame(global_opts)
     tile_picture_fill_format_example(global_opts)
