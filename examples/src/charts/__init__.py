@@ -28,6 +28,7 @@ from .display_chart_labels import charts_display_chart_labels
 from .display_percentage_as_labels import charts_display_percentage_as_labels
 from .doughnut_chart_hole import charts_doughnut_chart_hole
 from .edit_chart_data_in_external_workbook import charts_edit_chart_data_in_external_workbook
+from .embedded_workbook_type_example import charts_embedded_workbook_type_example
 from .existing_chart import charts_existing_chart
 from .extract_excel_data_example import charts_extract_excel_data_example
 from .font_properties_for_chart import charts_font_properties_for_chart
@@ -115,6 +116,7 @@ def run_charts_examples(global_opts):
     charts_display_percentage_as_labels(global_opts)
     charts_doughnut_chart_hole(global_opts)
     # charts_edit_chart_data_in_external_workbook(options)
+    charts_embedded_workbook_type_example(global_opts)
     charts_existing_chart(global_opts)
     charts_extract_excel_data_example(global_opts)
     charts_font_properties_for_chart(global_opts)
