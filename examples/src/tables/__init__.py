@@ -1,5 +1,6 @@
 from .add_image_inside_table_cell import add_image_inside_table_cell
 from .add_image_inside_table_cell_and_crop import add_image_inside_table_cell_and_crop
+from .add_table_from_workbook_example import add_table_from_workbook_example
 from .cell_split import cell_split
 from .cloning_in_table import cloning_in_table
 from .create_table import create_table
@@ -25,6 +26,7 @@ def run_tables_examples(global_opts):
     print("===== Tables examples =====")
     add_image_inside_table_cell(global_opts)
     add_image_inside_table_cell_and_crop(global_opts)
+    add_table_from_workbook_example(global_opts)
     cell_split(global_opts)
     cloning_in_table(global_opts)
     create_table(global_opts)
