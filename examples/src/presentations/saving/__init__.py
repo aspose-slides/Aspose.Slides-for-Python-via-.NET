@@ -1,4 +1,5 @@
 from .add_blob_image_to_presentation import save_add_blob_image
+from .compression_level_example import compression_level_example
 from .convert_svg_image_object_info_group_of_shapes import save_convert_svg_to_group_of_shapes
 from .image_quality_example import image_quality_example
 from .java_script_link_example import java_script_link_example
@@ -17,6 +18,7 @@ from .to_save_format_example import to_save_format_example
 def run_presentation_saving_examples(global_opts):
     print("======= Presentation Saving =======")
     save_add_blob_image(global_opts)
+    compression_level_example(global_opts)
     save_convert_svg_to_group_of_shapes(global_opts)
     image_quality_example(global_opts)
     java_script_link_example(global_opts)
