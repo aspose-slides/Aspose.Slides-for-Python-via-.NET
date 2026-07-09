@@ -131,10 +131,10 @@ def manage_activex_control_pillow_example(global_opts):
                 frame.x, frame.y + 100, frame.width, frame.height, frame.flip_h, frame.flip_v, frame.rotation)
 
         # Save the presentation with Edited ActiveX Controls
-        presentation.save(global_opts.out_dir + "activex_manage_control-edited_out.pptm", slides.export.SaveFormat.PPTM)
+        presentation.save(global_opts.out_dir + "activex_manage_control-pillow-edited_out.pptm", slides.export.SaveFormat.PPTM)
 
         # Now removing controls
         slide.controls.clear()
 
         # Saving the presentation with cleared ActiveX controls
-        presentation.save(global_opts.out_dir + "activex_manage_control-cleared_out.pptm", slides.export.SaveFormat.PPTM)
+        presentation.save(global_opts.out_dir + "activex_manage_control-pillow-cleared_out.pptm", slides.export.SaveFormat.PPTM)

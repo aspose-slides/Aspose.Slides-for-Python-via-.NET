@@ -40,6 +40,7 @@ from .export_ole_example import export_ole_example
 from .export_shape_to_svg import export_shape_to_svg
 from .export_to_html_with_responsive_layout import convert_to_html_with_responsive_layout
 from .fodp_format_conversion import convert_to_fodp
+from .html5_pictures_compression_example import html5_pictures_compression_example
 from .import_html_slide_example import import_html_slide_example
 from .odp_to_pptx import convert_to_odp
 from .pdf_import_example import import_from_pdf
@@ -92,6 +93,7 @@ def run_presentation_conversion_examples(global_opts):
     export_shape_to_svg(global_opts)
     convert_to_html_with_responsive_layout(global_opts)
     if platform.system() != "Linux": convert_to_fodp(global_opts)
+    html5_pictures_compression_example(global_opts)
     convert_to_odp(global_opts)
     import_from_pdf(global_opts)
     import_html_slide_example(global_opts)
