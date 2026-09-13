@@ -1,9 +1,8 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_set_invert_fill_color_chart(global_opts):
-    invert_color = drawing.Color.red
+    invert_color = slides.Color.red
     with slides.Presentation() as pres:
         chart = pres.slides[0].shapes.add_chart(slides.charts.ChartType.CLUSTERED_COLUMN, 100, 100, 400, 300)
         workbook = chart.chart_data.chart_data_workbook

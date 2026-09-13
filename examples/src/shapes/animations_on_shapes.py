@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def animation_on_shapes(global_opts):
@@ -31,10 +30,10 @@ def animation_on_shapes(global_opts):
         # Created path is empty so we should add commands for moving.
         motion_behavior = fx_user_path.behaviors[0]
 
-        pts = [drawing.PointF(0.076, 0.59)]
+        pts = [slides.PointF(0.076, 0.59)]
         motion_behavior.path.add(slides.animation.MotionCommandPathType.LINE_TO, pts,
                                  slides.animation.MotionPathPointsType.AUTO, True)
-        pts = [drawing.PointF(0.076, 0.59)]
+        pts = [slides.PointF(0.076, 0.59)]
         motion_behavior.path.add(slides.animation.MotionCommandPathType.LINE_TO, pts,
                                  slides.animation.MotionPathPointsType.AUTO, False)
         motion_behavior.path.add(slides.animation.MotionCommandPathType.END, None,

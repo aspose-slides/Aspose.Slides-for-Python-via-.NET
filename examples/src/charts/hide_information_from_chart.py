@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_hide_information_from_chart(global_opts):
@@ -34,7 +33,7 @@ def charts_hide_information_from_chart(global_opts):
 
         # Setting series line color
         series.format.line.fill_format.fill_type = slides.FillType.SOLID
-        series.format.line.fill_format.solid_fill_color.color = drawing.Color.purple
+        series.format.line.fill_format.solid_fill_color.color = slides.Color.purple
         series.format.line.dash_style = slides.LineDashStyle.SOLID
 
         pres.save(global_opts.out_dir + "charts_hide_information_from_chart_out.pptx", slides.export.SaveFormat.PPTX)

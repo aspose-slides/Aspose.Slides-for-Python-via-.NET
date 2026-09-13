@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def formatted_eclipse(global_opts):
@@ -13,11 +12,11 @@ def formatted_eclipse(global_opts):
 
         # Apply some formatting to ellipse shape
         shape.fill_format.fill_type = slides.FillType.SOLID
-        shape.fill_format.solid_fill_color.color = drawing.Color.chocolate
+        shape.fill_format.solid_fill_color.color = slides.Color.chocolate
 
         # Apply some formatting to the line of Ellipse
         shape.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape.line_format.fill_format.solid_fill_color.color = drawing.Color.black
+        shape.line_format.fill_format.solid_fill_color.color = slides.Color.black
         shape.line_format.width = 5
 
         # Write the PPTX file to disk

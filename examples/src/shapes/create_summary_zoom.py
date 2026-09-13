@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def create_summary_zoom(global_opts):
@@ -7,7 +6,7 @@ def create_summary_zoom(global_opts):
         # Adds a new slide to the presentation
         slide = pres.slides.add_empty_slide(pres.slides[0].layout_slide)
         slide.background.fill_format.fill_type = slides.FillType.SOLID
-        slide.background.fill_format.solid_fill_color.color = drawing.Color.brown
+        slide.background.fill_format.solid_fill_color.color = slides.Color.brown
         slide.background.type = slides.BackgroundType.OWN_BACKGROUND
 
         # Adds a new section to the presentation
@@ -16,7 +15,7 @@ def create_summary_zoom(global_opts):
         # Adds a new slide to the presentation
         slide = pres.slides.add_empty_slide(pres.slides[0].layout_slide)
         slide.background.fill_format.fill_type = slides.FillType.SOLID
-        slide.background.fill_format.solid_fill_color.color = drawing.Color.aqua
+        slide.background.fill_format.solid_fill_color.color = slides.Color.aqua
         slide.background.type = slides.BackgroundType.OWN_BACKGROUND
 
         # Adds a new section to the presentation
@@ -25,7 +24,7 @@ def create_summary_zoom(global_opts):
         # Adds a new slide to the presentation
         slide = pres.slides.add_empty_slide(pres.slides[0].layout_slide)
         slide.background.fill_format.fill_type = slides.FillType.SOLID
-        slide.background.fill_format.solid_fill_color.color = drawing.Color.chartreuse
+        slide.background.fill_format.solid_fill_color.color = slides.Color.chartreuse
         slide.background.type = slides.BackgroundType.OWN_BACKGROUND
 
         # Adds a new section to the presentation
@@ -34,7 +33,7 @@ def create_summary_zoom(global_opts):
         # Adds a new slide to the presentation
         slide = pres.slides.add_empty_slide(pres.slides[0].layout_slide)
         slide.background.fill_format.fill_type = slides.FillType.SOLID
-        slide.background.fill_format.solid_fill_color.color = drawing.Color.dark_green
+        slide.background.fill_format.solid_fill_color.color = slides.Color.dark_green
         slide.background.type = slides.BackgroundType.OWN_BACKGROUND
 
         # Adds a new section to the presentation

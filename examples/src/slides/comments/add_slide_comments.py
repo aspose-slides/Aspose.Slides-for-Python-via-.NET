@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 from datetime import date
 
 
@@ -13,7 +12,7 @@ def add_slide_comments(global_opts):
         author = presentation.comment_authors.add_author("Jawad", "MF")
 
         # Position of comments
-        point = drawing.PointF()
+        point = slides.PointF()
         point.x = 0.2
         point.y = 0.2
 

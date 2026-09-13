@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def word_art_example(global_opts):
@@ -17,16 +16,16 @@ def word_art_example(global_opts):
 
         # Set format of the text
         portion.portion_format.fill_format.fill_type = slides.FillType.PATTERN
-        portion.portion_format.fill_format.pattern_format.fore_color.color = drawing.Color.dark_orange
-        portion.portion_format.fill_format.pattern_format.back_color.color = drawing.Color.white
+        portion.portion_format.fill_format.pattern_format.fore_color.color = slides.Color.dark_orange
+        portion.portion_format.fill_format.pattern_format.back_color.color = slides.Color.white
         portion.portion_format.fill_format.pattern_format.pattern_style = slides.PatternStyle.SMALL_GRID
 
         portion.portion_format.line_format.fill_format.fill_type = slides.FillType.SOLID
-        portion.portion_format.line_format.fill_format.solid_fill_color.color = drawing.Color.black
+        portion.portion_format.line_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Add a shadow effect for the text
         portion.portion_format.effect_format.enable_outer_shadow_effect()
-        portion.portion_format.effect_format.outer_shadow_effect.shadow_color.color = drawing.Color.black
+        portion.portion_format.effect_format.outer_shadow_effect.shadow_color.color = slides.Color.black
         portion.portion_format.effect_format.outer_shadow_effect.scale_horizontal = 100
         portion.portion_format.effect_format.outer_shadow_effect.scale_vertical = 65
         portion.portion_format.effect_format.outer_shadow_effect.blur_radius = 4.73
@@ -69,10 +68,10 @@ def word_art_example(global_opts):
         shape.three_d_format.bevel_top.height = 12.5
         shape.three_d_format.bevel_top.width = 11
 
-        shape.three_d_format.extrusion_color.color = drawing.Color.orange
+        shape.three_d_format.extrusion_color.color = slides.Color.orange
         shape.three_d_format.extrusion_height = 6
 
-        shape.three_d_format.contour_color.color = drawing.Color.dark_red
+        shape.three_d_format.contour_color.color = slides.Color.dark_red
         shape.three_d_format.contour_width = 1.5
 
         shape.three_d_format.depth = 3
@@ -96,10 +95,10 @@ def word_art_example(global_opts):
         text_frame.text_frame_format.three_d_format.bevel_top.height = 12.5
         text_frame.text_frame_format.three_d_format.bevel_top.width = 11
 
-        text_frame.text_frame_format.three_d_format.extrusion_color.color = drawing.Color.orange
+        text_frame.text_frame_format.three_d_format.extrusion_color.color = slides.Color.orange
         text_frame.text_frame_format.three_d_format.extrusion_height = 6
 
-        text_frame.text_frame_format.three_d_format.contour_color.color = drawing.Color.dark_red
+        text_frame.text_frame_format.three_d_format.contour_color.color = slides.Color.dark_red
         text_frame.text_frame_format.three_d_format.contour_width = 1.5
 
         text_frame.text_frame_format.three_d_format.depth = 3

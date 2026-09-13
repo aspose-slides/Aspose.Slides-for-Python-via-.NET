@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_normal_charts(global_opts):
@@ -52,7 +51,7 @@ def charts_normal_charts(global_opts):
 
         # Setting fill color for series
         series.format.fill.fill_type = slides.FillType.SOLID
-        series.format.fill.solid_fill_color.color = drawing.Color.red
+        series.format.fill.solid_fill_color.color = slides.Color.red
 
         # Take second chart series
         series = chart.chart_data.series[1]
@@ -64,7 +63,7 @@ def charts_normal_charts(global_opts):
 
         # Setting fill color for series
         series.format.fill.fill_type = slides.FillType.SOLID
-        series.format.fill.solid_fill_color.color = drawing.Color.green
+        series.format.fill.solid_fill_color.color = slides.Color.green
 
         # First label will be show Category name
         lbl = series.data_points[0].label

@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_add_doughnut_callout(global_opts):
@@ -27,7 +26,7 @@ def charts_add_doughnut_callout(global_opts):
 				data_point = i_cs.data_points.add_data_point_for_doughnut_series(workbook.get_cell(0, category_index + 1, i + 1, 1))
 				data_point.format.fill.fill_type = slides.FillType.SOLID
 				data_point.format.line.fill_format.fill_type = slides.FillType.SOLID
-				data_point.format.line.fill_format.solid_fill_color.color = drawing.Color.white
+				data_point.format.line.fill_format.solid_fill_color.color = slides.Color.white
 				data_point.format.line.width = 1
 				data_point.format.line.style = slides.LineStyle.SINGLE
 				data_point.format.line.dash_style = slides.LineDashStyle.SOLID
@@ -39,8 +38,8 @@ def charts_add_doughnut_callout(global_opts):
 					lbl.data_label_format.text_format.portion_format.latin_font = slides.FontData("DINPro-Bold")
 					lbl.data_label_format.text_format.portion_format.font_height = 12
 					lbl.data_label_format.text_format.portion_format.fill_format.fill_type = slides.FillType.SOLID
-					lbl.data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = drawing.Color.light_gray
-					lbl.data_label_format.format.line.fill_format.solid_fill_color.color = drawing.Color.white
+					lbl.data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = slides.Color.light_gray
+					lbl.data_label_format.format.line.fill_format.solid_fill_color.color = slides.Color.white
 					lbl.data_label_format.show_value = False
 					lbl.data_label_format.show_category_name = True
 					lbl.data_label_format.show_series_name = False

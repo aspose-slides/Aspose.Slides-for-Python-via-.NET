@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def rendering_3d(global_opts):
@@ -14,7 +13,7 @@ def rendering_3d(global_opts):
         shape.three_d_format.light_rig.direction = slides.LightingDirection.TOP
         shape.three_d_format.material = slides.MaterialPresetType.FLAT
         shape.three_d_format.extrusion_height = 100
-        shape.three_d_format.extrusion_color.color = drawing.Color.blue
+        shape.three_d_format.extrusion_color.color = slides.Color.blue
         
         pres.slides[0].get_image(2, 2).save(global_opts.out_dir + "sample_3d.png")
         pres.save(global_opts.out_dir + "rendering_3d_out.pptx", slides.export.SaveFormat.PPTX)

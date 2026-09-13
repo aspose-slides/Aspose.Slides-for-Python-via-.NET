@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_set_data_labels_percentage_sign(global_opts):
@@ -30,7 +29,7 @@ def charts_set_data_labels_percentage_sign(global_opts):
 
         # Setting the fill color of series
         series.format.fill.fill_type = slides.FillType.SOLID
-        series.format.fill.solid_fill_color.color = drawing.Color.red
+        series.format.fill.solid_fill_color.color = slides.Color.red
 
         # Setting LabelFormat properties
         series.labels.default_data_label_format.show_value = True
@@ -38,7 +37,7 @@ def charts_set_data_labels_percentage_sign(global_opts):
         series.labels.default_data_label_format.number_format = "0.0%"
         series.labels.default_data_label_format.text_format.portion_format.font_height = 10
         series.labels.default_data_label_format.text_format.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        series.labels.default_data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = drawing.Color.white
+        series.labels.default_data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = slides.Color.white
         series.labels.default_data_label_format.show_value = True
 
         # Add new series
@@ -50,13 +49,13 @@ def charts_set_data_labels_percentage_sign(global_opts):
 
         # Setting Fill type and color
         series2.format.fill.fill_type = slides.FillType.SOLID
-        series2.format.fill.solid_fill_color.color = drawing.Color.blue
+        series2.format.fill.solid_fill_color.color = slides.Color.blue
         series2.labels.default_data_label_format.show_value = True
         series2.labels.default_data_label_format.is_number_format_linked_to_source = False
         series2.labels.default_data_label_format.number_format = "0.0%"
         series2.labels.default_data_label_format.text_format.portion_format.font_height = 10
         series2.labels.default_data_label_format.text_format.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        series2.labels.default_data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = drawing.Color.white
+        series2.labels.default_data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = slides.Color.white
 
         # Write presentation to disk
         presentation.save(global_opts.out_dir + "charts_set_data_labels_percentage_sign_out.pptx", slides.export.SaveFormat.PPTX)

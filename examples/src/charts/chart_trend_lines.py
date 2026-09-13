@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_trend_lines(global_opts):
@@ -17,7 +16,7 @@ def charts_trend_lines(global_opts):
         linear_trend_line = chart.chart_data.series[0].trend_lines.add(slides.charts.TrendlineType.LINEAR)
         linear_trend_line.trendline_type = slides.charts.TrendlineType.LINEAR
         linear_trend_line.format.line.fill_format.fill_type = slides.FillType.SOLID
-        linear_trend_line.format.line.fill_format.solid_fill_color.color = drawing.Color.red
+        linear_trend_line.format.line.fill_format.solid_fill_color.color = slides.Color.red
 
         # Adding Logarithmic trend line for chart series 2
         log_trend_line = chart.chart_data.series[1].trend_lines.add(slides.charts.TrendlineType.LOGARITHMIC)

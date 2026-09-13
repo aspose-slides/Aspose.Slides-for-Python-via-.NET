@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def shapes_add_arrow_shaped_line(global_opts):
@@ -24,7 +23,7 @@ def shapes_add_arrow_shaped_line(global_opts):
         shape.line_format.end_arrowhead_style = slides.LineArrowheadStyle.TRIANGLE
 
         shape.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape.line_format.fill_format.solid_fill_color.color = drawing.Color.maroon
+        shape.line_format.fill_format.solid_fill_color.color = slides.Color.maroon
 
         # Write the PPTX to Disk
         pres.save(global_opts.out_dir + "shapes_add_arrow_shaped_line_out.pptx", slides.export.SaveFormat.PPTX)

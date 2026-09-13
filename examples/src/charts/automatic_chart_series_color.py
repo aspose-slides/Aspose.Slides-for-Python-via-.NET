@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_automatic_chart_series_color(global_opts):
@@ -56,7 +55,7 @@ def charts_automatic_chart_series_color(global_opts):
 
         # Setting fill color for series
         series.format.fill.fill_type = slides.FillType.SOLID
-        series.format.fill.solid_fill_color.color = drawing.Color.gray
+        series.format.fill.solid_fill_color.color = slides.Color.gray
 
         # Save presentation with chart
         presentation.save(global_opts.out_dir + "charts_automatic_chart_series_color_out.pptx", slides.export.SaveFormat.PPTX)

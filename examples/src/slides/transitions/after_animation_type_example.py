@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def after_animation_type_example(global_opts):
@@ -20,7 +19,7 @@ def after_animation_type_example(global_opts):
         # Change the After animation effect type to "Color"
         for effect in seq:
             effect.after_animation_type = slides.animation.AfterAnimationType.COLOR
-            effect.after_animation_color.color = drawing.Color.green
+            effect.after_animation_color.color = slides.Color.green
         
         # Add new slide to the presentation
         slide3 = pres.slides.add_clone(pres.slides[0])

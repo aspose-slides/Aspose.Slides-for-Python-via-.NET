@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def picture_frame_formatting(global_opts):
@@ -17,7 +16,7 @@ def picture_frame_formatting(global_opts):
 
         # Apply some formatting to PictureFrame
         pf.line_format.fill_format.fill_type = slides.FillType.SOLID
-        pf.line_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        pf.line_format.fill_format.solid_fill_color.color = slides.Color.blue
         pf.line_format.width = 20
         pf.rotation = 45
 

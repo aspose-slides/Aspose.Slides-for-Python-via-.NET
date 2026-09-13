@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def fill_shapes_with_solid_color(global_opts):
@@ -15,7 +14,7 @@ def fill_shapes_with_solid_color(global_opts):
         shape.fill_format.fill_type = slides.FillType.SOLID
 
         # Set the color of the rectangle
-        shape.fill_format.solid_fill_color.color = drawing.Color.yellow
+        shape.fill_format.solid_fill_color.color = slides.Color.yellow
 
         # Write the PPTX file to disk
         presentation.save(global_opts.out_dir + "shapes_filltype_solid_out.pptx", slides.export.SaveFormat.PPTX)

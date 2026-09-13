@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 

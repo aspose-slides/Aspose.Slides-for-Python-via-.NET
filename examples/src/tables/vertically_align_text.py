@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def vertically_align_text(global_opts):
@@ -28,7 +27,7 @@ def vertically_align_text(global_opts):
         portion = paragraph.portions[0]
         portion.text = "Text here"
         portion.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        portion.portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        portion.portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Aligning the text vertically
         cell = tbl.rows[0][0]

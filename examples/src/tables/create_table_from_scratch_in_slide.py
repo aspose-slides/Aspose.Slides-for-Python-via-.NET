@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def create_table_from_scratch_in_slide(global_opts):
@@ -19,19 +18,19 @@ def create_table_from_scratch_in_slide(global_opts):
         for row in range(len(table.rows)):
             for cell in range(len(table.rows[row])):
                 table.rows[row][cell].cell_format.border_top.fill_format.fill_type = slides.FillType.SOLID
-                table.rows[row][cell].cell_format.border_top.fill_format.solid_fill_color.color = drawing.Color.red
+                table.rows[row][cell].cell_format.border_top.fill_format.solid_fill_color.color = slides.Color.red
                 table.rows[row][cell].cell_format.border_top.width = 5
 
                 table.rows[row][cell].cell_format.border_bottom.fill_format.fill_type = slides.FillType.SOLID
-                table.rows[row][cell].cell_format.border_bottom.fill_format.solid_fill_color.color = drawing.Color.red
+                table.rows[row][cell].cell_format.border_bottom.fill_format.solid_fill_color.color = slides.Color.red
                 table.rows[row][cell].cell_format.border_bottom.width = 5
 
                 table.rows[row][cell].cell_format.border_left.fill_format.fill_type = slides.FillType.SOLID
-                table.rows[row][cell].cell_format.border_left.fill_format.solid_fill_color.color = drawing.Color.red
+                table.rows[row][cell].cell_format.border_left.fill_format.solid_fill_color.color = slides.Color.red
                 table.rows[row][cell].cell_format.border_left.width = 5
 
                 table.rows[row][cell].cell_format.border_right.fill_format.fill_type = slides.FillType.SOLID
-                table.rows[row][cell].cell_format.border_right.fill_format.solid_fill_color.color = drawing.Color.red
+                table.rows[row][cell].cell_format.border_right.fill_format.solid_fill_color.color = slides.Color.red
                 table.rows[row][cell].cell_format.border_right.width = 5
 
         # Merge cells 1 & 2 of row 1

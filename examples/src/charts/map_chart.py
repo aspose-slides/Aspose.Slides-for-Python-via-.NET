@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_map_chart(global_opts):
@@ -25,6 +24,6 @@ def charts_map_chart(global_opts):
 
         # Set data point appearance
         data_point.format.fill.fill_type = slides.FillType.SOLID
-        data_point.format.fill.solid_fill_color.color = drawing.Color.green
+        data_point.format.fill.solid_fill_color.color = slides.Color.green
 
         presentation.save(global_opts.out_dir + "charts_map_chart_out.pptx", slides.export.SaveFormat.PPTX)

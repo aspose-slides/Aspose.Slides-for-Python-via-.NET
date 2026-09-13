@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def portion_get_rect(global_opts):
@@ -47,7 +46,7 @@ def portion_get_rect(global_opts):
                                                          rect.height)
 
             shape.fill_format.fill_type = slides.FillType.NO_FILL
-            shape.line_format.fill_format.solid_fill_color.color = drawing.Color.yellow
+            shape.line_format.fill_format.solid_fill_color.color = slides.Color.yellow
             shape.line_format.fill_format.fill_type = slides.FillType.SOLID
 
             for portion in para.portions:
@@ -65,7 +64,7 @@ def portion_get_rect(global_opts):
                                                          rect.y + auto_shape.y, rect.width, rect.height)
 
             shape.fill_format.fill_type = slides.FillType.NO_FILL
-            shape.line_format.fill_format.solid_fill_color.color = drawing.Color.yellow
+            shape.line_format.fill_format.solid_fill_color.color = slides.Color.yellow
             shape.line_format.fill_format.fill_type = slides.FillType.SOLID
 
         pres.save(global_opts.out_dir + "text_get_rect_out.pptx", slides.export.SaveFormat.PPTX)

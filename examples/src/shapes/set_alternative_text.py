@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def set_alternative_text(global_opts):
@@ -12,7 +11,7 @@ def set_alternative_text(global_opts):
         shape1 = slide.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 50, 40, 150, 50)
         shape2 = slide.shapes.add_auto_shape(slides.ShapeType.MOON, 160, 40, 150, 50)
         shape2.fill_format.fill_type = slides.FillType.SOLID
-        shape2.fill_format.solid_fill_color.color = drawing.Color.gray
+        shape2.fill_format.solid_fill_color.color = slides.Color.gray
 
         for shape in slide.shapes:
             if shape is slides.AutoShape:

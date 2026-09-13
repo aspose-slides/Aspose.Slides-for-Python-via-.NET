@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def create_zoom_frame(global_opts):
@@ -11,7 +10,7 @@ def create_zoom_frame(global_opts):
         # Create a background for the second slide
         slide2.background.type = slides.BackgroundType.OWN_BACKGROUND
         slide2.background.fill_format.fill_type = slides.FillType.SOLID
-        slide2.background.fill_format.solid_fill_color.color = drawing.Color.cyan
+        slide2.background.fill_format.solid_fill_color.color = slides.Color.cyan
 
         # Create a text box for the second slide
         auto_shape = slide2.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 200, 500, 200)
@@ -20,7 +19,7 @@ def create_zoom_frame(global_opts):
         # Create a background for the third slide
         slide3.background.type = slides.BackgroundType.OWN_BACKGROUND
         slide3.background.fill_format.fill_type = slides.FillType.SOLID
-        slide3.background.fill_format.solid_fill_color.color = drawing.Color.dark_khaki
+        slide3.background.fill_format.solid_fill_color.color = slides.Color.dark_khaki
 
         # Create a text box for the third slide
         auto_shape = slide3.shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 200, 500, 200)
@@ -37,7 +36,7 @@ def create_zoom_frame(global_opts):
         # Set a zoom frame format for the zoomFrame2 object
         zoom_frame2.line_format.width = 5
         zoom_frame2.line_format.fill_format.fill_type = slides.FillType.SOLID
-        zoom_frame2.line_format.fill_format.solid_fill_color.color = drawing.Color.hot_pink
+        zoom_frame2.line_format.fill_format.solid_fill_color.color = slides.Color.hot_pink
         zoom_frame2.line_format.dash_style = slides.LineDashStyle.DASH_DOT
 
         # Do not show background for zoomFrame1 object

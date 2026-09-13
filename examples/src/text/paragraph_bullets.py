@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -32,7 +31,7 @@ def paragraph_bullets(global_opts):
 
         # Setting bullet color
         para.paragraph_format.bullet.color.color_type = slides.ColorType.RGB
-        para.paragraph_format.bullet.color.color = drawing.Color.black
+        para.paragraph_format.bullet.color.color = slides.Color.black
         # set is_bullet_hard_color to True to use own bullet color
         para.paragraph_format.bullet.is_bullet_hard_color = slides.NullableBool.TRUE
 
@@ -56,7 +55,7 @@ def paragraph_bullets(global_opts):
         para2.paragraph_format.indent = 25
 
         para2.paragraph_format.bullet.color.color_type = slides.ColorType.RGB
-        para2.paragraph_format.bullet.color.color = drawing.Color.black
+        para2.paragraph_format.bullet.color.color = slides.Color.black
         # set is_bullet_hard_color to True to use own bullet color
         para2.paragraph_format.bullet.is_bullet_hard_color = slides.NullableBool.TRUE
 

@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -15,11 +14,11 @@ def format_join_styles(global_opts):
 
         # Set the fill color of the rectangle shape
         shape1.fill_format.fill_type = slides.FillType.SOLID
-        shape1.fill_format.solid_fill_color.color = drawing.Color.black
+        shape1.fill_format.solid_fill_color.color = slides.Color.black
         shape2.fill_format.fill_type = slides.FillType.SOLID
-        shape2.fill_format.solid_fill_color.color = drawing.Color.black
+        shape2.fill_format.solid_fill_color.color = slides.Color.black
         shape3.fill_format.fill_type = slides.FillType.SOLID
-        shape3.fill_format.solid_fill_color.color = drawing.Color.black
+        shape3.fill_format.solid_fill_color.color = slides.Color.black
 
         # Set the line width
         shape1.line_format.width = 15
@@ -28,11 +27,11 @@ def format_join_styles(global_opts):
 
         # Set the color of the line of rectangle
         shape1.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape1.line_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        shape1.line_format.fill_format.solid_fill_color.color = slides.Color.blue
         shape2.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape2.line_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        shape2.line_format.fill_format.solid_fill_color.color = slides.Color.blue
         shape3.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape3.line_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        shape3.line_format.fill_format.solid_fill_color.color = slides.Color.blue
 
         # Set the Join Style
         shape1.line_format.join_style = slides.LineJoinStyle.MITER

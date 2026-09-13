@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_entities_formatting(global_opts):
@@ -17,20 +16,20 @@ def charts_entities_formatting(global_opts):
         chart_title = chart.chart_title.text_frame_for_overriding.paragraphs[0].portions[0]
         chart_title.text = "Sample Chart"
         chart_title.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        chart_title.portion_format.fill_format.solid_fill_color.color = drawing.Color.gray
+        chart_title.portion_format.fill_format.solid_fill_color.color = slides.Color.gray
         chart_title.portion_format.font_height = 20
         chart_title.portion_format.font_bold = slides.NullableBool.TRUE
         chart_title.portion_format.font_italic = slides.NullableBool.TRUE
 
         # Setting Major grid lines format for value axis
         chart.axes.vertical_axis.major_grid_lines_format.line.fill_format.fill_type = slides.FillType.SOLID
-        chart.axes.vertical_axis.major_grid_lines_format.line.fill_format.solid_fill_color.color = drawing.Color.blue
+        chart.axes.vertical_axis.major_grid_lines_format.line.fill_format.solid_fill_color.color = slides.Color.blue
         chart.axes.vertical_axis.major_grid_lines_format.line.width = 5
         chart.axes.vertical_axis.major_grid_lines_format.line.dash_style = slides.LineDashStyle.DASH_DOT
 
         # Setting Minor grid lines format for value axis
         chart.axes.vertical_axis.minor_grid_lines_format.line.fill_format.fill_type = slides.FillType.SOLID
-        chart.axes.vertical_axis.minor_grid_lines_format.line.fill_format.solid_fill_color.color = drawing.Color.red
+        chart.axes.vertical_axis.minor_grid_lines_format.line.fill_format.solid_fill_color.color = slides.Color.red
         chart.axes.vertical_axis.minor_grid_lines_format.line.width = 3
 
         # Setting value axis number format
@@ -55,7 +54,7 @@ def charts_entities_formatting(global_opts):
         text_value.font_height = 16
         text_value.font_italic = slides.NullableBool.TRUE
         text_value.fill_format.fill_type = slides.FillType.SOLID
-        text_value.fill_format.solid_fill_color.color = drawing.Color.dark_green
+        text_value.fill_format.solid_fill_color.color = slides.Color.dark_green
         text_value.latin_font = slides.FontData("Times New Roman")
 
         # Setting value axis title
@@ -64,19 +63,19 @@ def charts_entities_formatting(global_opts):
         value_axis_title = chart.axes.vertical_axis.title.text_frame_for_overriding.paragraphs[0].portions[0]
         value_axis_title.text = "Primary Axis"
         value_axis_title.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        value_axis_title.portion_format.fill_format.solid_fill_color.color = drawing.Color.gray
+        value_axis_title.portion_format.fill_format.solid_fill_color.color = slides.Color.gray
         value_axis_title.portion_format.font_height = 20
         value_axis_title.portion_format.font_bold = slides.NullableBool.TRUE
         value_axis_title.portion_format.font_italic = slides.NullableBool.TRUE
 
         # Setting Major grid lines format for Category axis
         chart.axes.horizontal_axis.major_grid_lines_format.line.fill_format.fill_type = slides.FillType.SOLID
-        chart.axes.horizontal_axis.major_grid_lines_format.line.fill_format.solid_fill_color.color = drawing.Color.green
+        chart.axes.horizontal_axis.major_grid_lines_format.line.fill_format.solid_fill_color.color = slides.Color.green
         chart.axes.horizontal_axis.major_grid_lines_format.line.width = 5
 
         # Setting Minor grid lines format for Category axis
         chart.axes.horizontal_axis.minor_grid_lines_format.line.fill_format.fill_type = slides.FillType.SOLID
-        chart.axes.horizontal_axis.minor_grid_lines_format.line.fill_format.solid_fill_color.color = drawing.Color.yellow
+        chart.axes.horizontal_axis.minor_grid_lines_format.line.fill_format.solid_fill_color.color = slides.Color.yellow
         chart.axes.horizontal_axis.minor_grid_lines_format.line.width = 3
 
         # Setting Category Axis Text Properties
@@ -85,7 +84,7 @@ def charts_entities_formatting(global_opts):
         text_category.font_height = 16
         text_category.font_italic = slides.NullableBool.TRUE
         text_category.fill_format.fill_type = slides.FillType.SOLID
-        text_category.fill_format.solid_fill_color.color = drawing.Color.blue
+        text_category.fill_format.solid_fill_color.color = slides.Color.blue
         text_category.latin_font = slides.FontData("Arial")
 
         # Setting Category Titile
@@ -95,7 +94,7 @@ def charts_entities_formatting(global_opts):
         category_title = chart.axes.horizontal_axis.title.text_frame_for_overriding.paragraphs[0].portions[0]
         category_title.text = "Sample Category"
         category_title.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        category_title.portion_format.fill_format.solid_fill_color.color = drawing.Color.gray
+        category_title.portion_format.fill_format.solid_fill_color.color = slides.Color.gray
         category_title.portion_format.font_height = 20
         category_title.portion_format.font_bold = slides.NullableBool.TRUE
         category_title.portion_format.font_italic = slides.NullableBool.TRUE
@@ -112,7 +111,7 @@ def charts_entities_formatting(global_opts):
         text_legend.font_height = 16
         text_legend.font_italic = slides.NullableBool.TRUE
         text_legend.fill_format.fill_type = slides.FillType.SOLID
-        text_legend.fill_format.solid_fill_color.color = drawing.Color.dark_red
+        text_legend.fill_format.solid_fill_color.color = slides.Color.dark_red
 
         # Set show chart legends without overlapping chart
         chart.legend.overlay = True
@@ -122,13 +121,13 @@ def charts_entities_formatting(global_opts):
         # Setting chart back wall color
         chart.back_wall.thickness = 1
         chart.back_wall.format.fill.fill_type = slides.FillType.SOLID
-        chart.back_wall.format.fill.solid_fill_color.color = drawing.Color.orange
+        chart.back_wall.format.fill.solid_fill_color.color = slides.Color.orange
 
         chart.floor.format.fill.fill_type = slides.FillType.SOLID
-        chart.floor.format.fill.solid_fill_color.color = drawing.Color.red
+        chart.floor.format.fill.solid_fill_color.color = slides.Color.red
         # Setting Plot area color
         chart.plot_area.format.fill.fill_type = slides.FillType.SOLID
-        chart.plot_area.format.fill.solid_fill_color.color = drawing.Color.light_cyan
+        chart.plot_area.format.fill.solid_fill_color.color = slides.Color.light_cyan
 
         # Save Presentation
         pres.save(global_opts.out_dir + "charts_entities_formatting_out.pptx", slides.export.SaveFormat.PPTX)

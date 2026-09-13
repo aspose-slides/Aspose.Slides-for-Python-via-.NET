@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def set_transparency_of_text_in_shadow(global_opts):
@@ -13,6 +12,6 @@ def set_transparency_of_text_in_shadow(global_opts):
         print("{0} - transparency is: {1}".format(shadow_color, (shadow_color.a / 255) * 100))
 
         # set transparency to zero percent
-        outer_shadow_effect.shadow_color.color = drawing.Color.from_argb(255, shadow_color)
+        outer_shadow_effect.shadow_color.color = slides.Color.from_argb(255, shadow_color)
 
         pres.save(global_opts.out_dir + "text_transparency_out.pptx", slides.export.SaveFormat.PPTX)

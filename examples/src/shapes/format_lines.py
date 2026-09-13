@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -13,7 +12,7 @@ def format_lines(global_opts):
 
         # Set the fill color of the rectangle shape
         shape.fill_format.fill_type = slides.FillType.SOLID
-        shape.fill_format.solid_fill_color.color = drawing.Color.white
+        shape.fill_format.solid_fill_color.color = slides.Color.white
 
         # Apply some formatting on the line of the rectangle
         shape.line_format.style = slides.LineStyle.THICK_THIN
@@ -22,7 +21,7 @@ def format_lines(global_opts):
 
         # Set the color of the line of rectangle
         shape.line_format.fill_format.fill_type = slides.FillType.SOLID
-        shape.line_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        shape.line_format.fill_format.solid_fill_color.color = slides.Color.blue
 
         # Write the PPTX file to disk
         pres.save(global_opts.out_dir + "shapes_format_lines_out.pptx", slides.export.SaveFormat.PPTX)

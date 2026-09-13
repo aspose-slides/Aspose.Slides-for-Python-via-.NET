@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -38,7 +37,7 @@ def font_family_example(global_opts):
 
         # Set the color of the Font
         port.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        port.portion_format.fill_format.solid_fill_color.color = drawing.Color.blue
+        port.portion_format.fill_format.solid_fill_color.color = slides.Color.blue
 
         # Write the presentation to disk
         pres.save(global_opts.out_dir + "text_font_family_out.pptx", slides.export.SaveFormat.PPTX)

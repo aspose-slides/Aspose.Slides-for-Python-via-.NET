@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_get_actual_position_of_chart_data_label(global_opts):
@@ -21,6 +20,6 @@ def charts_get_actual_position_of_chart_data_label(global_opts):
 
                     shape = chart.user_shapes.shapes.add_auto_shape(slides.ShapeType.ELLIPSE, x, y, w, h)
                     shape.fill_format.fill_type = slides.FillType.SOLID
-                    shape.fill_format.solid_fill_color.color = drawing.Color.from_argb(100, 0, 255, 0)
+                    shape.fill_format.solid_fill_color.color = slides.Color.from_argb(100, 0, 255, 0)
 
         pres.save(global_opts.out_dir + "charts_get_actual_position_of_chart_datalabel_out.pptx", slides.export.SaveFormat.PPTX)

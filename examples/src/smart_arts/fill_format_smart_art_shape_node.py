@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def fill_format_smart_art_shape_node(global_opts):
@@ -15,7 +14,7 @@ def fill_format_smart_art_shape_node(global_opts):
         # Setting node fill color
         for item in node.shapes:
             item.fill_format.fill_type = slides.FillType.SOLID
-            item.fill_format.solid_fill_color.color = drawing.Color.red
+            item.fill_format.solid_fill_color.color = slides.Color.red
 
         # Saving Presentation
         presentation.save(global_opts.out_dir + "smart_art_shapes_fill_format_out.pptx", slides.export.SaveFormat.PPTX)

@@ -1,5 +1,4 @@
 import os
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -23,7 +22,7 @@ def guides_properties(global_opts):
         print(os.linesep.join(f"{g.orientation} {g.position} {g.color}" for g in guides))
 
         # Change the color of the first drawing guide of the master slide
-        guides[0].color = drawing.Color.forest_green
+        guides[0].color = slides.Color.forest_green
 
         # Print the drawing guides of the first master slide
         print(os.linesep.join(f"{g.orientation} {g.position} {g.color}" for g in guides))

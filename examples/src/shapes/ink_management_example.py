@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def ink_management_example(global_opts):
@@ -14,8 +13,8 @@ def ink_management_example(global_opts):
             print("Brush color of the trace =", ink_shape.traces[0].brush.color.name)
 
             # Change color and size of the brush
-            ink_shape.traces[0].brush.color = drawing.Color.red
-            ink_shape.traces[0].brush.size = drawing.SizeF(10, 5)
+            ink_shape.traces[0].brush.color = slides.Color.red
+            ink_shape.traces[0].brush.size = slides.SizeF(10, 5)
         
             # Save presentation
             presentation.save(global_opts.out_dir + "SimpleInk_out.pptx", slides.export.SaveFormat.PPTX)

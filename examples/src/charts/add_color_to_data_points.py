@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def charts_add_color_to_data_points(global_opts):
@@ -14,11 +13,11 @@ def charts_add_color_to_data_points(global_opts):
         branch1_label.data_label_format.show_series_name = True
 
         branch1_label.data_label_format.text_format.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        branch1_label.data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = drawing.Color.yellow
+        branch1_label.data_label_format.text_format.portion_format.fill_format.solid_fill_color.color = slides.Color.yellow
 
         steam4_format = data_points[9].format
         steam4_format.fill.fill_type = slides.FillType.SOLID
         
-        steam4_format.fill.solid_fill_color.color = drawing.Color.from_argb(0, 176, 240, 255)
+        steam4_format.fill.solid_fill_color.color = slides.Color.from_argb(0, 176, 240, 255)
 
         pres.save(global_opts.out_dir + "charts_add_color_to_data_points_out.pptx", slides.export.SaveFormat.PPTX)

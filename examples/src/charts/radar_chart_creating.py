@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_radar_chart(global_opts):
@@ -46,7 +45,7 @@ def charts_radar_chart(global_opts):
 
         # Set series color
         series.format.line.fill_format.fill_type = slides.FillType.SOLID
-        series.format.line.fill_format.solid_fill_color.color = drawing.Color.dark_red
+        series.format.line.fill_format.solid_fill_color.color = slides.Color.dark_red
 
         # Now populating another series data
         series = chart.chart_data.series[1]
@@ -59,7 +58,7 @@ def charts_radar_chart(global_opts):
 
         # Set series color
         series.format.line.fill_format.fill_type = slides.FillType.SOLID
-        series.format.line.fill_format.solid_fill_color.color = drawing.Color.orange
+        series.format.line.fill_format.solid_fill_color.color = slides.Color.orange
 
         # Set legend position
         chart.legend.position = slides.charts.LegendPositionType.BOTTOM
@@ -69,7 +68,7 @@ def charts_radar_chart(global_opts):
         text_category.font_bold = slides.NullableBool.TRUE
         text_category.font_height = 10
         text_category.fill_format.fill_type = slides.FillType.SOLID
-        text_category.fill_format.solid_fill_color.color = drawing.Color.dim_gray
+        text_category.fill_format.solid_fill_color.color = slides.Color.dim_gray
         text_category.latin_font = slides.FontData("Calibri")
 
         # Setting Legends Text Properties
@@ -77,7 +76,7 @@ def charts_radar_chart(global_opts):
         text_legend.font_bold = slides.NullableBool.TRUE
         text_legend.font_height = 10
         text_legend.fill_format.fill_type = slides.FillType.SOLID
-        text_legend.fill_format.solid_fill_color.color = drawing.Color.dim_gray
+        text_legend.fill_format.solid_fill_color.color = slides.Color.dim_gray
         text_category.latin_font = slides.FontData("Calibri")
 
         # Setting Value Axis Text Properties
@@ -85,7 +84,7 @@ def charts_radar_chart(global_opts):
         text_value.font_bold = slides.NullableBool.TRUE
         text_value.font_height = 10
         text_value.fill_format.fill_type = slides.FillType.SOLID
-        text_value.fill_format.solid_fill_color.color = drawing.Color.dim_gray
+        text_value.fill_format.solid_fill_color.color = slides.Color.dim_gray
         text_value.latin_font = slides.FontData("Calibri")
 
         # Setting value axis number format

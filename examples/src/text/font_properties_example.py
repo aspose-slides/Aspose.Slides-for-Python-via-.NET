@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -38,9 +37,9 @@ def font_properties_example(global_opts):
 
         # Set font color
         port1.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        port1.portion_format.fill_format.solid_fill_color.color = drawing.Color.purple
+        port1.portion_format.fill_format.solid_fill_color.color = slides.Color.purple
         port2.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        port2.portion_format.fill_format.solid_fill_color.color = drawing.Color.peru
+        port2.portion_format.fill_format.solid_fill_color.color = slides.Color.peru
 
         # Write the PPTX to disk
         pres.save(global_opts.out_dir + "text_font_properties_out.pptx", slides.export.SaveFormat.PPTX)

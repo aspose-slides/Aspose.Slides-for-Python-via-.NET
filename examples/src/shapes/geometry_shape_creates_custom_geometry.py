@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 import math
 
 
@@ -13,12 +12,12 @@ def create_star_geometry(outer_radius, inner_radius):
         radians = angle * (math.pi / 180)
         x = outer_radius * math.cos(radians)
         y = outer_radius * math.sin(radians)
-        points.append(drawing.PointF(x + outer_radius, y + outer_radius))
+        points.append(slides.PointF(x + outer_radius, y + outer_radius))
 
         radians = math.pi * (angle + step / 2) / 180.0
         x = inner_radius * math.cos(radians)
         y = inner_radius * math.sin(radians)
-        points.append(drawing.PointF(x + outer_radius, y + outer_radius))
+        points.append(slides.PointF(x + outer_radius, y + outer_radius))
 
     star_path.move_to(points[0])
 

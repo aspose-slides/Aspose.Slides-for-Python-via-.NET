@@ -1,5 +1,4 @@
 import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def fill_shapes_pattern(global_opts):
@@ -18,8 +17,8 @@ def fill_shapes_pattern(global_opts):
         shape.fill_format.pattern_format.pattern_style = slides.PatternStyle.TRELLIS
 
         # Set the pattern back and fore colors
-        shape.fill_format.pattern_format.back_color.color = drawing.Color.light_gray
-        shape.fill_format.pattern_format.fore_color.color = drawing.Color.yellow
+        shape.fill_format.pattern_format.back_color.color = slides.Color.light_gray
+        shape.fill_format.pattern_format.fore_color.color = slides.Color.yellow
 
         # Write the PPTX file to disk
         pres.save(global_opts.out_dir + "shapes_filltype_pattern_out.pptx", slides.export.SaveFormat.PPTX)

@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 
 
 def set_hyperlink_color(global_opts):
@@ -12,7 +11,7 @@ def set_hyperlink_color(global_opts):
             0].portion_format.hyperlink_click.color_source = slides.HyperlinkColorSource.PORTION_FORMAT
         shape1.text_frame.paragraphs[0].portions[0].portion_format.fill_format.fill_type = slides.FillType.SOLID
         shape1.text_frame.paragraphs[0].portions[
-            0].portion_format.fill_format.solid_fill_color.color = drawing.Color.red
+            0].portion_format.fill_format.solid_fill_color.color = slides.Color.red
 
         shape2 = presentation.slides[0].shapes.add_auto_shape(slides.ShapeType.RECTANGLE, 100, 200, 450, 50, False)
         shape2.add_text_frame("This is a sample of usual hyperlink.")

@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -23,7 +22,7 @@ def multi_level_bullets(global_opts):
         para1.paragraph_format.bullet.type = slides.BulletType.SYMBOL
         para1.paragraph_format.bullet.char = chr(8226)
         para1.paragraph_format.default_portion_format.fill_format.fill_type = slides.FillType.SOLID
-        para1.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        para1.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Setting bullet level
         para1.paragraph_format.depth = 0
@@ -34,7 +33,7 @@ def multi_level_bullets(global_opts):
         para2.paragraph_format.bullet.type = slides.BulletType.SYMBOL
         para2.paragraph_format.bullet.char = '-'
         para2.paragraph_format.default_portion_format.fill_format.fill_type = slides.FillType.SOLID
-        para2.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        para2.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Setting bullet level
         para2.paragraph_format.depth = 1
@@ -45,7 +44,7 @@ def multi_level_bullets(global_opts):
         para3.paragraph_format.bullet.type = slides.BulletType.SYMBOL
         para3.paragraph_format.bullet.char = chr(8226)
         para3.paragraph_format.default_portion_format.fill_format.fill_type = slides.FillType.SOLID
-        para3.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        para3.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Setting bullet level
         para3.paragraph_format.depth = 2
@@ -56,7 +55,7 @@ def multi_level_bullets(global_opts):
         para4.paragraph_format.bullet.type = slides.BulletType.SYMBOL
         para4.paragraph_format.bullet.char = '-'
         para4.paragraph_format.default_portion_format.fill_format.fill_type = slides.FillType.SOLID
-        para4.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        para4.paragraph_format.default_portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Setting bullet level
         para4.paragraph_format.depth = 3

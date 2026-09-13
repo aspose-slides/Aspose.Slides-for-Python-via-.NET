@@ -1,5 +1,4 @@
 ﻿import aspose.slides as slides
-import aspose.pydrawing as drawing
 from datetime import date
 
 
@@ -7,25 +6,25 @@ def add_parent_comments(global_opts):
     with slides.Presentation() as pres:
         # Add comment
         author1 = pres.comment_authors.add_author("Author_1", "A.A.")
-        comment1 = author1.comments.add_comment("comment1", pres.slides[0], drawing.PointF(10, 10), date.today())
+        comment1 = author1.comments.add_comment("comment1", pres.slides[0], slides.PointF(10, 10), date.today())
 
         # Add reply for comment1
         author2 = pres.comment_authors.add_author("Author_2", "B.b.")
-        reply1 = author2.comments.add_comment("reply 1 for comment 1", pres.slides[0], drawing.PointF(10, 10), date.today())
+        reply1 = author2.comments.add_comment("reply 1 for comment 1", pres.slides[0], slides.PointF(10, 10), date.today())
         reply1.parent_comment = comment1
 
         # Add reply for comment1
-        reply2 = author2.comments.add_comment("reply 2 for comment 1", pres.slides[0], drawing.PointF(10, 10), date.today())
+        reply2 = author2.comments.add_comment("reply 2 for comment 1", pres.slides[0], slides.PointF(10, 10), date.today())
         reply2.parent_comment = comment1
 
         # Add reply to reply
-        sub_reply = author1.comments.add_comment("subreply 3 for reply 2", pres.slides[0], drawing.PointF(10, 10), date.today())
+        sub_reply = author1.comments.add_comment("subreply 3 for reply 2", pres.slides[0], slides.PointF(10, 10), date.today())
         sub_reply.parent_comment = reply2
 
-        comment2 = author2.comments.add_comment("comment 2", pres.slides[0], drawing.PointF(10, 10), date.today())
-        comment3 = author2.comments.add_comment("comment 3", pres.slides[0], drawing.PointF(10, 10), date.today())
+        comment2 = author2.comments.add_comment("comment 2", pres.slides[0], slides.PointF(10, 10), date.today())
+        comment3 = author2.comments.add_comment("comment 3", pres.slides[0], slides.PointF(10, 10), date.today())
 
-        reply3 = author1.comments.add_comment("reply 4 for comment 3", pres.slides[0], drawing.PointF(10, 10), date.today())
+        reply3 = author1.comments.add_comment("reply 4 for comment 3", pres.slides[0], slides.PointF(10, 10), date.today())
         reply3.parent_comment = comment3
 
         # Display hierarchy on console

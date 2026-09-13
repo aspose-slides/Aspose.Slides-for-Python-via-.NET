@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def standard_tables(global_opts):
@@ -19,19 +18,19 @@ def standard_tables(global_opts):
         for row in table.rows:
             for cell in row:
                 cell.cell_format.border_top.fill_format.fill_type = slides.FillType.SOLID
-                cell.cell_format.border_top.fill_format.solid_fill_color.color = drawing.Color.red
+                cell.cell_format.border_top.fill_format.solid_fill_color.color = slides.Color.red
                 cell.cell_format.border_top.width = 5
 
                 cell.cell_format.border_bottom.fill_format.fill_type = slides.FillType.SOLID
-                cell.cell_format.border_bottom.fill_format.solid_fill_color.color = drawing.Color.red
+                cell.cell_format.border_bottom.fill_format.solid_fill_color.color = slides.Color.red
                 cell.cell_format.border_bottom.width = 5
 
                 cell.cell_format.border_left.fill_format.fill_type = slides.FillType.SOLID
-                cell.cell_format.border_left.fill_format.solid_fill_color.color = drawing.Color.red
+                cell.cell_format.border_left.fill_format.solid_fill_color.color = slides.Color.red
                 cell.cell_format.border_left.width = 5
 
                 cell.cell_format.border_right.fill_format.fill_type = slides.FillType.SOLID
-                cell.cell_format.border_right.fill_format.solid_fill_color.color = drawing.Color.red
+                cell.cell_format.border_right.fill_format.solid_fill_color.color = slides.Color.red
                 cell.cell_format.border_right.width = 5
 
         # Write PPTX to Disk

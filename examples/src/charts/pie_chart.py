@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def charts_pie_chart(global_opts):
@@ -50,33 +49,33 @@ def charts_pie_chart(global_opts):
 
         point = series.data_points[0]
         point.format.fill.fill_type = slides.FillType.SOLID
-        point.format.fill.solid_fill_color.color = drawing.Color.cyan
+        point.format.fill.solid_fill_color.color = slides.Color.cyan
 
         # Setting Sector border
         point.format.line.fill_format.fill_type = slides.FillType.SOLID
-        point.format.line.fill_format.solid_fill_color.color = drawing.Color.gray
+        point.format.line.fill_format.solid_fill_color.color = slides.Color.gray
         point.format.line.width = 3.0
         point.format.line.style = slides.LineStyle.THIN_THICK
         point.format.line.dash_style = slides.LineDashStyle.DASH_DOT
 
         point1 = series.data_points[1]
         point1.format.fill.fill_type = slides.FillType.SOLID
-        point1.format.fill.solid_fill_color.color = drawing.Color.brown
+        point1.format.fill.solid_fill_color.color = slides.Color.brown
 
         # Setting Sector border
         point1.format.line.fill_format.fill_type = slides.FillType.SOLID
-        point1.format.line.fill_format.solid_fill_color.color = drawing.Color.blue
+        point1.format.line.fill_format.solid_fill_color.color = slides.Color.blue
         point1.format.line.width = 3.0
         point1.format.line.style = slides.LineStyle.SINGLE
         point1.format.line.dash_style = slides.LineDashStyle.LARGE_DASH_DOT
 
         point2 = series.data_points[2]
         point2.format.fill.fill_type = slides.FillType.SOLID
-        point2.format.fill.solid_fill_color.color = drawing.Color.coral
+        point2.format.fill.solid_fill_color.color = slides.Color.coral
 
         # Setting Sector border
         point2.format.line.fill_format.fill_type = slides.FillType.SOLID
-        point2.format.line.fill_format.solid_fill_color.color = drawing.Color.red
+        point2.format.line.fill_format.solid_fill_color.color = slides.Color.red
         point2.format.line.width = 2.0
         point2.format.line.style = slides.LineStyle.THIN_THIN
         point2.format.line.dash_style = slides.LineDashStyle.LARGE_DASH_DOT_DOT

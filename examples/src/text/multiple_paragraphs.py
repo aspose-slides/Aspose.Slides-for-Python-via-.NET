@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -44,12 +43,12 @@ def multiple_paragraphs(global_opts):
                 tf.paragraphs[i].portions[j].text = "Portion0" + str(j)
                 if j == 0:
                     tf.paragraphs[i].portions[j].portion_format.fill_format.fill_type = slides.FillType.SOLID
-                    tf.paragraphs[i].portions[j].portion_format.fill_format.solid_fill_color.color = drawing.Color.red
+                    tf.paragraphs[i].portions[j].portion_format.fill_format.solid_fill_color.color = slides.Color.red
                     tf.paragraphs[i].portions[j].portion_format.font_bold = slides.NullableBool.TRUE
                     tf.paragraphs[i].portions[j].portion_format.font_height = 15
                 elif j == 1:
                     tf.paragraphs[i].portions[j].portion_format.fill_format.fill_type = slides.FillType.SOLID
-                    tf.paragraphs[i].portions[j].portion_format.fill_format.solid_fill_color.color = drawing.Color.blue
+                    tf.paragraphs[i].portions[j].portion_format.fill_format.solid_fill_color.color = slides.Color.blue
                     tf.paragraphs[i].portions[j].portion_format.font_italic = slides.NullableBool.TRUE
                     tf.paragraphs[i].portions[j].portion_format.font_height = 18
 

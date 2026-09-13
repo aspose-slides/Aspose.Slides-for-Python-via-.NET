@@ -1,4 +1,3 @@
-import aspose.pydrawing as drawing
 import aspose.slides as slides
 
 
@@ -31,7 +30,7 @@ def convert_to_tiff_custom_size(global_opts):
         tiff_options.dpi_y = 100
 
         # Set Image Size
-        tiff_options.image_size = drawing.Size(1728, 1078)
+        tiff_options.image_size = slides.Size(1728, 1078)
 
         # Save the presentation to TIFF with specified image size
         pres.save(global_opts.out_dir + "convert_to_tiff_custom_size_out.tiff", slides.export.SaveFormat.TIFF,

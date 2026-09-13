@@ -1,5 +1,4 @@
-﻿import aspose.pydrawing as drawing
-import aspose.slides as slides
+﻿import aspose.slides as slides
 
 
 def rotating_text(global_opts):
@@ -26,7 +25,7 @@ def rotating_text(global_opts):
         portion = para.portions[0]
         portion.text = "A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog."
         portion.portion_format.fill_format.fill_type = slides.FillType.SOLID
-        portion.portion_format.fill_format.solid_fill_color.color = drawing.Color.black
+        portion.portion_format.fill_format.solid_fill_color.color = slides.Color.black
 
         # Save Presentation
         presentation.save(global_opts.out_dir + "text_rotate_out.pptx", slides.export.SaveFormat.PPTX)
