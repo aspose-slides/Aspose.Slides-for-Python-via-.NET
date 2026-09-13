@@ -47,6 +47,7 @@ from .paragraph_bullets import paragraph_bullets
 from .paragraph_indent import paragraph_indent
 from .paragraphs_alignment import paragraphs_alignment
 from .portion_get_rect import portion_get_rect
+from .render_paragraph_example import render_paragraph_example
 from .rendering_with_fallback_font import rendering_with_fallback_font
 from .replace_fonts_explicitly import replace_fonts_explicitly
 from .replacing_text import replacing_text
@@ -120,6 +121,7 @@ def run_text_examples(global_opts):
     paragraph_indent(global_opts)
     paragraphs_alignment(global_opts)
     portion_get_rect(global_opts)
+    render_paragraph_example(global_opts)
     rendering_with_fallback_font(global_opts)
     replace_fonts_explicitly(global_opts)
     replacing_text(global_opts)
